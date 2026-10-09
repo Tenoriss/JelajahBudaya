@@ -1,0 +1,228 @@
+{
+  "maps": {
+    "prologue": {
+      "desa_awal": {
+        "position": [
+          500,
+          90
+        ],
+        "connections": [
+          "pantai_awal",
+          "prologue_festival"
+        ]
+      },
+      "pantai_awal": {
+        "position": [
+          250,
+          270
+        ],
+        "connections": [
+          "desa_awal"
+        ]
+      },
+      "prologue_festival": {
+        "position": [
+          750,
+          270
+        ],
+        "connections": [
+          "desa_awal"
+        ]
+      }
+    },
+    "java": {
+      "java_candi": {
+        "position": [
+          250,
+          80
+        ],
+        "connections": [
+          "java_desa"
+        ]
+      },
+      "java_desa": {
+        "position": [
+          500,
+          180
+        ],
+        "connections": [
+          "java_candi",
+          "java_pasar",
+          "java_sawah"
+        ]
+      },
+      "java_pasar": {
+        "position": [
+          750,
+          80
+        ],
+        "connections": [
+          "java_desa",
+          "java_sawah"
+        ]
+      },
+      "java_sawah": {
+        "position": [
+          750,
+          280
+        ],
+        "connections": [
+          "java_desa",
+          "java_pasar"
+        ]
+      }
+    },
+    "kalimantan": {
+      "kalimantan_desa": {
+        "position": [
+          500,
+          180
+        ],
+        "connections": [
+          "kalimantan_hutan",
+          "kalimantan_pasar",
+          "kalimantan_sungai"
+        ]
+      },
+      "kalimantan_hutan": {
+        "position": [
+          250,
+          80
+        ],
+        "connections": [
+          "kalimantan_desa",
+          "kalimantan_sungai"
+        ]
+      },
+      "kalimantan_pasar": {
+        "position": [
+          750,
+          80
+        ],
+        "connections": [
+          "kalimantan_desa"
+        ]
+      },
+      "kalimantan_sungai": {
+        "position": [
+          250,
+          280
+        ],
+        "connections": [
+          "kalimantan_desa",
+          "kalimantan_hutan"
+        ]
+      }
+    },
+    "papua": {
+      "papua_danau": {
+        "position": [
+          250,
+          80
+        ],
+        "connections": [
+          "papua_desa"
+        ]
+      },
+      "papua_desa": {
+        "position": [
+          500,
+          180
+        ],
+        "connections": [
+          "papua_danau",
+          "papua_hutan",
+          "papua_lembah"
+        ]
+      },
+      "papua_hutan": {
+        "position": [
+          750,
+          80
+        ],
+        "connections": [
+          "papua_desa"
+        ]
+      },
+      "papua_lembah": {
+        "position": [
+          750,
+          280
+        ],
+        "connections": [
+          "papua_desa"
+        ]
+      }
+    },
+    "sulawesi": {
+      "sulawesi_bukit": {
+        "position": [
+          250,
+          80
+        ],
+        "connections": [
+          "sulawesi_desa"
+        ]
+      },
+      "sulawesi_desa": {
+        "position": [
+          500,
+          180
+        ],
+        "connections": [
+          "sulawesi_bukit",
+          "sulawesi_pantai",
+          "sulawesi_pelabuhan"
+        ]
+      },
+      "sulawesi_pantai": {
+        "position": [
+          250,
+          280
+        ],
+        "connections": [
+          "sulawesi_desa"
+        ]
+      },
+      "sulawesi_pelabuhan": {
+        "position": [
+          750,
+          280
+        ],
+        "connections": [
+          "sulawesi_desa"
+        ]
+      }
+    },
+    "sumatra": {
+      "sumatra_danau": {
+        "position": [
+          750,
+          280
+        ],
+        "connections": [
+          "sumatra_desa"
+        ]
+      },
+      "sumatra_desa": {
+        "position": [
+          500,
+          180
+        ],
+        "connections": [
+          "sumatra_danau",
+          "sumatra_hutan"
+        ]
+      },
+      "sumatra_hutan": {
+        "position": [
+          250,
+          80
+        ],
+        "connections": [
+          "sumatra_desa"
+        ]
+      }
+    }
+  }
+}

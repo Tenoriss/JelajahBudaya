@@ -1,0 +1,680 @@
+{
+ "npcs": {
+  "npc_aminah": {
+   "name": "Aminah",
+   "role": "keeper of the ancestral house",
+   "region": "sumatra",
+   "character": "npc_aminah",
+   "idle_dialogue": "idle_npc_aminah",
+   "wander": true,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sm_01_kampung",
+      "no_flag": "done_pz_carving_memory"
+     },
+     "dialogue": "dlg_sm_01_kampung_task"
+    }
+   ]
+  },
+  "npc_datuak": {
+   "name": "Datuak",
+   "role": "elder",
+   "region": "sumatra",
+   "character": "npc_datuak",
+   "idle_dialogue": "idle_npc_datuak",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sm_05_talempong",
+      "no_flag": "done_pz_talempong_pattern"
+     },
+     "dialogue": "dlg_sm_05_talempong_task"
+    }
+   ]
+  },
+  "npc_sari": {
+   "name": "Sari",
+   "role": "weaver",
+   "region": "sumatra",
+   "character": "npc_sari",
+   "idle_dialogue": "idle_npc_sari",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sm_04_ulos",
+      "no_flag": "done_pz_ulos_pattern"
+     },
+     "dialogue": "dlg_sm_04_ulos_task"
+    }
+   ]
+  },
+  "npc_bujang": {
+   "name": "Bujang",
+   "role": "flute player",
+   "region": "sumatra",
+   "character": "npc_bujang",
+   "idle_dialogue": "idle_npc_bujang",
+   "wander": true,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sm_03_saluang",
+      "no_flag": "done_pz_saluang_song"
+     },
+     "dialogue": "dlg_sm_03_saluang_task"
+    }
+   ]
+  },
+  "npc_ida": {
+   "name": "Ida",
+   "role": "cook",
+   "region": "sumatra",
+   "character": "npc_ida",
+   "idle_dialogue": "idle_npc_ida",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sm_02_rendang",
+      "no_flag": "done_pz_rendang"
+     },
+     "dialogue": "dlg_sm_02_rendang_task"
+    }
+   ]
+  },
+  "npc_ki_bagus": {
+   "name": "Ki Bagus",
+   "role": "gamelan player",
+   "region": "java",
+   "character": "npc_ki_bagus",
+   "idle_dialogue": "idle_npc_ki_bagus",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "jv_03_gamelan",
+      "no_flag": "done_pz_gamelan"
+     },
+     "dialogue": "dlg_jv_03_gamelan_task"
+    }
+   ]
+  },
+  "npc_dewi": {
+   "name": "Dewi",
+   "role": "museum copyist",
+   "region": "java",
+   "character": "npc_dewi",
+   "idle_dialogue": "idle_npc_dewi",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "jv_07_candi",
+      "no_flag": "done_pz_candi_relief"
+     },
+     "dialogue": "dlg_jv_07_candi_task"
+    }
+   ]
+  },
+  "npc_pak_tarno": {
+   "name": "Pak Tarno",
+   "role": "farmer",
+   "region": "java",
+   "character": "npc_pak_tarno",
+   "idle_dialogue": "idle_npc_pak_tarno",
+   "wander": true,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "jv_04_sawah",
+      "no_flag": "done_pz_sawah_water"
+     },
+     "dialogue": "dlg_jv_04_sawah_task"
+    }
+   ]
+  },
+  "npc_rara": {
+   "name": "Rara",
+   "role": "angklung teacher",
+   "region": "java",
+   "character": "npc_rara",
+   "idle_dialogue": "idle_npc_rara",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "jv_06_angklung",
+      "no_flag": "done_pz_angklung_order"
+     },
+     "dialogue": "dlg_jv_06_angklung_task"
+    }
+   ]
+  },
+  "npc_mbah_karto": {
+   "name": "Mbah Karto",
+   "role": "puppeteer",
+   "region": "java",
+   "character": "npc_mbah_karto",
+   "idle_dialogue": "idle_npc_mbah_karto",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "jv_05_wayang",
+      "no_flag": "done_pz_wayang_quiz"
+     },
+     "dialogue": "dlg_jv_05_wayang_task"
+    }
+   ]
+  },
+  "npc_lasan": {
+   "name": "Lasan",
+   "role": "longhouse repairer",
+   "region": "kalimantan",
+   "character": "npc_lasan",
+   "idle_dialogue": "idle_npc_lasan",
+   "wander": true,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "kl_01_rumah_panjang",
+      "no_flag": "done_pz_roof_plait"
+     },
+     "dialogue": "dlg_kl_01_rumah_panjang_task"
+    }
+   ]
+  },
+  "npc_tina": {
+   "name": "Tina",
+   "role": "singer",
+   "region": "kalimantan",
+   "character": "npc_tina",
+   "idle_dialogue": "idle_npc_tina",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "kl_02_karungut",
+      "no_flag": "done_pz_karungut"
+     },
+     "dialogue": "dlg_kl_02_karungut_task"
+    }
+   ]
+  },
+  "npc_bapa_udi": {
+   "name": "Bapa Udi",
+   "role": "boatman",
+   "region": "kalimantan",
+   "character": "npc_bapa_udi",
+   "idle_dialogue": "idle_npc_bapa_udi",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "kl_03_sungai",
+      "no_flag": "done_pz_river_flow"
+     },
+     "dialogue": "dlg_kl_03_sungai_task"
+    }
+   ]
+  },
+  "npc_rini": {
+   "name": "Rini",
+   "role": "dyer",
+   "region": "kalimantan",
+   "character": "npc_rini",
+   "idle_dialogue": "idle_npc_rini",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "kl_04_sasirangan",
+      "no_flag": "done_pz_sasirangan"
+     },
+     "dialogue": "dlg_kl_04_sasirangan_task"
+    }
+   ]
+  },
+  "npc_rambu": {
+   "name": "Rambu",
+   "role": "kolintang player",
+   "region": "sulawesi",
+   "character": "npc_rambu",
+   "idle_dialogue": "idle_npc_rambu",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_03_kolintang",
+      "no_flag": "done_pz_kolintang_tune"
+     },
+     "dialogue": "dlg_sl_03_kolintang_task"
+    }
+   ]
+  },
+  "npc_puang": {
+   "name": "Puang",
+   "role": "head of the family line",
+   "region": "sulawesi",
+   "character": "npc_puang",
+   "idle_dialogue": "idle_npc_puang",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_01_tongkonan",
+      "no_flag": "done_pz_tongkonan_carve"
+     },
+     "dialogue": "dlg_sl_01_tongkonan_task"
+    }
+   ]
+  },
+  "npc_dg_naba": {
+   "name": "Daeng Naba",
+   "role": "shipwright",
+   "region": "sulawesi",
+   "character": "npc_dg_naba",
+   "idle_dialogue": "idle_npc_dg_naba",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_02_phinisi",
+      "no_flag": "done_pz_phinisi_hull"
+     },
+     "dialogue": "dlg_sl_02_phinisi_task"
+    }
+   ]
+  },
+  "npc_yuliana": {
+   "name": "Yuliana",
+   "role": "gardener",
+   "region": "sulawesi",
+   "character": "npc_yuliana",
+   "idle_dialogue": "idle_npc_yuliana",
+   "wander": true,
+   "talk_radius": 30,
+   "facing": "down"
+  },
+  "npc_yosia": {
+   "name": "Yosia",
+   "role": "builder",
+   "region": "papua",
+   "character": "npc_yosia",
+   "idle_dialogue": "idle_npc_yosia",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_01_honai",
+      "no_flag": "done_pz_honai_build"
+     },
+     "dialogue": "dlg_pp_01_honai_task"
+    }
+   ]
+  },
+  "npc_petrus": {
+   "name": "Petrus",
+   "role": "canoe owner",
+   "region": "papua",
+   "character": "npc_petrus",
+   "idle_dialogue": "idle_npc_petrus",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_06_sentani",
+      "no_flag": "done_pz_sentani_find"
+     },
+     "dialogue": "dlg_pp_06_sentani_task"
+    },
+    {
+     "if": {
+      "quest_active": "pp_03_papeda",
+      "no_flag": "done_pz_papeda"
+     },
+     "dialogue": "dlg_pp_03_papeda_task"
+    }
+   ]
+  },
+  "npc_mama_lena": {
+   "name": "Mama Lena",
+   "role": "basket maker",
+   "region": "papua",
+   "character": "npc_mama_lena",
+   "idle_dialogue": "idle_npc_mama_lena",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_07_kulit_kayu",
+      "no_flag": "done_pz_barkcloth"
+     },
+     "dialogue": "dlg_pp_07_kulit_kayu_task"
+    },
+    {
+     "if": {
+      "quest_active": "pp_02_noken",
+      "no_flag": "done_pz_noken_knot"
+     },
+     "dialogue": "dlg_pp_02_noken_task"
+    }
+   ]
+  },
+  "npc_tomas": {
+   "name": "Tomas",
+   "role": "drum carver",
+   "region": "papua",
+   "character": "npc_tomas",
+   "idle_dialogue": "idle_npc_tomas",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_04_tifa",
+      "no_flag": "done_pz_tifa_pattern"
+     },
+     "dialogue": "dlg_pp_04_tifa_task"
+    }
+   ]
+  },
+  "npc_penjaga": {
+   "name": "Pak Hasan",
+   "role": "village keeper",
+   "region": "prologue",
+   "character": "npc_penjaga",
+   "idle_dialogue": "idle_npc_penjaga",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_09_jejak",
+      "no_flag": "done_pz_quiz_festival"
+     },
+     "dialogue": "dlg_pp_09_jejak_task"
+    },
+    {
+     "if": {
+      "quest_active": "pg_01_notebook",
+      "no_flag": "done_pz_notebook_pages"
+     },
+     "dialogue": "dlg_pg_01_notebook_task"
+    }
+   ]
+  },
+  "npc_pengembara": {
+   "name": "Samsul",
+   "role": "traveller",
+   "region": "prologue",
+   "character": "npc_pengembara",
+   "idle_dialogue": "idle_npc_pengembara",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_08_burung",
+      "no_flag": "done_pz_bird_logic"
+     },
+     "dialogue": "dlg_pp_08_burung_task"
+    },
+    {
+     "if": {
+      "quest_active": "pg_02_keberangkatan",
+      "no_flag": "done_pz_gotong_royong"
+     },
+     "dialogue": "dlg_pg_02_keberangkatan_task"
+    }
+   ]
+  },
+  "npc_anak": {
+   "name": "Ari",
+   "role": "child",
+   "region": "prologue",
+   "character": "npc_anak",
+   "idle_dialogue": "idle_npc_anak",
+   "wander": true,
+   "talk_radius": 34,
+   "facing": "down"
+  },
+  "npc_nelayan": {
+   "name": "Pak Amir",
+   "role": "fisher",
+   "region": "prologue",
+   "character": "npc_nelayan",
+   "idle_dialogue": "idle_npc_nelayan",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_07_bajo",
+      "no_flag": "done_pz_bajo_search"
+     },
+     "dialogue": "dlg_sl_07_bajo_task"
+    },
+    {
+     "if": {
+      "quest_active": "pg_03_net_mend",
+      "no_flag": "done_pz_net_mend"
+     },
+     "dialogue": "dlg_pg_03_net_mend_task"
+    }
+   ]
+  },
+  "npc_guru": {
+   "name": "Bu Ratna",
+   "role": "teacher",
+   "region": "prologue",
+   "character": "npc_guru",
+   "idle_dialogue": "idle_npc_guru",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "pp_05_lembah",
+      "no_flag": "done_pz_valley_ditches"
+     },
+     "dialogue": "dlg_pp_05_lembah_task"
+    },
+    {
+     "if": {
+      "quest_active": "sl_06_lontara",
+      "no_flag": "done_pz_lontara_logic"
+     },
+     "dialogue": "dlg_sl_06_lontara_task"
+    }
+   ]
+  },
+  "npc_penari": {
+   "name": "Nur",
+   "role": "dancer",
+   "region": "prologue",
+   "character": "npc_penari",
+   "idle_dialogue": "idle_npc_penari",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_05_pakarena",
+      "no_flag": "done_pz_pakarena"
+     },
+     "dialogue": "dlg_sl_05_pakarena_task"
+    },
+    {
+     "if": {
+      "quest_active": "kl_08_gantar",
+      "no_flag": "done_pz_gantar_steps"
+     },
+     "dialogue": "dlg_kl_08_gantar_task"
+    },
+    {
+     "if": {
+      "quest_active": "sm_07_piring",
+      "no_flag": "done_pz_piring_steps"
+     },
+     "dialogue": "dlg_sm_07_piring_task"
+    }
+   ]
+  },
+  "npc_pengrajin": {
+   "name": "Bu Wati",
+   "role": "craftsperson",
+   "region": "prologue",
+   "character": "npc_pengrajin",
+   "idle_dialogue": "idle_npc_pengrajin",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "kl_05_bengkel",
+      "no_flag": "done_pz_mandau_tools"
+     },
+     "dialogue": "dlg_kl_05_bengkel_task"
+    },
+    {
+     "if": {
+      "quest_active": "jv_02_batik",
+      "no_flag": "done_pz_batik"
+     },
+     "dialogue": "dlg_jv_02_batik_task"
+    },
+    {
+     "if": {
+      "quest_active": "sm_08_pasar",
+      "no_flag": "done_pz_pasar_match"
+     },
+     "dialogue": "dlg_sm_08_pasar_task"
+    }
+   ]
+  },
+  "npc_koki": {
+   "name": "Bu Siti",
+   "role": "cook",
+   "region": "prologue",
+   "character": "npc_koki",
+   "idle_dialogue": "idle_npc_koki",
+   "wander": false,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_04_coto",
+      "no_flag": "done_pz_coto"
+     },
+     "dialogue": "dlg_sl_04_coto_task"
+    },
+    {
+     "if": {
+      "quest_active": "kl_06_soto",
+      "no_flag": "done_pz_soto_banjar"
+     },
+     "dialogue": "dlg_kl_06_soto_task"
+    },
+    {
+     "if": {
+      "quest_active": "jv_01_tumpeng",
+      "no_flag": "done_pz_tumpeng"
+     },
+     "dialogue": "dlg_jv_01_tumpeng_task"
+    }
+   ]
+  },
+  "npc_pedagang": {
+   "name": "Umar",
+   "role": "trader",
+   "region": "prologue",
+   "character": "npc_pedagang",
+   "idle_dialogue": "idle_npc_pedagang",
+   "wander": true,
+   "talk_radius": 30,
+   "facing": "down",
+   "conditional_dialogue": [
+    {
+     "if": {
+      "quest_active": "sl_08_pelabuhan",
+      "no_flag": "done_pz_harbour_match"
+     },
+     "dialogue": "dlg_sl_08_pelabuhan_task"
+    },
+    {
+     "if": {
+      "quest_active": "kl_07_pasar_logic",
+      "no_flag": "done_pz_pasar_logic"
+     },
+     "dialogue": "dlg_kl_07_pasar_logic_task"
+    },
+    {
+     "if": {
+      "quest_active": "jv_08_pasar_java",
+      "no_flag": "done_pz_javanese_market"
+     },
+     "dialogue": "dlg_jv_08_pasar_java_task"
+    },
+    {
+     "if": {
+      "quest_active": "sm_06_danau",
+      "no_flag": "done_pz_danau_search"
+     },
+     "dialogue": "dlg_sm_06_danau_task"
+    }
+   ]
+  }
+ }
+}

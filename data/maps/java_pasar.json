@@ -1,0 +1,424 @@
+{
+ "id": "java_pasar",
+ "name": "Pasar Pagi",
+ "region": "java",
+ "size": [
+  44,
+  34
+ ],
+ "spawn": [
+  22,
+  26
+ ],
+ "music": "java",
+ "ambience": "amb_village",
+ "terrain": {
+  "default": "PAVING",
+  "rects": [
+   {
+    "tile": "GRASS",
+    "rect": [
+     0,
+     26,
+     44,
+     8
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     4,
+     16,
+     36,
+     4
+    ]
+   },
+   {
+    "tile": "DIRT",
+    "rect": [
+     0,
+     30,
+     44,
+     4
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     44,
+     0,
+     2,
+     34
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PAVING",
+    "from": [
+     22,
+     4
+    ],
+    "to": [
+     22,
+     30
+    ],
+    "width": 4
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "JUNGLE",
+    "center": [
+     40,
+     30
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "market_stall",
+   "pos": [
+    10,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall_blue",
+   "pos": [
+    16,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    22,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall_blue",
+   "pos": [
+    28,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    34,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    8,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung_green",
+   "pos": [
+    14,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "food_stall",
+   "pos": [
+    26,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "food_stall",
+   "pos": [
+    32,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "clock_tower",
+   "pos": [
+    22,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    12,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    18,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    24,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "pot_plant",
+   "pos": [
+    30,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "easel_board",
+   "pos": [
+    36,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lantern",
+   "pos": [
+    20,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lantern",
+   "pos": [
+    24,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    4,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    40,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_koki",
+   "pos": [
+    26,
+    22
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_pengrajin",
+   "pos": [
+    34,
+    14
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_pedagang",
+   "pos": [
+    12,
+    20
+   ],
+   "wander": true,
+   "facing": "right"
+  },
+  {
+   "id": "npc_pengembara",
+   "pos": [
+    30,
+    26
+   ],
+   "wander": false,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "jv_pick_spice",
+   "kind": "pickup",
+   "pos": [
+    12,
+    14
+   ],
+   "target": "bumbu_tumpeng",
+   "text": "Turmeric, coconut and aromatics, bundled for a celebration."
+  },
+  {
+   "id": "jv_pick_wax",
+   "kind": "pickup",
+   "pos": [
+    18,
+    14
+   ],
+   "target": "lilin_batik",
+   "text": "A block of batik wax, faintly perfumed with resin."
+  },
+  {
+   "id": "jv_pz_jv_market",
+   "kind": "puzzle",
+   "pos": [
+    22,
+    18
+   ],
+   "target": "pz_javanese_market",
+   "prompt": "Help at the market",
+   "if": {
+    "quest_active": "jv_08_pasar_java"
+   }
+  },
+  {
+   "id": "jv_pick_angklung_sou",
+   "kind": "pickup",
+   "pos": [
+    28,
+    18
+   ],
+   "target": "sou_angklung_mini"
+  },
+  {
+   "id": "jv_col_key_plate",
+   "kind": "pickup",
+   "pos": [
+    36,
+    22
+   ],
+   "target": "col_keping_gamelan"
+  },
+  {
+   "id": "jv_save_market",
+   "kind": "save",
+   "pos": [
+    20,
+    24
+   ]
+  },
+  {
+   "id": "jv_sign_market",
+   "kind": "sign",
+   "pos": [
+    22,
+    26
+   ],
+   "title": "Market rules",
+   "text": "Stalls are laid out the night before by the trader whose name is on the list. If the list is wrong, the whole morning is wrong."
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_pasar_pagi",
+   "name": "Morning Market",
+   "pos": [
+    22,
+    24
+   ],
+   "description": "Stalls that open before sunrise and pack up by noon.",
+   "entry": "market",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_java_desa",
+   "pos": [
+    2,
+    16
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "java_desa",
+   "entry": "to_java_pasar"
+  },
+  {
+   "id": "to_java_sawah",
+   "pos": [
+    42,
+    16
+   ],
+   "size": [
+    2,
+    3
+   ],
+   "target": "java_sawah",
+   "entry": "to_java_pasar"
+  },
+  {
+   "id": "to_kalimantan_desa",
+   "pos": [
+    22,
+    32
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "kalimantan_desa",
+   "entry": "to_java_pasar"
+  }
+ ],
+ "collision_rects": [
+  [
+   44,
+   0,
+   2,
+   34
+  ]
+ ]
+}

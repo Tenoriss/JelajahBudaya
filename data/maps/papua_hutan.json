@@ -1,0 +1,403 @@
+{
+ "id": "papua_hutan",
+ "name": "Hutan Pegunungan",
+ "region": "papua",
+ "size": [
+  54,
+  40
+ ],
+ "spawn": [
+  27,
+  32
+ ],
+ "music": "papua",
+ "ambience": "amb_forest",
+ "terrain": {
+  "default": "JUNGLE",
+  "rects": [
+   {
+    "tile": "CLIFF",
+    "rect": [
+     0,
+     0,
+     54,
+     5
+    ]
+   },
+   {
+    "tile": "TALLGRASS",
+    "rect": [
+     6,
+     22,
+     40,
+     8
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     4,
+     18,
+     46,
+     3
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     46,
+     10,
+     6,
+     24
+    ]
+   },
+   {
+    "tile": "ASH",
+    "rect": [
+     12,
+     30,
+     16,
+     6
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "MUD",
+    "center": [
+     30,
+     32
+    ],
+    "radius": 6
+   },
+   {
+    "tile": "BAMBOO",
+    "center": [
+     42,
+     34
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    6,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    16,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    26,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    36,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    46,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    4,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    22,
+    36
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    40,
+    36
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cave_mouth",
+   "pos": [
+    14,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    34,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "mountain_rock",
+   "pos": [
+    30,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "log",
+   "pos": [
+    24,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "mushroom",
+   "pos": [
+    18,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    10,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    34,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    40,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lookout_tower",
+   "pos": [
+    28,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "waterfall",
+   "pos": [
+    46,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "totem",
+   "pos": [
+    38,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tribal_shield",
+   "pos": [
+    36,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_pengembara",
+   "pos": [
+    28,
+    22
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_tomas",
+   "pos": [
+    34,
+    30
+   ],
+   "wander": true,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pp_pz_bird_site",
+   "kind": "puzzle",
+   "pos": [
+    28,
+    20
+   ],
+   "target": "pz_bird_logic",
+   "prompt": "Read the watcher's notes",
+   "sprite": "lookout_tower",
+   "if": {
+    "quest_active": "pp_08_burung"
+   }
+  },
+  {
+   "id": "pp_pick_plume",
+   "kind": "pickup",
+   "pos": [
+    26,
+    24
+   ],
+   "target": "col_bulu_molt",
+   "text": "A plume lying on the forest floor, moulted naturally. Nothing was caught."
+  },
+  {
+   "id": "pp_note_bird",
+   "kind": "note",
+   "pos": [
+    30,
+    20
+   ],
+   "title": "Watcher's rules",
+   "text": "Watch with your eyes. Do not call, do not chase, do not collect. These birds were hunted almost to nothing once; that is why they are protected now."
+  },
+  {
+   "id": "pp_save_hutan",
+   "kind": "save",
+   "pos": [
+    26,
+    20
+   ]
+  },
+  {
+   "id": "pp_hidden_ridge",
+   "kind": "hidden",
+   "pos": [
+    50,
+    36
+   ],
+   "title": "Above the Waterfall",
+   "text": "A path behind the waterfall leads up to a shelf of rock with a view down the whole valley, and to old markings that belong to nobody you can name.",
+   "items": [
+    "air_minum"
+   ],
+   "culture": "burung_cenderawasih"
+  },
+  {
+   "id": "pp_minigame_waterfall",
+   "kind": "minigame",
+   "pos": [
+    44,
+    32
+   ],
+   "prompt": "Cross by the waterfall",
+   "minigame": "nod",
+   "title": "River Crossing",
+   "target": "nod",
+   "text": "Cross when the water is between surges.",
+   "data": {
+    "rounds": 3,
+    "width": 92,
+    "speed": 350,
+    "themes": [
+     "the water is rising!",
+     "wait for the gap!",
+     "one more step!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_hutan_papua",
+   "name": "Ridge Lookout",
+   "pos": [
+    28,
+    18
+   ],
+   "description": "A lookout on the ridge: forest, river and mountain, with hundreds of communities below it, each with its own language.",
+   "entry": "ridge",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_papua_desa",
+   "pos": [
+    26,
+    36
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "papua_desa",
+   "entry": "to_papua_hutan"
+  }
+ ],
+ "collision_rects": [
+  [
+   46,
+   10,
+   6,
+   24
+  ]
+ ]
+}

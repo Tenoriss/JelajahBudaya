@@ -1,0 +1,317 @@
+{
+ "id": "pantai_awal",
+ "name": "Pantai Awal",
+ "region": "prologue",
+ "size": [
+  48,
+  34
+ ],
+ "spawn": [
+  24,
+  26
+ ],
+ "music": "prologue",
+ "ambience": "amb_waves",
+ "terrain": {
+  "default": "SAND",
+  "rects": [
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     48,
+     8
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     8,
+     3,
+     26
+    ]
+   },
+   {
+    "tile": "GRASS",
+    "rect": [
+     12,
+     12,
+     36,
+     22
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     14,
+     18,
+     34,
+     3
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "REED",
+    "center": [
+     38,
+     26
+    ],
+    "radius": 4
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     44,
+     12
+    ],
+    "radius": 5
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    20,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    24,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    27,
+    9
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    31,
+    10
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    16,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack_blue",
+   "pos": [
+    19,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    34,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    36,
+    21
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    38,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    14,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm2",
+   "pos": [
+    30,
+    31
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    44,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_small",
+   "pos": [
+    42,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    40,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    12,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_nelayan",
+   "pos": [
+    22,
+    20
+   ],
+   "wander": false,
+   "facing": "down"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pg_net_bench",
+   "kind": "note",
+   "pos": [
+    18,
+    22
+   ],
+   "title": "The mending bench",
+   "text": "Twine, a wooden shuttle and a bamboo needle. Nothing metal in sight - a net is tied, never nailed."
+  },
+  {
+   "id": "pg_pick_net",
+   "kind": "pickup",
+   "pos": [
+    19,
+    23
+   ],
+   "target": "benang_jaring",
+   "text": "A roll of tough net twine."
+  },
+  {
+   "id": "pg_beach_shell",
+   "kind": "pickup",
+   "pos": [
+    40,
+    24
+   ],
+   "target": "col_kerang"
+  },
+  {
+   "id": "pg_save_beach",
+   "kind": "save",
+   "pos": [
+    26,
+    22
+   ]
+  },
+  {
+   "id": "pg_hidden_rockpool",
+   "kind": "hidden",
+   "pos": [
+    44,
+    32
+   ],
+   "title": "Rock Pools",
+   "text": "Behind the rocks the tide has left a shallow pool, warm as bathwater, full of small bright fish.",
+   "items": [
+    "air_minum"
+   ],
+   "culture": "kampung_home"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_pantai_awal",
+   "name": "The Old Jetty",
+   "pos": [
+    24,
+    12
+   ],
+   "description": "Planks worn smooth by forty years of bare feet and wet rope.",
+   "entry": "jetty",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_desa_awal",
+   "pos": [
+    45,
+    18
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "desa_awal",
+   "entry": "to_pantai_awal"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   48,
+   8
+  ],
+  [
+   0,
+   8,
+   3,
+   26
+  ]
+ ]
+}

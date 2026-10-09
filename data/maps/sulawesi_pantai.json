@@ -1,0 +1,371 @@
+{
+ "id": "sulawesi_pantai",
+ "name": "Pantai Bajo",
+ "region": "sulawesi",
+ "size": [
+  52,
+  36
+ ],
+ "spawn": [
+  26,
+  28
+ ],
+ "music": "sulawesi",
+ "ambience": "amb_waves",
+ "terrain": {
+  "default": "WATER",
+  "rects": [
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     52,
+     36
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     8,
+     10,
+     36,
+     4
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     8,
+     14,
+     4,
+     14
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     24,
+     14,
+     4,
+     14
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     40,
+     14,
+     4,
+     14
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     8,
+     28,
+     36,
+     4
+    ]
+   },
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     26,
+     6,
+     10
+    ]
+   }
+  ],
+  "lines": [],
+  "blobs": [
+   {
+    "tile": "REED",
+    "center": [
+     46,
+     32
+    ],
+    "radius": 3
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    14,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    34,
+    12
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    20,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    28,
+    22
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    44,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    20,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    32,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    16,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    36,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack_blue",
+   "pos": [
+    38,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    12,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    14,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    2,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    46,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_small",
+   "pos": [
+    6,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_nelayan",
+   "pos": [
+    24,
+    24
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_penari",
+   "pos": [
+    34,
+    26
+   ],
+   "wander": false,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sl_pz_fish_site",
+   "kind": "puzzle",
+   "pos": [
+    44,
+    22
+   ],
+   "target": "pz_bajo_search",
+   "prompt": "Read the fishers' reports",
+   "sprite": "boat_dock_house",
+   "if": {
+    "quest_active": "sl_07_bajo"
+   }
+  },
+  {
+   "id": "sl_pz_dance_site",
+   "kind": "puzzle",
+   "pos": [
+    34,
+    28
+   ],
+   "target": "pz_pakarena",
+   "prompt": "Watch the rehearsal",
+   "sprite": "drum",
+   "if": {
+    "quest_active": "sl_05_pakarena"
+   }
+  },
+  {
+   "id": "sl_pick_shell",
+   "kind": "pickup",
+   "pos": [
+    8,
+    30
+   ],
+   "target": "col_kerang"
+  },
+  {
+   "id": "sl_note_tide",
+   "kind": "note",
+   "pos": [
+    26,
+    26
+   ],
+   "title": "Tide note",
+   "text": "The walkway floats. At high tide the first two planks are under water, and everybody simply steps down onto the deck of a boat."
+  },
+  {
+   "id": "sl_save_pantai",
+   "kind": "save",
+   "pos": [
+    26,
+    30
+   ]
+  },
+  {
+   "id": "sl_hidden_reef",
+   "kind": "hidden",
+   "pos": [
+    48,
+    6
+   ],
+   "title": "The Shallow Reef",
+   "text": "Beyond the last walkway the water drops away and the reef begins - bright coral, small fish, and a broken anchor wedged in the coral.",
+   "items": [
+    "ikan_kuning"
+   ],
+   "culture": "bajo_village"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_bajo",
+   "name": "The Stilt Village",
+   "pos": [
+    26,
+    20
+   ],
+   "description": "Houses and walkways standing over the water, with boats tied to the front step.",
+   "entry": "village",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sulawesi_desa",
+   "pos": [
+    8,
+    30
+   ],
+   "size": [
+    2,
+    3
+   ],
+   "target": "sulawesi_desa",
+   "entry": "to_sulawesi_pantai"
+  },
+  {
+   "id": "to_papua_danau",
+   "pos": [
+    43,
+    20
+   ],
+   "size": [
+    2,
+    3
+   ],
+   "target": "papua_danau",
+   "entry": "to_sulawesi_pantai"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   52,
+   36
+  ]
+ ]
+}

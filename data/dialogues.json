@@ -1,0 +1,3380 @@
+{
+ "dialogues": {
+  "dlg_pg_01_notebook_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Ah - you have come about your grandmother's things?",
+      "She kept a notebook, and she always said it was not finished.",
+      "It has been sitting in the store room since she stopped travelling. Pages everywhere."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pg_01_notebook_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "You matched all six. And her hand is still on the first page.",
+      "Then it is settled: the notebook travels again, and you are the one carrying it.",
+      "Write down what people tell you. Their words, their names, their places."
+     ]
+    }
+   }
+  },
+  "dlg_pg_01_notebook_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "The loose pages are in the store room - the room is the big house north of the square.",
+      "Line them up by what is drawn on them."
+     ],
+     "do": {
+      "open_puzzle": "pz_notebook_pages"
+     }
+    }
+   }
+  },
+  "dlg_pg_02_keberangkatan_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Packing is the same work as building - it has an order.",
+      "Carry water, salt, a little sambal, and something to write with.",
+      "The rest you can buy or be given along the way."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pg_02_keberangkatan_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Good. Then you will not be the traveller who arrives empty-handed.",
+      "One more thing: take the basket from the mending shed - the village filled it for you.",
+      "Cloth, coffee, salt. Gifts. People will ask you where you are from."
+     ]
+    }
+   }
+  },
+  "dlg_pg_02_keberangkatan_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "The shed is west of the square. Bring the basket, and we will pack it together."
+     ],
+     "do": {
+      "open_puzzle": "pz_gotong_royong"
+     }
+    }
+   }
+  },
+  "dlg_pg_03_net_mend_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "You want to go inland? Then you will need this net mended first, and a letter.",
+      "The letter says the next village should receive you. The keeper signs those.",
+      "Here is the twine. My shuttle is on the bench."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pg_03_net_mend_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "That is a good mend - better than mine, and I have been doing it forty years.",
+      "The keeper signed the letter while you were working. Take it.",
+      "Inland, the roads climb. It is cold up there in the morning. Go carefully."
+     ],
+     "do": {
+      "chapter": 2
+     }
+    }
+   }
+  },
+  "dlg_pg_03_net_mend_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "The twine is in your hand already. My bench is at the jetty, west of the houses."
+     ],
+     "do": {
+      "open_puzzle": "pz_net_mend"
+     }
+    }
+   }
+  },
+  "dlg_sm_01_kampung_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_aminah",
+     "lines": [
+      "You came up the new road? Then you are the traveller with the notebook.",
+      "Look at this wall - the panels were taken down to be cleaned and now nobody agrees where they go.",
+      "Help me match them and I will tell you about the house."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_aminah",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_aminah",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_01_kampung_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_aminah",
+     "lines": [
+      "There - exactly. My mother would have put them the same way.",
+      "This house belongs to the women of the family, you know. It is theirs, not the men's.",
+      "Write that down before you forget it."
+     ]
+    }
+   }
+  },
+  "dlg_sm_01_kampung_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_aminah",
+     "lines": [
+      "The panels are stacked against the wall on the east side of the house."
+     ],
+     "do": {
+      "open_puzzle": "pz_carving_memory"
+     }
+    }
+   }
+  },
+  "dlg_sm_02_rendang_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ida",
+     "lines": [
+      "A wedding across the valley, which means rendang, which means I have been cooking since dawn.",
+      "The spice bundle is still at the market stall and the coconut milk is at the grinder.",
+      "Bring both, and then you can watch the pot - I need another pair of hands."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_ida",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_ida",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_02_rendang_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ida",
+     "lines": [
+      "Nearly dry, and the colour is right. Sit down, you have earned a plate.",
+      "Rendang is cooked this dry so it keeps. That is why it travels - and why weddings always have it."
+     ]
+    }
+   }
+  },
+  "dlg_sm_02_rendang_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ida",
+     "lines": [
+      "Everything is in the pot. Watch the fire with me - keep it steady."
+     ],
+     "do": {
+      "open_puzzle": "pz_rendang"
+     }
+    }
+   }
+  },
+  "dlg_sm_03_saluang_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bujang",
+     "lines": [
+      "I cut a new saluang, and then I forgot how the song begins. Imagine!",
+      "My teacher used to say the flute breathes for you if you let it.",
+      "Take the blank and try. You do not need to be good, you need to listen."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_bujang",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_bujang",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_03_saluang_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bujang",
+     "lines": [
+      "That is it. That is the song.",
+      "You know what is strange? You cannot get a good breath by breathing in and out normally.",
+      "You push the air out while you breathe in through your nose. That is why a phrase can last so long."
+     ]
+    }
+   }
+  },
+  "dlg_sm_03_saluang_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bujang",
+     "lines": [
+      "The blank is with the bamboo clump behind the house. Take it and try a phrase."
+     ],
+     "do": {
+      "open_puzzle": "pz_saluang_song"
+     }
+    }
+   }
+  },
+  "dlg_sm_04_ulos_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_sari",
+     "lines": [
+      "The wedding is tomorrow and the loom is fighting me.",
+      "I have the yarn, but the pattern has to be laid out before the thread tangles.",
+      "Will you fetch the gold thread from the trader? It is the last thing I need."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_sari",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_sari",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_04_ulos_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_sari",
+     "lines": [
+      "Good. Now it will hold.",
+      "This kind of cloth is not sold in a shop - it is given. At a birth, at a wedding, at a funeral.",
+      "Giving one is the same as saying a blessing out loud."
+     ]
+    }
+   }
+  },
+  "dlg_sm_04_ulos_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_sari",
+     "lines": [
+      "The loom is under the lean-to. Sit at it and copy the pattern."
+     ],
+     "do": {
+      "open_puzzle": "pz_ulos_pattern"
+     }
+    }
+   }
+  },
+  "dlg_sm_05_talempong_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_datuak",
+     "lines": [
+      "You have heard the flute and watched the cloth; now comes the music for the procession.",
+      "The talempong is a set of small bronze gongs. One person cannot play a whole tune - we strike, and the tune comes out between us.",
+      "Learn the pattern, then try the procession game at the square."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_datuak",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_datuak",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_05_talempong_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_datuak",
+     "lines": [
+      "Enough. The wedding will have its music.",
+      "Small gongs like these travel well - we can carry the whole set to the next village. A big bronze orchestra could never do that."
+     ]
+    }
+   }
+  },
+  "dlg_sm_05_talempong_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_datuak",
+     "lines": [
+      "Come to the frame of gongs behind the elders' house. I will show you the pattern."
+     ],
+     "do": {
+      "open_puzzle": "pz_talempong_pattern"
+     }
+    }
+   }
+  },
+  "dlg_sm_06_danau_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Half my goods went into the lake this morning. Everybody saw it, nobody agrees where.",
+      "A boy says the reeds caught it. The cake seller says it went past her stall.",
+      "Walk up to the lake and work out where it actually came ashore, would you?"
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_06_danau_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "My basket, my salt, my coffee - all dry inside.",
+      "I have travelled this lake shore for twenty years and I would not have guessed that spot.",
+      "You read the shore better than I do. That is worth a sack of beans."
+     ]
+    }
+   }
+  },
+  "dlg_sm_06_danau_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Come up to the lake with me and look at the shore."
+     ],
+     "do": {
+      "open_puzzle": "pz_danau_search"
+     }
+    }
+   }
+  },
+  "dlg_sm_07_piring_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Hold these. Careful - they are real plates, not props.",
+      "We dance with them in our palms, and at the end we step on them.",
+      "The new dancer keeps starting with the hardest part. Help her sort the order."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_07_piring_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Now she has it. One more rehearsal and the harvest festival will be ready.",
+      "You should know where the dance comes from: it began as a thank-you for the rice harvest.",
+      "That is why we still dance it when the field is cut."
+     ]
+    }
+   }
+  },
+  "dlg_sm_07_piring_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "The troupe is north of the square, on the mat. Come and dance one round."
+     ],
+     "do": {
+      "open_puzzle": "pz_piring_steps"
+     }
+    }
+   }
+  },
+  "dlg_sm_08_pasar_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Market opens at first light and everything has to be in the right place.",
+      "Gold thread, chilli, coffee, cloth, a little bronze - and I keep mixing them up.",
+      "Help me sort them and I will tell the boatman that you need the eastern road."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sm_08_pasar_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Open on time. Look at that - the whole street trading.",
+      "Take this scarf; it is not the best one I have made, but it is the one I can spare.",
+      "The eastern road runs to the coast, then south along the water. Another island is waiting."
+     ],
+     "do": {
+      "chapter": 3
+     }
+    }
+   }
+  },
+  "dlg_sm_08_pasar_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "The stalls are at the eastern end. Bring the goods and we will sort them."
+     ],
+     "do": {
+      "open_puzzle": "pz_pasar_match"
+     }
+    }
+   }
+  },
+  "dlg_jv_01_tumpeng_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "You are just in time to help, and I am not asking.",
+      "Tonight is a syukuran - a thanksgiving - and there has to be tumpeng.",
+      "The ingredients are at the market stall. Bring them and stay for the fire."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_01_tumpeng_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Now that is a mountain, not a lump. The tip goes to the eldest, you know.",
+      "We cut the top first and give it away, then everybody eats the rest.",
+      "Write that down: the shape is the mountain, and the mountain is what feeds us."
+     ]
+    }
+   }
+  },
+  "dlg_jv_01_tumpeng_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "The stove is behind the warung. Come and help me finish it."
+     ],
+     "do": {
+      "open_puzzle": "pz_tumpeng"
+     }
+    }
+   }
+  },
+  "dlg_jv_02_batik_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Careful, the wax is hot. No - hotter than that. Good.",
+      "This cloth will go into the dye bath twice. Whatever the wax covers stays light.",
+      "Draw this pattern for me and I will show you why our patterns have names."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_02_batik_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Now look at it against the light. Pale where the wax was, dark where the dye went.",
+      "Some patterns are for weddings and some for everyday - it is not only decoration.",
+      "That is why we say a batik has a name, not just a design."
+     ]
+    }
+   }
+  },
+  "dlg_jv_02_batik_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "The cloth is stretched on the frame. Sit down and draw with the pen."
+     ],
+     "do": {
+      "open_puzzle": "pz_batik"
+     }
+    }
+   }
+  },
+  "dlg_jv_03_gamelan_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ki_bagus",
+     "lines": [
+      "Sit here. Do not play yet - listen first.",
+      "Each gamelan is tuned to suit itself, so a set is played together or not at all.",
+      "We play for the temple anniversary. Keep time with the drum and you will be fine."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_ki_bagus",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_ki_bagus",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_03_gamelan_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ki_bagus",
+     "lines": [
+      "You kept time, and you did not rush. That is the whole art.",
+      "Two tunings: one with five notes to the octave, one with seven. We use one at a time.",
+      "Because a set is tuned as a set, you cannot mix instruments from two gamelan. Remember that."
+     ]
+    }
+   }
+  },
+  "dlg_jv_03_gamelan_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ki_bagus",
+     "lines": [
+      "The instruments are laid out in the pendopo. Sit at the saron and follow the drum."
+     ],
+     "do": {
+      "open_puzzle": "pz_gamelan"
+     }
+    }
+   }
+  },
+  "dlg_jv_04_sawah_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pak_tarno",
+     "lines": [
+      "Every family here takes water in turn - that is how the terraces have survived.",
+      "Today the gate jammed and the lowest field is drying.",
+      "Go up the terrace path and open the channels again, then bring seedlings down."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pak_tarno",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pak_tarno",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_04_sawah_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pak_tarno",
+     "lines": [
+      "Water is running to the lowest field. Good. Nobody's crop will fail today.",
+      "You saw how the channels are shared? No single household owns that water.",
+      "We keep the schedule together, and everyone eats. That is the whole system."
+     ]
+    }
+   }
+  },
+  "dlg_jv_04_sawah_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pak_tarno",
+     "lines": [
+      "The gate is up on the terrace path. Turn the channels until the water reaches the field."
+     ],
+     "do": {
+      "open_puzzle": "pz_sawah_water"
+     }
+    }
+   }
+  },
+  "dlg_jv_05_wayang_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mbah_karto",
+     "lines": [
+      "My eyes are tired, and my hands are still steady. It is the remembering that goes first.",
+      "Tonight I need someone who can answer questions in front of the village.",
+      "The story note is at the workshop. Bring it, and answer what I ask."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_mbah_karto",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_mbah_karto",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_05_wayang_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mbah_karto",
+     "lines": [
+      "Correct, all three. Tonight you sit beside the screen and watch the shadows.",
+      "The puppets are flat leather, and every one of them has a voice - the dalang gives it to them.",
+      "That is what people come to hear: one person, a hundred voices, until morning."
+     ]
+    }
+   }
+  },
+  "dlg_jv_05_wayang_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mbah_karto",
+     "lines": [
+      "Sit here. I will ask the questions the way the village asks them."
+     ],
+     "do": {
+      "open_puzzle": "pz_wayang_quiz"
+     }
+    }
+   }
+  },
+  "dlg_jv_06_angklung_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rara",
+     "lines": [
+      "You cannot play angklung alone. That is the point of it.",
+      "Each of these makes one note or one chord, so the tune is spread across thirty children.",
+      "Help me teach them the order, then join the group game at the square."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_rara",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_rara",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_06_angklung_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rara",
+     "lines": [
+      "Listen to them! Nobody is playing fast, and it works.",
+      "This is how it is taught in school here - in a group, never in a practice room alone.",
+      "One instrument, one note, everybody needed."
+     ]
+    }
+   }
+  },
+  "dlg_jv_06_angklung_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rara",
+     "lines": [
+      "The children are on the square with the instruments. Show them the order first."
+     ],
+     "do": {
+      "open_puzzle": "pz_angklung_order"
+     }
+    }
+   }
+  },
+  "dlg_jv_07_candi_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dewi",
+     "lines": [
+      "Careful - do not touch the carvings, just look. We are copying, not restoring.",
+      "The temple is built as a stepped mountain: you climb through galleries before the open terraces.",
+      "Someone turned the panel blocks to clean behind them, and now the row is wrong."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_dewi",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_dewi",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_07_candi_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dewi",
+     "lines": [
+      "The row is right again. Thank you.",
+      "People walk it clockwise. Each level is a stage, and the reliefs are read as you climb.",
+      "It was built in the eighth century, and it is still the largest Buddhist temple anywhere."
+     ]
+    }
+   }
+  },
+  "dlg_jv_07_candi_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dewi",
+     "lines": [
+      "Meet me at the temple grounds on the eastern road. Bring steady hands."
+     ],
+     "do": {
+      "open_puzzle": "pz_candi_relief"
+     }
+    }
+   }
+  },
+  "dlg_jv_08_pasar_java_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Half past five and the stalls already disagree about where they belong.",
+      "Sort them for me? Rice, wax, mallets, seedlings, a fan - simple enough.",
+      "Then I will tell you which road goes south to the river ports."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_jv_08_pasar_java_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Open, and trading. Take this square of batik; the maker owes me a favour.",
+      "South of here the road reaches the river country. Rivers, not roads, are the way in.",
+      "Look for the long houses. You will know them when you see them."
+     ],
+     "do": {
+      "chapter": 4
+     }
+    }
+   }
+  },
+  "dlg_jv_08_pasar_java_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "The market is on the square right now - come and help me sort it."
+     ],
+     "do": {
+      "open_puzzle": "pz_javanese_market"
+     }
+    }
+   }
+  },
+  "dlg_kl_01_rumah_panjang_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_lasan",
+     "lines": [
+      "You came up the river? Then you have seen the house from the water - one long roof, the whole village under it.",
+      "The storm took four panels off the gallery. We weave the replacements by hand.",
+      "Help me finish one and then walk the gallery. It is longer than you think."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_lasan",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_lasan",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_01_rumah_panjang_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_lasan",
+     "lines": [
+      "Good panel. That will hold the rain off for ten years.",
+      "Every family has its own rooms along the gallery - and the gallery itself belongs to everyone.",
+      "That is why we repair it together and nobody argues about whose roof it is."
+     ]
+    }
+   }
+  },
+  "dlg_kl_01_rumah_panjang_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_lasan",
+     "lines": [
+      "The rattan is soaking behind the house. Come and plait a panel with me."
+     ],
+     "do": {
+      "open_puzzle": "pz_roof_plait"
+     }
+    }
+   }
+  },
+  "dlg_kl_02_karungut_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tina",
+     "lines": [
+      "Listen. Do you hear how the words sit on the beat? Not on top of it - on it.",
+      "My grandmother could sing a story for an hour without losing the thread.",
+      "Help me keep the pulse through a whole verse. The drum will show you."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_tina",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_tina",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_02_karungut_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tina",
+     "lines": [
+      "You held it. Now you know why the stories survive: the tune remembers the words for you.",
+      "Advice, praise, the history of a place - all of it arrives singing.",
+      "Write down what she told you, if you can. Words like that should not be lost."
+     ]
+    }
+   }
+  },
+  "dlg_kl_02_karungut_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tina",
+     "lines": [
+      "Sit with me on the gallery. The drum is here - keep the pulse with it."
+     ],
+     "do": {
+      "open_puzzle": "pz_karungut"
+     }
+    }
+   }
+  },
+  "dlg_kl_03_sungai_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bapa_udi",
+     "lines": [
+      "Rivers are our roads, and today our road is blocked. A tree came down in the night.",
+      "Turn the channel pieces until the current runs to the landing again.",
+      "Mind the bank - the mud goes deeper than your boots."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_bapa_udi",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_bapa_udi",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_03_sungai_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bapa_udi",
+     "lines": [
+      "Boat coming in already. Listen to that engine.",
+      "In the dry season the water drops and the channels change. We read the water the way you read a road sign.",
+      "Come back in the wet season and the whole map will be different."
+     ]
+    }
+   }
+  },
+  "dlg_kl_03_sungai_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bapa_udi",
+     "lines": [
+      "Bring the boat up with me. The channel pieces are on the bank."
+     ],
+     "do": {
+      "open_puzzle": "pz_river_flow"
+     }
+    }
+   }
+  },
+  "dlg_kl_04_sasirangan_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rini",
+     "lines": [
+      "Everything is tied, dyed and hung up - and the pattern is once again a mess.",
+      "When the ties are placed at random you get a muddy cloth.",
+      "Watch where I tie mine, then copy it. The thread is with the trader at the landing."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_rini",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_rini",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_04_sasirangan_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rini",
+     "lines": [
+      "That is the pattern. Now look at the cloth after the dye has done its work.",
+      "We call it sasirangan. The ties stay light, the rest goes deep.",
+      "It used to be for ceremonies only. Now people wear it every day, and that is fine too."
+     ]
+    }
+   }
+  },
+  "dlg_kl_04_sasirangan_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rini",
+     "lines": [
+      "The dye pot is on the veranda. Watch the ties, then copy them."
+     ],
+     "do": {
+      "open_puzzle": "pz_sasirangan"
+     }
+    }
+   }
+  },
+  "dlg_kl_05_bengkel_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "The bench went over in the night. Every tool is out of its place.",
+      "A good blade is not sold in a market here - it is made, sharpened and passed down.",
+      "Pair them up for me and I will show you the one I use every day."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_05_bengkel_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "There. The blade is for clearing brush, splitting rattan and cutting timber.",
+      "The little knife on the sheath is the one that actually does the fine work.",
+      "It goes to a funeral dressed as well, but that is not what makes it valuable. The work does."
+     ]
+    }
+   }
+  },
+  "dlg_kl_05_bengkel_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Everything is piled on the bench. Start with the blade and its sheath."
+     ],
+     "do": {
+      "open_puzzle": "pz_mandau_tools"
+     }
+    }
+   }
+  },
+  "dlg_kl_06_soto_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Boats start arriving before dawn and they expect soup.",
+      "Cinnamon, star anise, clove - whole, not ground. That is what makes the smell.",
+      "Come and help, and then we will take a bowl to the floating market."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_06_soto_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Drink it. That is the flavour of a river port: spices that came by ship, beef from upriver, peanut from the market.",
+      "Every ingredient here has travelled further than you have. Remember that when you eat."
+     ]
+    }
+   }
+  },
+  "dlg_kl_06_soto_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "The pot is on the stove at the stall. Come and taste as we go."
+     ],
+     "do": {
+      "open_puzzle": "pz_soto_banjar"
+     }
+    }
+   }
+  },
+  "dlg_kl_07_pasar_logic_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "I bought salt, and now three boatmen each swear somebody else has it.",
+      "Boat A carries fruit. B is at the far end. C is moored next to the one with my salt.",
+      "Work it out for me - I am too old to interrogate three liars before breakfast."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_07_pasar_logic_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Boat C. Of course it is C.",
+      "You would be a good market trader. Haggling is mostly noticing things.",
+      "Take these; there is nothing in this life you cannot learn by watching a landing."
+     ]
+    }
+   }
+  },
+  "dlg_kl_07_pasar_logic_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Come down to the landing and listen to them argue."
+     ],
+     "do": {
+      "open_puzzle": "pz_pasar_logic"
+     }
+    }
+   }
+  },
+  "dlg_kl_08_gantar_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "We dance the planting before we plant - it is a rehearsal for the fields.",
+      "The bamboo pole is the dibble stick, and the seed is real seed.",
+      "Help me get the order right, then dance one round with us."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_kl_08_gantar_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "That is the whole cycle, danced in four minutes.",
+      "The stick makes the hole, the hand drops the seed, the foot closes it. Then wait for rain.",
+      "Take this, and take the northern road when you are ready. The sea is past the hills."
+     ],
+     "do": {
+      "chapter": 5
+     }
+    }
+   }
+  },
+  "dlg_kl_08_gantar_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "The dancers are on the long jetty. Bring seed and we will rehearse."
+     ],
+     "do": {
+      "open_puzzle": "pz_gantar_steps"
+     }
+    }
+   }
+  },
+  "dlg_sl_01_tongkonan_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_puang",
+     "lines": [
+      "Do not touch the old carvings - only the new panels above the door need turning.",
+      "The house itself has been in the family for generations; the gable, we renew.",
+      "Help me line them up and then stand in front of the house. You should see it properly."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_puang",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_puang",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_01_tongkonan_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_puang",
+     "lines": [
+      "Straight and level. The house looks as it should again.",
+      "The building belongs to the family line, not to one person. That is why we all work on it, and why the heirlooms are kept inside it.",
+      "Now look up at the roof - it sweeps to a point at both ends, like a saddle."
+     ]
+    }
+   }
+  },
+  "dlg_sl_01_tongkonan_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_puang",
+     "lines": [
+      "The panels are on the veranda of the house. Come and help me turn them."
+     ],
+     "do": {
+      "open_puzzle": "pz_tongkonan_carve"
+     }
+    }
+   }
+  },
+  "dlg_sl_02_phinisi_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dg_naba",
+     "lines": [
+      "She will be two masts and about twenty metres. Not one nail in her.",
+      "The planks are shaped by eye, then pegged and caulked with palm fibre.",
+      "Check my layout before we peg it - once the pegs are in, the shape is decided."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_dg_naba",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_dg_naba",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_02_phinisi_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dg_naba",
+     "lines": [
+      "That will hold. When the tide is high we will roll her down the beach and she will float.",
+      "No paper drawings - the shape lives in the builder's head and the hands of the crew.",
+      "That is why the knowledge is not written anywhere. It is passed from master to apprentice."
+     ]
+    }
+   }
+  },
+  "dlg_sl_02_phinisi_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dg_naba",
+     "lines": [
+      "The hull frame is on the beach. Bring the planking and check my layout."
+     ],
+     "do": {
+      "open_puzzle": "pz_phinisi_hull"
+     }
+    }
+   }
+  },
+  "dlg_sl_03_kolintang_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rambu",
+     "lines": [
+      "A wedding needs music and our group is one short.",
+      "Each of us covers a voice - melody, middle, bass. It only works as a group.",
+      "Learn this pattern and you can stand in with us."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_rambu",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_rambu",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_03_kolintang_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rambu",
+     "lines": [
+      "You will do. Play like that at the wedding and nobody will notice you are new.",
+      "The bars are wooden, and the mallets are padded so the note rings instead of clattering.",
+      "One set, three voices, played by three people. Just like the angklung, but with wood."
+     ]
+    }
+   }
+  },
+  "dlg_sl_03_kolintang_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rambu",
+     "lines": [
+      "The frame is set up behind the house. Stand at the bars and copy me."
+     ],
+     "do": {
+      "open_puzzle": "pz_kolintang_tune"
+     }
+    }
+   }
+  },
+  "dlg_sl_04_coto_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Boat workers want one thing: soup they can eat standing up.",
+      "The beef has been simmering since before dawn. Now the spice mix, then the peanut.",
+      "The mix is at the spice stall by the harbour gate. Bring it, then stay and stir."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_04_coto_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "That is it. Eat a bowl and go look at the ships - the same water carried the spices here.",
+      "Coriander and cumin did not grow on this island. They came by sea, and stayed.",
+      "Every dish you have eaten on this journey is a record of a journey somebody else made."
+     ]
+    }
+   }
+  },
+  "dlg_sl_04_coto_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "The pot is at the harbour stall. Bring the spice mix and we will finish it."
+     ],
+     "do": {
+      "open_puzzle": "pz_coto"
+     }
+    }
+   }
+  },
+  "dlg_sl_05_pakarena_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "The new ones keep accelerating. You cannot hurry this dance.",
+      "The steps are small, the hands carry the expression, and the drum decides when.",
+      "Try it with me - follow the drum and do not count."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_05_pakarena_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "That was calm. That is what the dance is for: it tells a guest that nobody is in a hurry.",
+      "Small steps, fan in hand, eyes up. Nothing is meant to look difficult.",
+      "Harder than it looks, yes. That is the point of it."
+     ]
+    }
+   }
+  },
+  "dlg_sl_05_pakarena_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "We rehearse in the yard by the harbour. Stand at the back and follow the drum."
+     ],
+     "do": {
+      "open_puzzle": "pz_pakarena"
+     }
+    }
+   }
+  },
+  "dlg_sl_06_lontara_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "These are old records, written on palm leaf strips. Genealogy, law, diary, land.",
+      "The labels rotted away, so we have to work them out again.",
+      "One of them I cannot place. Read the marks and the lengths and tell me what it is."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_guru",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_guru",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_06_lontara_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "The land record. That settles it - the boundary notes match what the elders remember.",
+      "The script came from India long ago and was written on palm leaf with a sharp point.",
+      "A written record is how a community argues with itself without losing the memory."
+     ]
+    }
+   }
+  },
+  "dlg_sl_06_lontara_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "The strips are on the table in the archive. Look at them with me."
+     ],
+     "do": {
+      "open_puzzle": "pz_lontara_logic"
+     }
+    }
+   }
+  },
+  "dlg_sl_07_bajo_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Two mornings, empty nets. The children will eat sago and we will eat sago.",
+      "Everyone saw something different. One saw the shallows near the walkway, another saw the reef edge, another the channel.",
+      "Put it together for me - where should we go at first light?"
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_07_bajo_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "There. That is where we will be at first light.",
+      "How did you work it? The shallows are close to the walkway, the reef meets the channel, and north of the channel is where the fish school.",
+      "You think like a fisher now. Take this shell, and this sash - for luck."
+     ]
+    }
+   }
+  },
+  "dlg_sl_07_bajo_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Come out to the walkway with me. Bring the reports."
+     ],
+     "do": {
+      "open_puzzle": "pz_bajo_search"
+     }
+    }
+   }
+  },
+  "dlg_sl_08_pelabuhan_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "The eastern boat leaves at high tide and I still have to close the ledger.",
+      "Silk, ships, palm-leaf records, sago, coffee - five cargoes, five places.",
+      "Match them for me and I will get you a place on the boat."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_sl_08_pelabuhan_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Ledger closed. The boat is at the end of the pier, sails already up.",
+      "East of here the mountains get higher and the languages get more numerous.",
+      "Go carefully, ask before you write, and take your time."
+     ],
+     "do": {
+      "chapter": 6
+     }
+    }
+   }
+  },
+  "dlg_sl_08_pelabuhan_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "The ledger is on the table at the end of the pier."
+     ],
+     "do": {
+      "open_puzzle": "pz_harbour_match"
+     }
+    }
+   }
+  },
+  "dlg_pp_01_honai_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_yosia",
+     "lines": [
+      "You came up from the coast? Then you felt how cold the night is here.",
+      "These houses are round, with a roof of thatch that comes almost to the ground.",
+      "The door is low, so you go in bowing. It keeps the heat in and the wind out."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_yosia",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_yosia",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_01_honai_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_yosia",
+     "lines": [
+      "Done. Now sit by the fire until your hands work again.",
+      "The hearth sits in the middle of the floor and the smoke finds its way out through the thatch.",
+      "Cold outside, warm inside. Everything about the shape is for that."
+     ]
+    }
+   }
+  },
+  "dlg_pp_01_honai_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_yosia",
+     "lines": [
+      "The thatch is stacked beside the house. Come up and copy the shape."
+     ],
+     "do": {
+      "open_puzzle": "pz_honai_build"
+     }
+    }
+   }
+  },
+  "dlg_pp_02_noken_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "The bag is not sewn and not woven on a loom. It is knotted.",
+      "Pull it and it stretches; put a baby in it and it holds. That is the whole design.",
+      "Bring the fibre and pair the knots with me - I have forgotten two of them."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_02_noken_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Both right. Now the bag will hang straight on your back.",
+      "You can carry sweet potato, firewood, or a baby in it, and it hangs from your head, so your hands stay free.",
+      "People have used these here for a very long time. It is not a small thing."
+     ]
+    }
+   }
+  },
+  "dlg_pp_02_noken_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "The fibre is on the rack. Sit with me and pair the knots."
+     ],
+     "do": {
+      "open_puzzle": "pz_noken_knot"
+     }
+    }
+   }
+  },
+  "dlg_pp_03_papeda_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "You are hungry, so you are useful. Sit and stir.",
+      "This is papeda: sago starch stirred into boiling water until it turns clear.",
+      "The fish soup goes with it - yellow with turmeric, sour with lime."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_03_papeda_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "Wrap it round the fork, dip it in the soup, and swallow. Do not chew, it does not need chewing.",
+      "Sago comes from a palm that grows in wet ground where rice will not.",
+      "So the food changes with the land. Rice where there are fields, sago where there is swamp."
+     ]
+    }
+   }
+  },
+  "dlg_pp_03_papeda_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "The pot is on the fire. Bring the sago and the fish and stir."
+     ],
+     "do": {
+      "open_puzzle": "pz_papeda"
+     }
+    }
+   }
+  },
+  "dlg_pp_04_tifa_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tomas",
+     "lines": [
+      "The drum carries the beat for everything - singing, dancing, calling people in.",
+      "You play sitting, with the drum on your lap or the ground, one hand on the skin.",
+      "Watch my call and answer it back to me."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_tomas",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_tomas",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_04_tifa_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tomas",
+     "lines": [
+      "That is the call. Tonight they will hear it from the other side of the valley.",
+      "This drum is carved from one piece of wood, and the skin is scraped thin and stretched.",
+      "A good drum is loud without shouting. Take this small one - it is quiet, but it is a start."
+     ]
+    }
+   }
+  },
+  "dlg_pp_04_tifa_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tomas",
+     "lines": [
+      "The drum is with me by the house. Watch, then answer."
+     ],
+     "do": {
+      "open_puzzle": "pz_tifa_pattern"
+     }
+    }
+   }
+  },
+  "dlg_pp_05_lembah_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "In the highlands the ground is wet, but the water still has to move or the roots rot.",
+      "So we dig ditches, not walls. That is different from the rice fields you saw on Java.",
+      "Help me show the children where the water should run."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_guru",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_guru",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_05_lembah_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "Now the beds are moist and not drowned. The children have seen why the ditch is there.",
+      "The gardens here grow sweet potato, taro and yam - heavy crops, for a cold place.",
+      "Different island, different field, different answer. All three work."
+     ]
+    }
+   }
+  },
+  "dlg_pp_05_lembah_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "The ditches run behind the school. Bring the children - and turn the channels."
+     ],
+     "do": {
+      "open_puzzle": "pz_valley_ditches"
+     }
+    }
+   }
+  },
+  "dlg_pp_06_sentani_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "The canoe drifted in the night. Nobody is hurt - it is the canoe we are missing.",
+      "Four people saw it, four different directions.",
+      "Take their words to the lakeshore and work out where it actually ended up."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_06_sentani_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "It is there, tied up by the racks. The children will row it back tomorrow.",
+      "Four witnesses, four directions, and all four were partly right. That is how talk works.",
+      "Write down who saw what, not only what was true. Your notebook will be better for it."
+     ]
+    }
+   }
+  },
+  "dlg_pp_06_sentani_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "The lake is east of the village. Take the directions with you."
+     ],
+     "do": {
+      "open_puzzle": "pz_sentani_find"
+     }
+    }
+   }
+  },
+  "dlg_pp_07_kulit_kayu_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Cloth from bark. Not from a plant stem, not from an animal - from the inside of a tree.",
+      "You strip it, soak it, and beat it until it spreads. Then you wait for it to dry.",
+      "Tell me the order, then beat it with me."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_07_kulit_kayu_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Flat, soft and pale. Now it can be painted.",
+      "Patterns belong to families here. What I paint, I was given the right to paint.",
+      "That is why I will not copy somebody else's design onto it, and neither should you."
+     ]
+    }
+   }
+  },
+  "dlg_pp_07_kulit_kayu_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "The bark is soaking behind the house. Bring the mallet."
+     ],
+     "do": {
+      "open_puzzle": "pz_barkcloth"
+     }
+    }
+   }
+  },
+  "dlg_pp_08_burung_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "I have walked up here for eleven mornings and seen almost nothing. That is bird watching.",
+      "This morning: a display at first light, plumes up over the head, near the ridge.",
+      "My handwriting in the dark is unreadable. Read it back to me."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_08_burung_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "The dawn bird, then. And nobody touched it, nobody caged it, nobody chased it.",
+      "These birds were hunted almost to nothing for their feathers once - sold far away as decoration.",
+      "Now they are protected here and by international trade rules. That is why we watch with our eyes only."
+     ],
+     "goto": "n2"
+    },
+    "n2": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "One more thing. Pak Hasan in Kampung Awal has been asking when you are coming home. Whatever that test of his is, I would go and take it."
+     ],
+     "do": {}
+    }
+   }
+  },
+  "dlg_pp_08_burung_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "Come up to the ridge with me at first light and read the notes."
+     ],
+     "do": {
+      "open_puzzle": "pz_bird_logic"
+     }
+    }
+   }
+  },
+  "dlg_pp_09_jejak_offer": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Sit. The notebook is nearly full, so there is one thing left to do.",
+      "I will ask, and you will answer, and then we will both know what you actually learned.",
+      "Do not worry about the score. Nobody has ever failed this by being honest."
+     ],
+     "choices": [
+      {
+       "text": "I will help.",
+       "goto": "yes"
+      },
+      {
+       "text": "Not yet, but I will come back.",
+       "goto": "no"
+      }
+     ]
+    },
+    "yes": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Good. Take your time, and write down what you learn."
+     ],
+     "do": {}
+    },
+    "no": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Then come back when you are ready - it will keep."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "dlg_pp_09_jejak_turnin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Every answer right. Then close it and look at what you have written.",
+      "You started with your grandmother's half-filled notebook. Now look at it.",
+      "One more thing, outside. The whole village is waiting."
+     ],
+     "do": {
+      "chapter": 7
+     }
+    }
+   }
+  },
+  "dlg_pp_09_jejak_task": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Sit here. We will do the questions one at a time."
+     ],
+     "do": {
+      "open_puzzle": "pz_quiz_festival"
+     }
+    }
+   }
+  },
+  "ending_finale": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Stand here. Look around you for a moment.",
+      "There are people in this square from six islands. Nobody planned that; they came because you wrote to them."
+     ],
+     "goto": "n2"
+    },
+    "n2": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Your grandmother wrote one line on the first page and left it at that.",
+      "It says: it is not one culture, and it is not a hundred separate ones.",
+      "It is people who trade, borrow, argue and celebrate together across the water."
+     ],
+     "goto": "n3"
+    },
+    "n3": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "She never finished the sentence. You have.",
+      "The notebook is closed. The islands are open. Go and look at them again - there is no hurry now.",
+      "And if somebody asks you what Indonesia is, hand them the notebook."
+     ],
+     "do": {
+      "set_flag": "ending_seen",
+      "cp": 200
+     },
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_aminah": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_aminah",
+     "lines": [
+      "The house is old, but the wall was renewed twice. Nothing here is frozen.",
+      "If you sit on the veranda long enough, somebody always comes by with news."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_datuak": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_datuak",
+     "lines": [
+      "Bronze gongs like ours are carried to the wedding in a basket - front and back, like a boat.",
+      "When you write down what we say, write our names beside it. Then people will know who spoke."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_sari": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_sari",
+     "lines": [
+      "A backstrap loom can only make cloth as wide as my arms are long. That is why our cloths are narrow.",
+      "Red, black and white. Those are the colours you will see on a woman's cloth at a wedding."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_bujang": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bujang",
+     "lines": [
+      "Listen - that is the wind in the bamboo, not music. It is a good day when the two agree.",
+      "A flute is cheap to make and impossible to make well. Cut one yourself and you will see."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_ida": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ida",
+     "lines": [
+      "Everything here starts with coconut. Milk, oil, sugar - the same tree, three different things.",
+      "Eat with your right hand if you are eating with your hand. And wash first, always."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_ki_bagus": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_ki_bagus",
+     "lines": [
+      "Sit anywhere you like. The instruments do not belong to anyone in particular except the set.",
+      "You can hear the difference between two gamelans in a single note. Each set finds its own pitch."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_dewi": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dewi",
+     "lines": [
+      "We do not restore the reliefs. We copy them, and we write down what condition they are in.",
+      "The stone has been repaired more than once, and each repair is part of the building's history."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_pak_tarno": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pak_tarno",
+     "lines": [
+      "Rice will stand in water for weeks and then want to be dry for cutting. Two moods, one plant.",
+      "The ducks come after the harvest, and they eat what we would have to clear. That is the trade."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_rara": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rara",
+     "lines": [
+      "Thirty children, thirty instruments, one tune. It is the easiest lesson and the hardest.",
+      "One tube per note. Nothing here is decoration - the length of the tube makes the pitch."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_mbah_karto": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mbah_karto",
+     "lines": [
+      "A performance can run to morning. I have fallen asleep twice, and both times the puppets survived.",
+      "The stories are old, but the jokes are new every night. That is how the crowd stays."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_lasan": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_lasan",
+     "lines": [
+      "The gallery belongs to everyone, so we repair it together and nobody writes down who paid.",
+      "Up here the roof is our biggest worry. Down at the coast their worry is the tide."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_tina": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tina",
+     "lines": [
+      "A sung story can carry advice, praise or grief. The tune decides how far the words travel.",
+      "My grandmother sang for an hour without repeating herself. I manage four verses."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_bapa_udi": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_bapa_udi",
+     "lines": [
+      "In the wet season the river takes the road. Then we travel on the water and forget the road exists.",
+      "Never swim after rain. The current under a brown surface is not what it looks like from the bank."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_rini": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rini",
+     "lines": [
+      "Tie it tight and it stays light. Tie it loose and the dye creeps in. That is the whole pattern.",
+      "Combed cotton came here by trade. Our own fibre is bark and rattan, and that goes the other way."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_rambu": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_rambu",
+     "lines": [
+      "Wooden bars, padded sticks, three players. The bass player is the one who never seems busy.",
+      "In the villages here, the music group is also the church choir. Same people, different chairs."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_puang": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_puang",
+     "lines": [
+      "The house is not mine. It belongs to the line - I merely keep the door open.",
+      "When the family gathers, we sleep on the gallery and the grandchildren go to the rice store."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_dg_naba": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_dg_naba",
+     "lines": [
+      "I do not draw hulls. I have built twelve, and the thirteenth will be slightly better than the twelfth.",
+      "The timber is bought three years before it is cut. Wet wood fights the builder."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_yuliana": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_yuliana",
+     "lines": [
+      "In the highlands the soil is thin and the rain is heavy. We plant along the slope, not across it.",
+      "Nutmeg, clove, coconut - a garden here is also a spice shop."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_yosia": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_yosia",
+     "lines": [
+      "The roof has to be three fingers thick or the rain finds a way through.",
+      "We build in a circle here. In the villages down at the coast, the houses are long and rectangular."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_petrus": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_petrus",
+     "lines": [
+      "The lake is calm in the morning and dishonest in the afternoon. Cross early.",
+      "A canoe has a name and a family. If it is gone, we know who to ask first."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_mama_lena": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_mama_lena",
+     "lines": [
+      "Pull the knot tight and the bag stretches. It hangs from my head, so my hands stay free.",
+      "I do not sell other families' patterns. What I make, I was given the right to make."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_tomas": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_tomas",
+     "lines": [
+      "One piece of wood, one skin. If the wood has a crack in it, the drum will always answer badly.",
+      "You play sitting down. Standing up turns a drum into a noise."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_penjaga": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "A village keeps records in three ways: in writing, in what people remember, and in the ground.",
+      "Ask before you write. Nobody minds a notebook that asks first."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_pengembara": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengembara",
+     "lines": [
+      "I have walked from the eastern islands to the western ones. Twice, in fact. My knees are not friends with me.",
+      "Carry less than you think, and something to give away. That is the whole of travelling."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_anak": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_anak",
+     "lines": [
+      "Did you see the boat? It had a red sail! I saw it first!",
+      "My cousin says there are islands that are all mountains. Is that true?"
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_nelayan": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "The tide here runs hard on the full moon. Everybody plans around that, not around the clock.",
+      "Mend the net before it tears. A mend costs an hour; a tear costs a morning."
+     ],
+     "goto": "",
+     "choices": [
+      {
+       "text": "What do you have for sale?",
+       "goto": "shop"
+      },
+      {
+       "text": "Just passing by.",
+       "goto": ""
+      }
+     ]
+    },
+    "shop": {
+     "speaker": "npc_nelayan",
+     "lines": [
+      "Take a look. Prices are in Culture Points - that is how we count favours on this journey."
+     ],
+     "do": {
+      "open_shop": true
+     }
+    }
+   }
+  },
+  "idle_npc_guru": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_guru",
+     "lines": [
+      "There are over seven hundred languages in this country. Every one of them carries something.",
+      "A class of thirty children here may speak two languages at home. That is not a problem, it is a library."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_penari": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penari",
+     "lines": [
+      "Dance first, then talk. The body explains it faster than I can.",
+      "Every region's dance is built differently because the story it tells is different."
+     ],
+     "goto": ""
+    }
+   }
+  },
+  "idle_npc_pengrajin": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "A good craftsperson is a good listener. The material tells you what it wants to become.",
+      "If I cannot make it twice, I have not finished learning it."
+     ],
+     "goto": "",
+     "choices": [
+      {
+       "text": "What do you have for sale?",
+       "goto": "shop"
+      },
+      {
+       "text": "Just passing by.",
+       "goto": ""
+      }
+     ]
+    },
+    "shop": {
+     "speaker": "npc_pengrajin",
+     "lines": [
+      "Take a look. Prices are in Culture Points - that is how we count favours on this journey."
+     ],
+     "do": {
+      "open_shop": true
+     }
+    }
+   }
+  },
+  "idle_npc_koki": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_koki",
+     "lines": [
+      "A recipe is not a set of instructions. It is a description of the last time somebody made it.",
+      "Serve from the outside in, always. The middle of the platter is for sharing."
+     ],
+     "goto": "",
+     "choices": [
+      {
+       "text": "What do you have for sale?",
+       "goto": "shop"
+      },
+      {
+       "text": "Just passing by.",
+       "goto": ""
+      }
+     ]
+    },
+    "shop": {
+     "speaker": "npc_koki",
+     "lines": [
+      "Take a look. Prices are in Culture Points - that is how we count favours on this journey."
+     ],
+     "do": {
+      "open_shop": true
+     }
+    }
+   }
+  },
+  "idle_npc_pedagang": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Prices change with the tide, the harvest and the week. I write them down, which is the only advantage I have.",
+      "Everything sells twice: once at the market, once as a story about where it came from."
+     ],
+     "goto": "",
+     "choices": [
+      {
+       "text": "What do you have for sale?",
+       "goto": "shop"
+      },
+      {
+       "text": "Just passing by.",
+       "goto": ""
+      }
+     ]
+    },
+    "shop": {
+     "speaker": "npc_pedagang",
+     "lines": [
+      "Take a look. Prices are in Culture Points - that is how we count favours on this journey."
+     ],
+     "do": {
+      "open_shop": true
+     }
+    }
+   }
+  },
+  "intro_arrival": {
+   "start": "n1",
+   "nodes": {
+    "n1": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "You made it up the coast road. Good - the wind was against you all morning.",
+      "This is Kampung Awal. One street, one jetty, and my store room full of other people's memories."
+     ],
+     "goto": "n2"
+    },
+    "n2": {
+     "speaker": "npc_penjaga",
+     "lines": [
+      "Your grandmother left something with me years ago. A notebook, cloth bound, half empty.",
+      "Come and talk to me by the well and we will go and find it.",
+      "Walk with W A S D or the arrow keys. Press E to talk to people and to look at things. M opens the map, I your bag, J your journal, ESC the menu."
+     ],
+     "goto": ""
+    }
+   }
+  }
+ }
+}

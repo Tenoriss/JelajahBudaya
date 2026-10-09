@@ -1,0 +1,479 @@
+{
+ "id": "sulawesi_desa",
+ "name": "Kampung Tongkonan",
+ "region": "sulawesi",
+ "size": [
+  48,
+  40
+ ],
+ "spawn": [
+  24,
+  32
+ ],
+ "music": "sulawesi",
+ "ambience": "amb_highland",
+ "terrain": {
+  "default": "HIGHLAND",
+  "rects": [
+   {
+    "tile": "GRASS",
+    "rect": [
+     0,
+     0,
+     48,
+     8
+    ]
+   },
+   {
+    "tile": "PAVING",
+    "rect": [
+     16,
+     16,
+     16,
+     12
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     2,
+     26,
+     14,
+     8
+    ]
+   },
+   {
+    "tile": "RICE",
+    "rect": [
+     32,
+     26,
+     14,
+     8
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     6,
+     22,
+     36,
+     3
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     8
+    ],
+    "to": [
+     24,
+     22
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     22
+    ],
+    "to": [
+     24,
+     34
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     6,
+     22
+    ],
+    "to": [
+     42,
+     22
+    ],
+    "width": 3
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "TALLGRASS",
+    "center": [
+     42,
+     8
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     4,
+     12
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "tongkonan",
+   "pos": [
+    24,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    12,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    36,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    14,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "workshop",
+   "pos": [
+    34,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "stage",
+   "pos": [
+    24,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    20,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "pot_plant",
+   "pos": [
+    22,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    26,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    30,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "easel_board",
+   "pos": [
+    20,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    44,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch2",
+   "pos": [
+    18,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    12,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "statue",
+   "pos": [
+    28,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drum",
+   "pos": [
+    26,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "textile_rack",
+   "pos": [
+    36,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_puang",
+   "pos": [
+    22,
+    18
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_rambu",
+   "pos": [
+    26,
+    24
+   ],
+   "wander": false,
+   "facing": "up"
+  },
+  {
+   "id": "npc_yuliana",
+   "pos": [
+    14,
+    28
+   ],
+   "wander": true,
+   "facing": "right"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sl_pz_gable_site",
+   "kind": "puzzle",
+   "pos": [
+    22,
+    14
+   ],
+   "target": "pz_tongkonan_carve",
+   "prompt": "Examine the gable panels",
+   "sprite": "easel_board",
+   "if": {
+    "quest_active": "sl_01_tongkonan"
+   }
+  },
+  {
+   "id": "sl_pick_kolintang",
+   "kind": "pickup",
+   "pos": [
+    32,
+    26
+   ],
+   "target": "batang_kolintang",
+   "text": "One wooden bar of a tuned set, warm from the workshop."
+  },
+  {
+   "id": "sl_col_kolintang",
+   "kind": "pickup",
+   "pos": [
+    36,
+    20
+   ],
+   "target": "col_keping_kolintang"
+  },
+  {
+   "id": "sl_col_silk",
+   "kind": "pickup",
+   "pos": [
+    32,
+    30
+   ],
+   "target": "col_serat_sutra"
+  },
+  {
+   "id": "sl_save_desa",
+   "kind": "save",
+   "pos": [
+    20,
+    22
+   ]
+  },
+  {
+   "id": "sl_note_house",
+   "kind": "note",
+   "pos": [
+    24,
+    17
+   ],
+   "title": "The house faces north",
+   "text": "Houses here face north. The heirlooms are kept inside, and the family builds and repairs the house together."
+  },
+  {
+   "id": "sl_minigame_harvest",
+   "kind": "minigame",
+   "pos": [
+    22,
+    30
+   ],
+   "prompt": "Join the harvest game",
+   "minigame": "nod",
+   "title": "Harvest Timing",
+   "target": "nod",
+   "text": "The buffalo are coming in; keep time.",
+   "data": {
+    "rounds": 3,
+    "width": 96,
+    "speed": 320,
+    "themes": [
+     "the drums start!",
+     "the crowd calls!",
+     "one more round!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_tongkonan",
+   "name": "Ancestral House",
+   "pos": [
+    24,
+    15
+   ],
+   "description": "The saddle-roofed house of a family line, where the heirlooms are kept.",
+   "entry": "house",
+   "radius": 64
+  },
+  {
+   "id": "lm_kampung_tongkonan",
+   "name": "Highland Village",
+   "pos": [
+    24,
+    22
+   ],
+   "description": "Houses facing north, rice stores raised on posts, and a road that climbs.",
+   "entry": "",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_kalimantan_pasar",
+   "pos": [
+    3,
+    24
+   ],
+   "size": [
+    3,
+    3
+   ],
+   "target": "kalimantan_pasar",
+   "entry": "to_sulawesi_desa"
+  },
+  {
+   "id": "to_sulawesi_bukit",
+   "pos": [
+    24,
+    3
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "sulawesi_bukit",
+   "entry": "to_sulawesi_desa"
+  },
+  {
+   "id": "to_sulawesi_pantai",
+   "pos": [
+    2,
+    22
+   ],
+   "size": [
+    2,
+    3
+   ],
+   "target": "sulawesi_pantai",
+   "entry": "to_sulawesi_desa"
+  },
+  {
+   "id": "to_sulawesi_pelabuhan",
+   "pos": [
+    46,
+    22
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "sulawesi_pelabuhan",
+   "entry": "to_sulawesi_desa"
+  }
+ ],
+ "collision_rects": []
+}

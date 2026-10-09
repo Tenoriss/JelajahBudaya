@@ -1,0 +1,366 @@
+{
+ "id": "java_candi",
+ "name": "Candi Tua",
+ "region": "java",
+ "size": [
+  50,
+  38
+ ],
+ "spawn": [
+  25,
+  30
+ ],
+ "music": "java",
+ "ambience": "amb_forest",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "TEMPLE",
+    "rect": [
+     14,
+     8,
+     22,
+     20
+    ]
+   },
+   {
+    "tile": "PAVING",
+    "rect": [
+     18,
+     12,
+     14,
+     12
+    ]
+   },
+   {
+    "tile": "STONE",
+    "rect": [
+     12,
+     6,
+     26,
+     26
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     22,
+     28,
+     6,
+     8
+    ]
+   },
+   {
+    "tile": "JUNGLE",
+    "rect": [
+     0,
+     0,
+     12,
+     38
+    ]
+   },
+   {
+    "tile": "JUNGLE",
+    "rect": [
+     38,
+     0,
+     12,
+     38
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "JUNGLE",
+    "center": [
+     6,
+     20
+    ],
+    "radius": 6
+   },
+   {
+    "tile": "TALLGRASS",
+    "center": [
+     44,
+     30
+    ],
+    "radius": 5
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "candi",
+   "pos": [
+    24,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "statue",
+   "pos": [
+    18,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "statue",
+   "pos": [
+    30,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "shrine",
+   "pos": [
+    24,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    16,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    32,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "easel_board",
+   "pos": [
+    20,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    30,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    2,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    46,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    46,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    14,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    34,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    38,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch2",
+   "pos": [
+    26,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lookout_tower",
+   "pos": [
+    40,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    14,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_penjaga",
+   "pos": [
+    26,
+    26
+   ],
+   "wander": false,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "jv_pz_candi_site",
+   "kind": "puzzle",
+   "pos": [
+    22,
+    20
+   ],
+   "target": "pz_candi_relief",
+   "prompt": "Examine the relief panels",
+   "sprite": "easel_board",
+   "if": {
+    "quest_active": "jv_07_candi"
+   }
+  },
+  {
+   "id": "jv_note_candi",
+   "kind": "note",
+   "pos": [
+    26,
+    24
+   ],
+   "title": "Stone notice",
+   "text": "Walk clockwise. Climb slowly: the terraces are the story. Do not touch the panels - copying is enough."
+  },
+  {
+   "id": "jv_pick_temple",
+   "kind": "pickup",
+   "pos": [
+    32,
+    22
+   ],
+   "target": "col_batu_candi"
+  },
+  {
+   "id": "jv_pz_wayang_site",
+   "kind": "puzzle",
+   "pos": [
+    24,
+    26
+   ],
+   "target": "pz_wayang_quiz",
+   "prompt": "Sit in the shadow of the shrine",
+   "if": {
+    "quest_active": "jv_05_wayang"
+   }
+  },
+  {
+   "id": "jv_save_candi",
+   "kind": "save",
+   "pos": [
+    24,
+    30
+   ]
+  },
+  {
+   "id": "jv_hidden_carving",
+   "kind": "hidden",
+   "pos": [
+    46,
+    34
+   ],
+   "title": "Masons' Marks",
+   "text": "On the back of a loose stone there are small marks that never appear on the temple walls - the notes the builders made while they worked.",
+   "items": [
+    "col_batu_candi"
+   ],
+   "culture": "borobudur"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_candi",
+   "name": "The Stepped Temple",
+   "pos": [
+    24,
+    18
+   ],
+   "description": "A ninth-century Buddhist temple built as a stepped mountain; pilgrims walk clockwise up through the galleries.",
+   "entry": "temple",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_java_desa",
+   "pos": [
+    24,
+    36
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "java_desa",
+   "entry": "to_java_candi"
+  }
+ ],
+ "collision_rects": []
+}

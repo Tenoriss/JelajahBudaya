@@ -1,0 +1,430 @@
+{
+ "id": "java_sawah",
+ "name": "Terasering Sawah",
+ "region": "java",
+ "size": [
+  54,
+  40
+ ],
+ "spawn": [
+  27,
+  32
+ ],
+ "music": "java",
+ "ambience": "amb_stream",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "RICE",
+    "rect": [
+     4,
+     4,
+     46,
+     10
+    ]
+   },
+   {
+    "tile": "RICE",
+    "rect": [
+     4,
+     16,
+     34,
+     10
+    ]
+   },
+   {
+    "tile": "RICE",
+    "rect": [
+     4,
+     28,
+     22,
+     8
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     54,
+     2
+    ]
+   },
+   {
+    "tile": "GRASS",
+    "rect": [
+     40,
+     28,
+     14,
+     10
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     6,
+     14,
+     44,
+     2
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     6,
+     14
+    ],
+    "to": [
+     50,
+     14
+    ],
+    "width": 2
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     6,
+     26
+    ],
+    "to": [
+     50,
+     26
+    ],
+    "width": 2
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     48,
+     26
+    ],
+    "to": [
+     48,
+     14
+    ],
+    "width": 2
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "REED",
+    "center": [
+     30,
+     22
+    ],
+    "radius": 4
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     50,
+     34
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    8,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    20,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    32,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    44,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    12,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    28,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    12,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    44,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    36,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    42,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    46,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    20,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    2,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    50,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    30,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bridge_plank",
+   "pos": [
+    26,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bush_green",
+   "pos": [
+    24,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch",
+   "pos": [
+    34,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "signpost",
+   "pos": [
+    8,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_pak_tarno",
+   "pos": [
+    42,
+    32
+   ],
+   "wander": false,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "jv_pz_water_site",
+   "kind": "puzzle",
+   "pos": [
+    26,
+    16
+   ],
+   "target": "pz_sawah_water",
+   "prompt": "Examine the irrigation gate",
+   "sprite": "bridge_plank",
+   "if": {
+    "quest_active": "jv_04_sawah"
+   }
+  },
+  {
+   "id": "jv_pick_seedlings",
+   "kind": "pickup",
+   "pos": [
+    44,
+    32
+   ],
+   "target": "bibit_padi",
+   "text": "Bundles of young rice plants, tied with grass."
+  },
+  {
+   "id": "jv_col_temple_stone",
+   "kind": "pickup",
+   "pos": [
+    48,
+    30
+   ],
+   "target": "col_batu_candi"
+  },
+  {
+   "id": "jv_note_ducks",
+   "kind": "note",
+   "pos": [
+    20,
+    30
+   ],
+   "title": "Duck keeper's note",
+   "text": "After the harvest the ducks come through the field and eat what is left. They leave the field fertilised. Neither of us planned it; both of us like it."
+  },
+  {
+   "id": "jv_save_sawah",
+   "kind": "save",
+   "pos": [
+    8,
+    16
+   ]
+  },
+  {
+   "id": "jv_sawah_hidden",
+   "kind": "hidden",
+   "pos": [
+    52,
+    38
+   ],
+   "title": "The Spring",
+   "text": "At the top of the terraces a spring comes out of the hillside. It is the beginning of every channel below.",
+   "items": [
+    "air_minum"
+   ],
+   "culture": "sawah"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_sawah",
+   "name": "The Terraces",
+   "pos": [
+    26,
+    20
+   ],
+   "description": "Stepped wet rice fields fed by shared channels that everybody maintains.",
+   "entry": "terraces",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_java_desa",
+   "pos": [
+    52,
+    20
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "java_desa",
+   "entry": "to_java_sawah"
+  },
+  {
+   "id": "to_java_pasar",
+   "pos": [
+    4,
+    26
+   ],
+   "size": [
+    2,
+    3
+   ],
+   "target": "java_pasar",
+   "entry": "to_java_sawah"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   54,
+   2
+  ]
+ ]
+}

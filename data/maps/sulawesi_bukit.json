@@ -1,0 +1,363 @@
+{
+ "id": "sulawesi_bukit",
+ "name": "Bukit Minahasa",
+ "region": "sulawesi",
+ "size": [
+  50,
+  38
+ ],
+ "spawn": [
+  25,
+  30
+ ],
+ "music": "sulawesi",
+ "ambience": "amb_highland",
+ "terrain": {
+  "default": "HIGHLAND",
+  "rects": [
+   {
+    "tile": "CLIFF",
+    "rect": [
+     0,
+     0,
+     50,
+     5
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     6,
+     10,
+     18,
+     12
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     28,
+     12,
+     16,
+     10
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     4,
+     24,
+     42,
+     3
+    ]
+   },
+   {
+    "tile": "TALLGRASS",
+    "rect": [
+     4,
+     28,
+     42,
+     8
+    ]
+   },
+   {
+    "tile": "JUNGLE",
+    "rect": [
+     40,
+     4,
+     10,
+     16
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "CLIFF",
+    "center": [
+     44,
+     30
+    ],
+    "radius": 6
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     6,
+     6
+    ],
+    "radius": 5
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    12,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    34,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    24,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    16,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    22,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    30,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    26,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    18,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    46,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    8,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    42,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "mountain_rock",
+   "pos": [
+    46,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch",
+   "pos": [
+    20,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    30,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    12,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_yuliana",
+   "pos": [
+    18,
+    20
+   ],
+   "wander": true,
+   "facing": "down"
+  },
+  {
+   "id": "npc_pengembara",
+   "pos": [
+    28,
+    26
+   ],
+   "wander": false,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sl_note_slope",
+   "kind": "note",
+   "pos": [
+    22,
+    24
+   ],
+   "title": "Planting note",
+   "text": "Plant along the slope, never across it: across the slope, the first heavy rain takes the soil with it."
+  },
+  {
+   "id": "sl_pick_silk",
+   "kind": "pickup",
+   "pos": [
+    34,
+    22
+   ],
+   "target": "benang_sutra"
+  },
+  {
+   "id": "sl_col_farm",
+   "kind": "pickup",
+   "pos": [
+    12,
+    12
+   ],
+   "target": "col_serat_sutra"
+  },
+  {
+   "id": "sl_save_bukit",
+   "kind": "save",
+   "pos": [
+    24,
+    26
+   ]
+  },
+  {
+   "id": "sl_hidden_spring",
+   "kind": "hidden",
+   "pos": [
+    46,
+    36
+   ],
+   "title": "The Mineral Spring",
+   "text": "A spring comes out of the rock, warm and faintly sulphurous. The people here have built a stone basin to catch it and sit in it in the evening.",
+   "items": [
+    "obat_herbal"
+   ],
+   "culture": "gotong_royong"
+  },
+  {
+   "id": "sl_minigame_market",
+   "kind": "minigame",
+   "pos": [
+    30,
+    28
+   ],
+   "prompt": "Help with the harvest",
+   "minigame": "nod",
+   "title": "Highland Timing",
+   "target": "nod",
+   "text": "Bring the baskets down the slope in time.",
+   "data": {
+    "rounds": 3,
+    "width": 100,
+    "speed": 310,
+    "themes": [
+     "the baskets are full!",
+     "careful on the slope!",
+     "almost at the barn!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_bukit",
+   "name": "Highland Gardens",
+   "pos": [
+    22,
+    20
+   ],
+   "description": "Slope gardens of vegetables, nutmeg and clove, planted along the hill instead of across it.",
+   "entry": "gardens",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sulawesi_desa",
+   "pos": [
+    24,
+    34
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "sulawesi_desa",
+   "entry": "to_sulawesi_bukit"
+  }
+ ],
+ "collision_rects": []
+}

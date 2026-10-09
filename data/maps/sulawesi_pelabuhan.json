@@ -1,0 +1,509 @@
+{
+ "id": "sulawesi_pelabuhan",
+ "name": "Pelabuhan Makassar",
+ "region": "sulawesi",
+ "size": [
+  52,
+  38
+ ],
+ "spawn": [
+  26,
+  30
+ ],
+ "music": "sulawesi",
+ "ambience": "amb_harbour",
+ "terrain": {
+  "default": "PAVING",
+  "rects": [
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     52,
+     10
+    ]
+   },
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     10,
+     52,
+     3
+    ]
+   },
+   {
+    "tile": "DIRT",
+    "rect": [
+     0,
+     13,
+     52,
+     25
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     10,
+     14,
+     32,
+     10
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     4,
+     26,
+     44,
+     3
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PLANK",
+    "from": [
+     26,
+     10
+    ],
+    "to": [
+     26,
+     26
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     4,
+     26
+    ],
+    "to": [
+     48,
+     26
+    ],
+    "width": 3
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "JUNGLE",
+    "center": [
+     48,
+     34
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "gate_keraton",
+   "pos": [
+    26,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    12,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    18,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    34,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    22,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    30,
+    8
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "workshop",
+   "pos": [
+    40,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    8,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall_blue",
+   "pos": [
+    14,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "food_stall",
+   "pos": [
+    20,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    44,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    36,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    38,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    24,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "easel_board",
+   "pos": [
+    30,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    2,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "clock_tower",
+   "pos": [
+    46,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lantern",
+   "pos": [
+    22,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lantern",
+   "pos": [
+    30,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_dg_naba",
+   "pos": [
+    38,
+    24
+   ],
+   "wander": false,
+   "facing": "left"
+  },
+  {
+   "id": "npc_koki",
+   "pos": [
+    20,
+    26
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_pedagang",
+   "pos": [
+    12,
+    26
+   ],
+   "wander": true,
+   "facing": "right"
+  },
+  {
+   "id": "npc_guru",
+   "pos": [
+    32,
+    28
+   ],
+   "wander": false,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sl_pz_hull_site",
+   "kind": "puzzle",
+   "pos": [
+    36,
+    22
+   ],
+   "target": "pz_phinisi_hull",
+   "prompt": "Examine the hull frame",
+   "sprite": "boat_dock_house",
+   "if": {
+    "quest_active": "sl_02_phinisi"
+   }
+  },
+  {
+   "id": "sl_pz_coto_site",
+   "kind": "puzzle",
+   "pos": [
+    20,
+    28
+   ],
+   "target": "pz_coto",
+   "prompt": "Help at the food stall",
+   "sprite": "cooking_fire",
+   "if": {
+    "quest_active": "sl_04_coto"
+   }
+  },
+  {
+   "id": "sl_pz_lontara_site",
+   "kind": "puzzle",
+   "pos": [
+    28,
+    30
+   ],
+   "target": "pz_lontara_logic",
+   "prompt": "Look at the archive table",
+   "sprite": "easel_board",
+   "if": {
+    "quest_active": "sl_06_lontara"
+   }
+  },
+  {
+   "id": "sl_pz_ledger_site",
+   "kind": "puzzle",
+   "pos": [
+    24,
+    20
+   ],
+   "target": "pz_harbour_match",
+   "prompt": "Open the cargo ledger",
+   "sprite": "crate",
+   "if": {
+    "quest_active": "sl_08_pelabuhan"
+   }
+  },
+  {
+   "id": "sl_pick_plank",
+   "kind": "pickup",
+   "pos": [
+    40,
+    20
+   ],
+   "target": "papan_phinisi",
+   "text": "A long board, already shaped by eye for a hull curve."
+  },
+  {
+   "id": "sl_pick_pegs",
+   "kind": "pickup",
+   "pos": [
+    42,
+    20
+   ],
+   "target": "pasak_kayu",
+   "text": "Hard wooden pegs. No iron in a wooden hull."
+  },
+  {
+   "id": "sl_pick_coto_spice",
+   "kind": "pickup",
+   "pos": [
+    16,
+    24
+   ],
+   "target": "bumbu_coto"
+  },
+  {
+   "id": "sl_pick_lontara",
+   "kind": "pickup",
+   "pos": [
+    30,
+    30
+   ],
+   "target": "naskah_lontara"
+  },
+  {
+   "id": "sl_col_lontara",
+   "kind": "pickup",
+   "pos": [
+    44,
+    30
+   ],
+   "target": "col_kulit_lontara"
+  },
+  {
+   "id": "sl_save_harbour",
+   "kind": "save",
+   "pos": [
+    26,
+    24
+   ]
+  },
+  {
+   "id": "sl_note_ledger",
+   "kind": "note",
+   "pos": [
+    24,
+    22
+   ],
+   "title": "Ledger page",
+   "text": "Silk from Sengkang, ships from Tanaberu, palm-leaf records from the archive, sago from the eastern islands, coffee from the highlands. Five cargoes, five places."
+  },
+  {
+   "id": "sl_hidden_warehouse",
+   "kind": "hidden",
+   "pos": [
+    48,
+    36
+   ],
+   "title": "The Old Warehouse",
+   "text": "Behind the fort an old warehouse is still standing, half empty, with a ramp down to the water and the smell of spice and rope.",
+   "items": [
+    "sou_perahu_mini"
+   ],
+   "culture": "benteng_rotterdam"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_pelabuhan",
+   "name": "Harbour Gate",
+   "pos": [
+    26,
+    28
+   ],
+   "description": "The old harbour gate: ships from everywhere tied up outside it for centuries.",
+   "entry": "harbour",
+   "radius": 64
+  },
+  {
+   "id": "lm_benteng",
+   "name": "Stone Fort",
+   "pos": [
+    26,
+    34
+   ],
+   "description": "A stone fort built by the harbour kingdom, now a museum and archive.",
+   "entry": "",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sulawesi_desa",
+   "pos": [
+    3,
+    26
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "sulawesi_desa",
+   "entry": "to_sulawesi_pelabuhan"
+  },
+  {
+   "id": "to_papua_danau",
+   "pos": [
+    24,
+    9
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "papua_danau",
+   "entry": "to_sulawesi_pelabuhan"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   52,
+   10
+  ]
+ ]
+}

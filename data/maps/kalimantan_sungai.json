@@ -1,0 +1,401 @@
+{
+ "id": "kalimantan_sungai",
+ "name": "Sungai Besar",
+ "region": "kalimantan",
+ "size": [
+  56,
+  40
+ ],
+ "spawn": [
+  28,
+  32
+ ],
+ "music": "kalimantan",
+ "ambience": "amb_stream",
+ "terrain": {
+  "default": "JUNGLE",
+  "rects": [
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     12,
+     56,
+     16
+    ]
+   },
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     28,
+     56,
+     4
+    ]
+   },
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     8,
+     56,
+     4
+    ]
+   },
+   {
+    "tile": "JUNGLE",
+    "rect": [
+     0,
+     32,
+     56,
+     8
+    ]
+   },
+   {
+    "tile": "DIRT",
+    "rect": [
+     6,
+     30,
+     20,
+     8
+    ]
+   },
+   {
+    "tile": "PLANK",
+    "rect": [
+     38,
+     30,
+     14,
+     8
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     6,
+     34
+    ],
+    "to": [
+     50,
+     34
+    ],
+    "width": 3
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "REED",
+    "center": [
+     24,
+     30
+    ],
+    "radius": 4
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     50,
+     6
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     6,
+     6
+    ],
+    "radius": 5
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    12,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    20,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    24,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    30,
+    14
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    16,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    18,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    42,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    44,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    4,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    34,
+    36
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    52,
+    36
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    2,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "log",
+   "pos": [
+    48,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    36,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    22,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bridge_plank",
+   "pos": [
+    28,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_bapa_udi",
+   "pos": [
+    16,
+    32
+   ],
+   "wander": false,
+   "facing": "right"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "kl_pz_river_site",
+   "kind": "puzzle",
+   "pos": [
+    20,
+    30
+   ],
+   "target": "pz_river_flow",
+   "prompt": "Examine the channel",
+   "sprite": "bridge_plank",
+   "if": {
+    "quest_active": "kl_03_sungai"
+   }
+  },
+  {
+   "id": "kl_note_river",
+   "kind": "note",
+   "pos": [
+    24,
+    28
+   ],
+   "title": "Boatman's note",
+   "text": "Never swim after rain. If the water is brown and quick, the river is not yours."
+  },
+  {
+   "id": "kl_col_damar",
+   "kind": "pickup",
+   "pos": [
+    46,
+    34
+   ],
+   "target": "col_damar"
+  },
+  {
+   "id": "kl_save_river",
+   "kind": "save",
+   "pos": [
+    18,
+    30
+   ]
+  },
+  {
+   "id": "kl_minigame_river",
+   "kind": "minigame",
+   "pos": [
+    40,
+    30
+   ],
+   "prompt": "Race downstream",
+   "minigame": "nod",
+   "title": "Downstream Timing",
+   "target": "nod",
+   "text": "Take the bends at the right moment.",
+   "data": {
+    "rounds": 3,
+    "width": 92,
+    "speed": 340,
+    "themes": [
+     "the current is fast!",
+     "bend coming up!",
+     "the landing is in sight!"
+    ]
+   },
+   "reward_cp": 35
+  },
+  {
+   "id": "kl_hidden_oxbow",
+   "kind": "hidden",
+   "pos": [
+    52,
+    6
+   ],
+   "title": "The Oxbow",
+   "text": "An old loop of the river, cut off years ago, has become a still green pool full of fish and lily pads.",
+   "items": [
+    "ikan_kuning"
+   ],
+   "culture": "hutan_kalimantan"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_sungai",
+   "name": "The Big River",
+   "pos": [
+    28,
+    20
+   ],
+   "description": "The road of the interior: boats, timber, rattan and news all come down it.",
+   "entry": "river",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_kalimantan_desa",
+   "pos": [
+    50,
+    34
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "kalimantan_desa",
+   "entry": "to_kalimantan_sungai"
+  },
+  {
+   "id": "to_kalimantan_hutan",
+   "pos": [
+    46,
+    34
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "kalimantan_hutan",
+   "entry": "to_kalimantan_sungai"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   12,
+   56,
+   16
+  ]
+ ]
+}

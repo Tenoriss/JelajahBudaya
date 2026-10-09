@@ -1,0 +1,2088 @@
+{
+ "puzzles": {
+  "pz_notebook_pages": {
+   "id": "pz_notebook_pages",
+   "type": "memory",
+   "title": "Grandmother's Notebook",
+   "description": "Sort through the loose pages and match each pair that belongs together.",
+   "data": {
+    "columns": 4,
+    "cell": 140,
+    "symbols": [
+     "Front page",
+     "River sketch",
+     "Sawo leaf",
+     "Village list",
+     "Old stamp",
+     "Salt note"
+    ]
+   },
+   "hints": [
+    "Pairs sit next to each other on the table, not across it.",
+    "Two pages carry the same leaf pressed inside.",
+    "The river sketch matches the page with two wavy lines."
+   ],
+   "rewards": {
+    "culture": [],
+    "items": [],
+    "flag": "done_pz_notebook_pages"
+   }
+  },
+  "pz_gotong_royong": {
+   "id": "pz_gotong_royong",
+   "type": "sequence",
+   "title": "Raising the Shed Together",
+   "description": "Put the steps of a village work-day in the right order.",
+   "data": {
+    "items": [
+     "Measure and mark the posts",
+     "Cut and sharpen the posts",
+     "Raise the posts together",
+     "Tie the cross beams",
+     "Lay the roof thatch",
+     "Sweep the ground"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "hints": [
+    "Nothing can be tied before the posts stand.",
+    "The thatch goes on after the frame is tied.",
+    "The sweep is always last."
+   ],
+   "rewards": {
+    "culture": [],
+    "items": [],
+    "flag": "done_pz_gotong_royong"
+   }
+  },
+  "pz_net_mend": {
+   "id": "pz_net_mend",
+   "type": "crafting",
+   "title": "Mending the Net",
+   "description": "Choose the right materials, then lay the mesh on the grid to match the pattern.",
+   "data": {
+    "materials": [
+     "Net twine",
+     "Wooden shuttle",
+     "Bamboo needle"
+    ],
+    "wrong": [
+     "Iron nail",
+     "Batik wax",
+     "Gold thread"
+    ],
+    "size": 5,
+    "target": [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ]
+   },
+   "hints": [
+    "Twine is tied with a shuttle, not nailed.",
+    "The pattern is symmetrical left to right.",
+    "The middle row has fewer holes than the rows above and below."
+   ],
+   "rewards": {
+    "culture": [],
+    "items": [],
+    "flag": "done_pz_net_mend"
+   }
+  },
+  "pz_carving_memory": {
+   "id": "pz_carving_memory",
+   "type": "memory",
+   "title": "The Carved Wall",
+   "description": "Match the pairs of carved panels on the wall of the house.",
+   "data": {
+    "columns": 4,
+    "cell": 140,
+    "symbols": [
+     "Curved horn",
+     "Spiral",
+     "Leaf row",
+     "Double wave",
+     "Crossed stick",
+     "Rope line"
+    ]
+   },
+   "hints": [
+    "The panels are paired by motif, not by size.",
+    "Two of them follow the same curve as the roof edge.",
+    "The crossed stick and the rope line are partners."
+   ],
+   "rewards": {
+    "culture": [],
+    "items": [],
+    "flag": "done_pz_carving_memory"
+   }
+  },
+  "pz_rendang": {
+   "id": "pz_rendang",
+   "type": "cooking",
+   "title": "Cooking Rendang",
+   "description": "Pick the right ingredients, put the steps in order, then watch the fire.",
+   "data": {
+    "ingredients": [
+     "Beef",
+     "Coconut milk",
+     "Chilli",
+     "Ginger",
+     "Turmeric",
+     "Lemongrass"
+    ],
+    "bad": [
+     "Chocolate",
+     "Sweet soy sauce"
+    ],
+    "steps": [
+     "Pound the spices",
+     "Simmer the meat with the spice paste",
+     "Add the coconut milk",
+     "Cook until the sauce is nearly dry"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "timing": {
+     "width": 0.22,
+     "speed": 250
+    }
+   },
+   "hints": [
+    "Six things belong in the pot and two do not.",
+    "The spice paste goes in before the coconut milk.",
+    "When the marker stays in the golden band the sauce is right."
+   ],
+   "rewards": {
+    "culture": [
+     "rendang"
+    ],
+    "items": [
+     "bekal_jalan"
+    ],
+    "flag": "done_pz_rendang"
+   }
+  },
+  "pz_saluang_song": {
+   "id": "pz_saluang_song",
+   "type": "rhythm",
+   "title": "The Saluang Song",
+   "description": "An old melody for the bamboo flute: keep the beat as the notes pass the golden line.",
+   "data": {
+    "beats": [
+     0.8,
+     1.2,
+     1.6,
+     2.2,
+     2.6,
+     3.0,
+     3.6,
+     4.0,
+     4.4,
+     5.0,
+     5.4,
+     5.8
+    ],
+    "speed": 170
+   },
+   "hints": [
+    "Press space (or click) exactly as a note reaches the gold line.",
+    "The melody starts slowly and speeds up in the middle.",
+    "You only need to hit most of the notes, not every one."
+   ],
+   "rewards": {
+    "culture": [
+     "saluang"
+    ],
+    "items": [
+     "bambu_saluang"
+    ],
+    "flag": "done_pz_saluang_song"
+   }
+  },
+  "pz_ulos_pattern": {
+   "id": "pz_ulos_pattern",
+   "type": "crafting",
+   "title": "Weaving the Cloth",
+   "description": "Gather the loom materials, then copy the abstract weaving pattern.",
+   "data": {
+    "materials": [
+     "Cotton yarn",
+     "Backstrap loom",
+     "Shuttle"
+    ],
+    "wrong": [
+     "Plastic sheet",
+     "Nail polish"
+    ],
+    "size": 5,
+    "target": [
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ]
+   },
+   "hints": [
+    "Thread is woven; plastic has no place on a loom.",
+    "The pattern is mirrored top and bottom.",
+    "The middle row is a single line of light."
+   ],
+   "rewards": {
+    "culture": [
+     "ulos"
+    ],
+    "items": [
+     "kain_ulos"
+    ],
+    "flag": "done_pz_ulos_pattern"
+   }
+  },
+  "pz_talempong_pattern": {
+   "id": "pz_talempong_pattern",
+   "type": "pattern",
+   "title": "The Talempong Set",
+   "description": "Watch which gongs are struck, then strike the same ones.",
+   "data": {
+    "size": 4,
+    "pattern": [
+     1,
+     6,
+     9,
+     12,
+     15
+    ],
+    "preview_time": 2.4,
+    "cell": 88
+   },
+   "hints": [
+    "The lit gongs form a diagonal line.",
+    "There are five of them, from top left to bottom right.",
+    "You may strike them in any order once you remember them."
+   ],
+   "rewards": {
+    "culture": [
+     "talempong"
+    ],
+    "items": [],
+    "flag": "done_pz_talempong_pattern"
+   }
+  },
+  "pz_danau_search": {
+   "id": "pz_danau_search",
+   "type": "exploration",
+   "title": "Where Did the Cargo Go?",
+   "description": "Read the clues and mark the spot on the lakeside where the cargo drifted ashore.",
+   "data": {
+    "clues": [
+     "The boy saw the basket pass the reed bed on the north side.",
+     "It did not reach the rocks - those are in the south.",
+     "The cake seller's stall is east of the landing.",
+     "It was pulled out just west of the cake stall."
+    ],
+    "answer": [
+     0.42,
+     0.3
+    ],
+    "tolerance": 0.14
+   },
+   "hints": [
+    "North is towards the top of the picture.",
+    "Reeds grow where the water is shallow.",
+    "Start from the stall and walk west."
+   ],
+   "rewards": {
+    "culture": [
+     "danau_toba"
+    ],
+    "items": [],
+    "flag": "done_pz_danau_search"
+   }
+  },
+  "pz_piring_steps": {
+   "id": "pz_piring_steps",
+   "type": "sequence",
+   "title": "The Plate Dance",
+   "description": "Arrange the dance steps in the order they are performed.",
+   "data": {
+    "items": [
+     "Bow to the musicians",
+     "Step the first pattern",
+     "Turn with the plates lifted",
+     "Quick steps between the plates",
+     "Step onto the plates",
+     "Bow again to close"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "hints": [
+    "A performance opens with respect and closes with it.",
+    "The fast steps come before the final, most difficult part.",
+    "The plates are stepped on last, never first."
+   ],
+   "rewards": {
+    "culture": [
+     "tari_piring"
+    ],
+    "items": [],
+    "flag": "done_pz_piring_steps"
+   }
+  },
+  "pz_pasar_match": {
+   "id": "pz_pasar_match",
+   "type": "match",
+   "title": "Market Day",
+   "description": "Match each good with the stall that sells it.",
+   "data": {
+    "pairs": [
+     [
+      "Gold thread",
+      "Weaving stall"
+     ],
+     [
+      "Chilli",
+      "Spice stall"
+     ],
+     [
+      "Coffee beans",
+      "Drying yard"
+     ],
+     [
+      "Woven cloth",
+      "Cloth stall"
+     ],
+     [
+      "Bronze ding",
+      "Music stall"
+     ]
+    ]
+   },
+   "hints": [
+    "Each good belongs with the trade that makes it.",
+    "Thread goes where something is being woven.",
+    "Bronze belongs with music."
+   ],
+   "rewards": {
+    "culture": [
+     "songket_palembang"
+    ],
+    "items": [
+     "sou_kain_songket",
+     "col_benang_emas"
+    ],
+    "flag": "sumatra_market_done"
+   }
+  },
+  "pz_tumpeng": {
+   "id": "pz_tumpeng",
+   "type": "cooking",
+   "title": "The Celebration Rice",
+   "description": "Choose the ingredients for a cone of yellow rice, then finish it on the fire.",
+   "data": {
+    "ingredients": [
+     "Rice",
+     "Turmeric",
+     "Coconut milk",
+     "Lemongrass",
+     "Fried shallots"
+    ],
+    "bad": [
+     "Chocolate bar",
+     "Cheese slice"
+    ],
+    "steps": [
+     "Wash the rice",
+     "Steam the rice with turmeric and coconut milk",
+     "Shape the cone",
+     "Arrange the side dishes around it"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "timing": {
+     "width": 0.2,
+     "speed": 280
+    }
+   },
+   "hints": [
+    "Turmeric is what makes the rice yellow.",
+    "Rice steams before it is shaped; it cannot hold a cone while wet and loose.",
+    "Side dishes are arranged after the cone is standing."
+   ],
+   "rewards": {
+    "culture": [
+     "tumpeng"
+    ],
+    "items": [
+     "bumbu_tumpeng"
+    ],
+    "flag": "done_pz_tumpeng"
+   }
+  },
+  "pz_batik": {
+   "id": "pz_batik",
+   "type": "crafting",
+   "title": "Drawing with Wax",
+   "description": "Gather the batik tools, then match the pattern on the cloth.",
+   "data": {
+    "materials": [
+     "Cotton cloth",
+     "Batik wax",
+     "Wax pen"
+    ],
+    "wrong": [
+     "Spray paint",
+     "Stapler"
+    ],
+    "size": 5,
+    "target": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1
+    ]
+   },
+   "hints": [
+    "Wax resists dye, so waxed areas stay light.",
+    "This pattern repeats diagonally.",
+    "Every corner of the grid is waxed."
+   ],
+   "rewards": {
+    "culture": [
+     "batik"
+    ],
+    "items": [
+     "lilin_batik",
+     "canting"
+    ],
+    "flag": "done_pz_batik"
+   }
+  },
+  "pz_gamelan": {
+   "id": "pz_gamelan",
+   "type": "rhythm",
+   "title": "Gamelan Rehearsal",
+   "description": "Follow the drum: strike as each note crosses the line.",
+   "data": {
+    "beats": [
+     1.0,
+     1.45,
+     1.9,
+     2.35,
+     2.9,
+     3.4,
+     3.9,
+     4.4,
+     5.0,
+     5.5,
+     6.0,
+     6.5,
+     7.0
+    ],
+    "speed": 175
+   },
+   "hints": [
+    "Watch the drum, not your hands.",
+    "The notes come in groups of four.",
+    "Missing one note will not stop the rehearsal."
+   ],
+   "rewards": {
+    "culture": [
+     "gamelan"
+    ],
+    "items": [
+     "tabuh"
+    ],
+    "flag": "done_pz_gamelan"
+   }
+  },
+  "pz_sawah_water": {
+   "id": "pz_sawah_water",
+   "type": "environment",
+   "title": "Water for the Terrace",
+   "description": "Rotate the channels so water runs from the spring to the lowest field.",
+   "data": {
+    "size": 4,
+    "source": [
+     0,
+     0
+    ],
+    "target": [
+     3,
+     3
+    ],
+    "grid": [
+     [
+      [
+       0,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       2
+      ]
+     ],
+     [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       3
+      ]
+     ]
+    ]
+   },
+   "hints": [
+    "Two pieces have to join the spring before anything else flows.",
+    "Water only moves where two connections meet.",
+    "The lowest field is the bottom right corner."
+   ],
+   "rewards": {
+    "culture": [
+     "sawah"
+    ],
+    "items": [
+     "bibit_padi"
+    ],
+    "flag": "done_pz_sawah_water"
+   }
+  },
+  "pz_wayang_quiz": {
+   "id": "pz_wayang_quiz",
+   "type": "quiz",
+   "title": "Stories Behind the Screen",
+   "description": "Answer the questions the puppeteer asks about the stories you have recorded.",
+   "data": {
+    "questions": [
+     {
+      "q": "What is the puppeteer of a wayang kulit performance called?",
+      "options": [
+       "Dalang",
+       "Dukun",
+       "Pawang"
+      ],
+      "answer": 0,
+      "fact": "The dalang voices every character and leads the musicians."
+     },
+     {
+      "q": "Where does the audience of a wayang kulit watch the story?",
+      "options": [
+       "On the same side as the puppets",
+       "On the shadow side of the screen",
+       "Outside the building"
+      ],
+      "answer": 1,
+      "fact": "The puppets cast shadows onto a lit screen for the audience."
+     },
+     {
+      "q": "How long can a wayang performance last?",
+      "options": [
+       "About ten minutes",
+       "One hour",
+       "All night"
+      ],
+      "answer": 2,
+      "fact": "Performances traditionally run through the night."
+     }
+    ]
+   },
+   "hints": [
+    "Think about where the light is.",
+    "The screen is lit from behind the puppeteer.",
+    "A night performance is the traditional form."
+   ],
+   "rewards": {
+    "culture": [
+     "wayang_kulit"
+    ],
+    "items": [
+     "naskah_wayang"
+    ],
+    "flag": "done_pz_wayang_quiz"
+   }
+  },
+  "pz_angklung_order": {
+   "id": "pz_angklung_order",
+   "type": "sequence",
+   "title": "Assembling the Angklung",
+   "description": "Put the steps of playing in a group in the right order.",
+   "data": {
+    "items": [
+     "Check that every tube is in its frame",
+     "Agree the beat with a nod",
+     "Shake on your turn only",
+     "Hold the note while others play",
+     "Stop together at the signal"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "hints": [
+    "Nothing can be played before the instruments are checked.",
+    "One shake, one note - the timing has to be agreed first.",
+    "Everyone stops together, not one by one."
+   ],
+   "rewards": {
+    "culture": [
+     "angklung"
+    ],
+    "items": [
+     "sou_angklung_mini"
+    ],
+    "flag": "done_pz_angklung_order"
+   }
+  },
+  "pz_candi_relief": {
+   "id": "pz_candi_relief",
+   "type": "tile",
+   "title": "The Stone Gallery",
+   "description": "Rotate the stone panels until every carved block faces the right way.",
+   "data": {
+    "size": 3,
+    "start": [
+     [
+      0,
+      1,
+      2
+     ],
+     [
+      3,
+      0,
+      1
+     ],
+     [
+      2,
+      3,
+      0
+     ]
+    ],
+    "goal": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ]
+   },
+   "hints": [
+    "Each block only needs turning, never moving.",
+    "Click a block once to turn it a quarter turn.",
+    "Work row by row from the top."
+   ],
+   "rewards": {
+    "culture": [
+     "borobudur"
+    ],
+    "items": [],
+    "flag": "done_pz_candi_relief"
+   }
+  },
+  "pz_javanese_market": {
+   "id": "pz_javanese_market",
+   "type": "match",
+   "title": "The Morning Market",
+   "description": "Match each stall with what it sells before the market packs up.",
+   "data": {
+    "pairs": [
+     [
+      "Turmeric rice",
+      "Food stall"
+     ],
+     [
+      "Wax pen",
+      "Batik stall"
+     ],
+     [
+      "Padded mallet",
+      "Gamelan stall"
+     ],
+     [
+      "Rice seedlings",
+      "Seed seller"
+     ],
+     [
+      "Fan",
+      "Dance troupe"
+     ]
+    ]
+   },
+   "hints": [
+    "Each object points at the trade it belongs to.",
+    "The mallet is padded so the bronze rings soft.",
+    "Seedlings come from whoever grows them."
+   ],
+   "rewards": {
+    "culture": [
+     "rumah_joglo"
+    ],
+    "items": [
+     "sou_batik_syal",
+     "col_batu_candi"
+    ],
+    "flag": "java_market_done"
+   }
+  },
+  "pz_roof_plait": {
+   "id": "pz_roof_plait",
+   "type": "crafting",
+   "title": "Weaving the Roof Panel",
+   "description": "Choose the right materials and plait the panel to match the pattern.",
+   "data": {
+    "materials": [
+     "Rattan strips",
+     "Palm leaves",
+     "Water for soaking"
+    ],
+    "wrong": [
+     "Steel wire",
+     "Batik wax"
+    ],
+    "size": 5,
+    "target": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "hints": [
+    "Rattan is soaked so it bends without cracking.",
+    "The pattern has a hollow centre.",
+    "The outer ring is completely filled."
+   ],
+   "rewards": {
+    "culture": [
+     "rumah_panjang"
+    ],
+    "items": [
+     "rumpun_rotan"
+    ],
+    "flag": "done_pz_roof_plait"
+   }
+  },
+  "pz_karungut": {
+   "id": "pz_karungut",
+   "type": "rhythm",
+   "title": "A Sung Story",
+   "description": "Sing the verses in time: hit the beat as the syllables pass.",
+   "data": {
+    "beats": [
+     0.9,
+     1.3,
+     1.7,
+     2.1,
+     2.7,
+     3.1,
+     3.5,
+     3.9,
+     4.5,
+     4.9,
+     5.3,
+     5.7,
+     6.3
+    ],
+    "speed": 165
+   },
+   "hints": [
+    "Karungut keeps a steady pulse; listen to the drum first.",
+    "The phrase groups are short, then a longer pause.",
+    "You can miss a syllable and still finish the verse."
+   ],
+   "rewards": {
+    "culture": [
+     "karungut"
+    ],
+    "items": [
+     "anyaman_tifa"
+    ],
+    "flag": "done_pz_karungut"
+   }
+  },
+  "pz_river_flow": {
+   "id": "pz_river_flow",
+   "type": "environment",
+   "title": "The Blocked Channel",
+   "description": "Turn the channels so the river water reaches the village landing.",
+   "data": {
+    "size": 4,
+    "source": [
+     0,
+     2
+    ],
+    "target": [
+     3,
+     1
+    ],
+    "grid": [
+     [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       3
+      ]
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       1
+      ]
+     ],
+     [
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       1
+      ]
+     ]
+    ]
+   },
+   "hints": [
+    "The spring is on the left bank, halfway up.",
+    "A channel that points away from the next one blocks the whole line.",
+    "The landing sits just above the middle of the right edge."
+   ],
+   "rewards": {
+    "culture": [
+     "hutan_kalimantan"
+    ],
+    "items": [
+     "peta_lipat"
+    ],
+    "flag": "done_pz_river_flow"
+   }
+  },
+  "pz_sasirangan": {
+   "id": "pz_sasirangan",
+   "type": "pattern",
+   "title": "Tie-dye Pattern",
+   "description": "Watch the tied cloth pattern, then tie the same squares.",
+   "data": {
+    "size": 4,
+    "pattern": [
+     0,
+     3,
+     5,
+     6,
+     9,
+     10,
+     12,
+     15
+    ],
+    "preview_time": 2.6,
+    "cell": 88
+   },
+   "hints": [
+    "The ties form a ring around the middle.",
+    "Two squares sit in opposite corners.",
+    "Count eight ties, not six."
+   ],
+   "rewards": {
+    "culture": [
+     "sasirangan"
+    ],
+    "items": [
+     "benang_sasirangan",
+     "sou_sasirangan"
+    ],
+    "flag": "done_pz_sasirangan"
+   }
+  },
+  "pz_mandau_tools": {
+   "id": "pz_mandau_tools",
+   "type": "memory",
+   "title": "Tools of the Workshop",
+   "description": "Match the pairs of tools on the workbench.",
+   "data": {
+    "columns": 4,
+    "cell": 140,
+    "symbols": [
+     "Work blade",
+     "Sheath pin",
+     "Sharpening stone",
+     "Rattan strip",
+     "Oil cloth",
+     "Wood mallet"
+    ]
+   },
+   "hints": [
+    "Each tool has exactly one twin.",
+    "The sharpening stone pairs with nothing metal.",
+    "Six pairs, twelve cards."
+   ],
+   "rewards": {
+    "culture": [
+     "mandau"
+    ],
+    "items": [
+     "pisau_serbaguna"
+    ],
+    "flag": "done_pz_mandau_tools"
+   }
+  },
+  "pz_soto_banjar": {
+   "id": "pz_soto_banjar",
+   "type": "cooking",
+   "title": "Soto from the River Market",
+   "description": "Choose the soup ingredients and finish the broth at the right moment.",
+   "data": {
+    "ingredients": [
+     "Chicken",
+     "Cinnamon",
+     "Star anise",
+     "Clove",
+     "Rice cake",
+     "Lime"
+    ],
+    "bad": [
+     "Whipped cream",
+     "Chocolate"
+    ],
+    "steps": [
+     "Boil the chicken for the broth",
+     "Add the whole spices",
+     "Simmer until it smells sweet",
+     "Serve with rice cake and lime"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "timing": {
+     "width": 0.24,
+     "speed": 260
+    }
+   },
+   "hints": [
+    "The aromatic spices go in whole and come out before serving.",
+    "Broth first, spices second.",
+    "Lime goes in the bowl, not the pot."
+   ],
+   "rewards": {
+    "culture": [
+     "kuliner_kalimantan"
+    ],
+    "items": [
+     "bekal_jalan"
+    ],
+    "flag": "done_pz_soto_banjar"
+   }
+  },
+  "pz_pasar_logic": {
+   "id": "pz_pasar_logic",
+   "type": "logic",
+   "title": "Which Boat Carries What?",
+   "description": "Read the boatmen's statements and work out which boat carries the salt.",
+   "data": {
+    "clues": [
+     "Three boats lie at the landing: A, B and C.",
+     "Boat A carries fruit, or so its owner says.",
+     "Boat C is moored next to the one carrying salt.",
+     "Boat B is moored at the far end, away from both others."
+    ],
+    "options": [
+     "Boat A",
+     "Boat B",
+     "Boat C"
+    ],
+    "answer": 2,
+    "explain": "B and A cannot both be next to the salt, and A is fruit, so C carries it."
+   },
+   "hints": [
+    "The far end has only one neighbour.",
+    "A is fruit, so the salt is not in A.",
+    "Who is left moored beside A?"
+   ],
+   "rewards": {
+    "culture": [
+     "pasar_terapung"
+    ],
+    "items": [
+     "keranjang_bahu"
+    ],
+    "flag": "done_pz_pasar_logic"
+   }
+  },
+  "pz_gantar_steps": {
+   "id": "pz_gantar_steps",
+   "type": "sequence",
+   "title": "Planting Dance",
+   "description": "Put the planting steps in order as the dancers do them.",
+   "data": {
+    "items": [
+     "Clear the ground",
+     "Make holes with the dibble stick",
+     "Drop in the seed",
+     "Cover the seed",
+     "Stamp the soil firm"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "hints": [
+    "Nothing is planted before the ground is cleared.",
+    "Seed goes into a hole, never on top of the soil.",
+    "The last movement presses the earth down."
+   ],
+   "rewards": {
+    "culture": [
+     "tari_gantar"
+    ],
+    "items": [
+     "bibit_padi_ladang",
+     "col_manik_dayak"
+    ],
+    "flag": "kalimantan_planting_done"
+   }
+  },
+  "pz_tongkonan_carve": {
+   "id": "pz_tongkonan_carve",
+   "type": "tile",
+   "title": "Carving the Gable",
+   "description": "Turn the carved panels until the gable pattern matches.",
+   "data": {
+    "size": 3,
+    "start": [
+     [
+      3,
+      2,
+      1
+     ],
+     [
+      0,
+      3,
+      2
+     ],
+     [
+      1,
+      0,
+      3
+     ]
+    ],
+    "goal": [
+     [
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1
+     ],
+     [
+      1,
+      1,
+      1
+     ]
+    ]
+   },
+   "hints": [
+    "Start with the top row and leave it alone once it is right.",
+    "Each click is a quarter turn clockwise.",
+    "The centre panel also needs turning."
+   ],
+   "rewards": {
+    "culture": [
+     "tongkonan"
+    ],
+    "items": [
+     "ukiran_kayu"
+    ],
+    "flag": "done_pz_tongkonan_carve"
+   }
+  },
+  "pz_phinisi_hull": {
+   "id": "pz_phinisi_hull",
+   "type": "crafting",
+   "title": "Laying the Hull",
+   "description": "Choose the shipbuilding materials and lay out the planks.",
+   "data": {
+    "materials": [
+     "Shaped planking",
+     "Wooden pegs",
+     "Palm fibre caulking"
+    ],
+    "wrong": [
+     "Steel nails",
+     "Plastic sheet"
+    ],
+    "size": 5,
+    "target": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   "hints": [
+    "No iron goes into a wooden hull.",
+    "The pattern narrows towards the keel.",
+    "The bottom row is the keel line: two separate points."
+   ],
+   "rewards": {
+    "culture": [
+     "phinisi"
+    ],
+    "items": [
+     "papan_phinisi",
+     "pasak_kayu"
+    ],
+    "flag": "done_pz_phinisi_hull"
+   }
+  },
+  "pz_kolintang_tune": {
+   "id": "pz_kolintang_tune",
+   "type": "pattern",
+   "title": "Tuning the Kolintang",
+   "description": "Watch which bars are struck, then strike the same ones.",
+   "data": {
+    "size": 4,
+    "pattern": [
+     4,
+     5,
+     10,
+     11
+    ],
+    "preview_time": 2.0,
+    "cell": 92
+   },
+   "hints": [
+    "The lit bars form a small square in the middle.",
+    "Four bars, not three.",
+    "You may strike them in any order."
+   ],
+   "rewards": {
+    "culture": [
+     "kolintang"
+    ],
+    "items": [
+     "batang_kolintang"
+    ],
+    "flag": "done_pz_kolintang_tune"
+   }
+  },
+  "pz_coto": {
+   "id": "pz_coto",
+   "type": "cooking",
+   "title": "Coto Makassar",
+   "description": "Pick the spices for the soup, order the steps, and stop the boil at the right moment.",
+   "data": {
+    "ingredients": [
+     "Beef",
+     "Ground peanut",
+     "Coriander",
+     "Cumin",
+     "Lemongrass",
+     "Rice cake"
+    ],
+    "bad": [
+     "Vanilla extract",
+     "Butter"
+    ],
+    "steps": [
+     "Boil the beef until tender",
+     "Grind and add the spice mix",
+     "Stir in the ground peanut",
+     "Serve with rice cake"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "timing": {
+     "width": 0.2,
+     "speed": 290
+    }
+   },
+   "hints": [
+    "Peanut is what thickens the broth.",
+    "Spices go in after the meat is tender.",
+    "Stop the boil while the band is gold."
+   ],
+   "rewards": {
+    "culture": [
+     "coto_makassar"
+    ],
+    "items": [
+     "bumbu_coto"
+    ],
+    "flag": "done_pz_coto"
+   }
+  },
+  "pz_pakarena": {
+   "id": "pz_pakarena",
+   "type": "rhythm",
+   "title": "The Fan Dance",
+   "description": "Move with the drum: hit each beat as it crosses the line.",
+   "data": {
+    "beats": [
+     1.0,
+     1.5,
+     2.0,
+     2.5,
+     3.2,
+     3.7,
+     4.2,
+     4.7,
+     5.4,
+     5.9,
+     6.4,
+     6.9
+    ],
+    "speed": 160
+   },
+   "hints": [
+    "The drum leads; the dancers follow it, not a count.",
+    "The beats come in pairs with a gap between.",
+    "Slow is correct here - the dance is deliberately unhurried."
+   ],
+   "rewards": {
+    "culture": [
+     "tari_pakarena"
+    ],
+    "items": [
+     "sou_sutra_kecil"
+    ],
+    "flag": "done_pz_pakarena"
+   }
+  },
+  "pz_lontara_logic": {
+   "id": "pz_lontara_logic",
+   "type": "logic",
+   "title": "Reading the Palm Leaf",
+   "description": "Use the marks on the palm leaf to work out which line belongs to which record.",
+   "data": {
+    "clues": [
+     "Four records: genealogy, law, diary, land.",
+     "The leaf with the longest line is the genealogy.",
+     "The law leaf is the only one with a double mark.",
+     "The diary is shorter than the land record."
+    ],
+    "options": [
+     "Diary",
+     "Law",
+     "Genealogy",
+     "Land record"
+    ],
+    "answer": 3,
+    "explain": "The land record is not the longest, not double-marked and not the shortest."
+   },
+   "hints": [
+    "Compare the lengths before the marks.",
+    "The double mark is unique to one record.",
+    "Whatever is left is the land record."
+   ],
+   "rewards": {
+    "culture": [
+     "lontara"
+    ],
+    "items": [
+     "naskah_lontara",
+     "col_kulit_lontara"
+    ],
+    "flag": "done_pz_lontara_logic"
+   }
+  },
+  "pz_bajo_search": {
+   "id": "pz_bajo_search",
+   "type": "exploration",
+   "title": "Where the Fish Are",
+   "description": "Read the boats' reports and mark the fishing ground on the map.",
+   "data": {
+    "clues": [
+     "The water shallows near the stilt walkway on the west side.",
+     "Fish were seen where the reef meets the deep channel.",
+     "The channel runs south of the village.",
+     "The catch was taken just north of the channel, near the reef edge."
+    ],
+    "answer": [
+     0.35,
+     0.62
+    ],
+    "tolerance": 0.13
+   },
+   "hints": [
+    "West is the left side of the map.",
+    "North is up.",
+    "The fishing ground sits between the village and the channel."
+   ],
+   "rewards": {
+    "culture": [
+     "bajo_village"
+    ],
+    "items": [],
+    "flag": "done_pz_bajo_search"
+   }
+  },
+  "pz_harbour_match": {
+   "id": "pz_harbour_match",
+   "type": "match",
+   "title": "Ports and Cargo",
+   "description": "Match each cargo with the port it left from.",
+   "data": {
+    "pairs": [
+     [
+      "Silk sash",
+      "Sengkang"
+     ],
+     [
+      "Wooden ship",
+      "Tanaberu"
+     ],
+     [
+      "Palm leaf record",
+      "Makassar"
+     ],
+     [
+      "Sago flour",
+      "Maluku boats"
+     ],
+     [
+      "Coffee",
+      "Highland road"
+     ]
+    ]
+   },
+   "hints": [
+    "Each cargo names a place you have already visited or heard about.",
+    "Silk comes from where it is woven.",
+    "Sago travels by boat, never by road."
+   ],
+   "rewards": {
+    "culture": [
+     "sutra_sengkang"
+    ],
+    "items": [
+     "sou_perahu_mini",
+     "col_kerang"
+    ],
+    "flag": "sulawesi_harbour_done"
+   }
+  },
+  "pz_honai_build": {
+   "id": "pz_honai_build",
+   "type": "crafting",
+   "title": "Building the Honai",
+   "description": "Gather the right materials and lay out the roof thatch.",
+   "data": {
+    "materials": [
+     "Wooden posts",
+     "Thatch grass",
+     "Bark rope"
+    ],
+    "wrong": [
+     "Glass pane",
+     "Brick"
+    ],
+    "size": 5,
+    "target": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "hints": [
+    "A honai roof is a cone of thatch, thick at the base.",
+    "The pattern widens as it goes down.",
+    "The bottom three rows are completely filled."
+   ],
+   "rewards": {
+    "culture": [
+     "honai"
+    ],
+    "items": [
+     "col_noken_kecil"
+    ],
+    "flag": "done_pz_honai_build"
+   }
+  },
+  "pz_noken_knot": {
+   "id": "pz_noken_knot",
+   "type": "memory",
+   "title": "Knots of the Noken",
+   "description": "Match the pairs of knots used to make the bag.",
+   "data": {
+    "columns": 4,
+    "cell": 140,
+    "symbols": [
+     "Loop knot",
+     "Double knot",
+     "Slip knot",
+     "Square knot",
+     "Overhand knot",
+     "Chain knot"
+    ]
+   },
+   "hints": [
+    "Six knots, twelve cards.",
+    "The slip knot is the one that comes undone with a pull.",
+    "Work across the top row first."
+   ],
+   "rewards": {
+    "culture": [
+     "noken"
+    ],
+    "items": [
+     "serat_noken"
+    ],
+    "flag": "done_pz_noken_knot"
+   }
+  },
+  "pz_papeda": {
+   "id": "pz_papeda",
+   "type": "cooking",
+   "title": "Papeda and Fish Soup",
+   "description": "Choose the right ingredients, stir in order, and stop the boil at the right moment.",
+   "data": {
+    "ingredients": [
+     "Sago starch",
+     "Water",
+     "Fish",
+     "Turmeric",
+     "Lime",
+     "Salt"
+    ],
+    "bad": [
+     "Instant noodles",
+     "Cream"
+    ],
+    "steps": [
+     "Boil the water",
+     "Stir in the sago starch slowly",
+     "Keep stirring until it turns clear",
+     "Simmer the fish soup"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "timing": {
+     "width": 0.2,
+     "speed": 270
+    }
+   },
+   "hints": [
+    "Sago thickens all at once if the starch goes in too fast.",
+    "Stirring is the whole trick.",
+    "Stop while the marker is inside the gold band."
+   ],
+   "rewards": {
+    "culture": [
+     "papeda"
+    ],
+    "items": [
+     "sagu_kering",
+     "gaung_papeda"
+    ],
+    "flag": "done_pz_papeda"
+   }
+  },
+  "pz_tifa_pattern": {
+   "id": "pz_tifa_pattern",
+   "type": "pattern",
+   "title": "Drum Call",
+   "description": "Watch the drum call, then answer on the same skins.",
+   "data": {
+    "size": 4,
+    "pattern": [
+     0,
+     2,
+     5,
+     7,
+     8,
+     13
+    ],
+    "preview_time": 2.4,
+    "cell": 90
+   },
+   "hints": [
+    "The call starts at the top corner and closes at the bottom.",
+    "Six strikes, not eight.",
+    "You may play them in any order to answer."
+   ],
+   "rewards": {
+    "culture": [
+     "tifa"
+    ],
+    "items": [
+     "anyaman_tifa",
+     "sou_tifa_mini"
+    ],
+    "flag": "done_pz_tifa_pattern"
+   }
+  },
+  "pz_valley_ditches": {
+   "id": "pz_valley_ditches",
+   "type": "environment",
+   "title": "Watering the Gardens",
+   "description": "Turn the ditches so the stream reaches the sweet potato beds.",
+   "data": {
+    "size": 4,
+    "source": [
+     1,
+     0
+    ],
+    "target": [
+     2,
+     3
+    ],
+    "grid": [
+     [
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       2
+      ]
+     ],
+     [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       1
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       1,
+       3
+      ]
+     ]
+    ]
+   },
+   "hints": [
+    "The stream enters near the top, one across from the corner.",
+    "Highland gardens are drained, not flooded, so the ditch must keep running.",
+    "The beds are in the bottom row, middle column."
+   ],
+   "rewards": {
+    "culture": [
+     "baliem_valley"
+    ],
+    "items": [
+     "bibit_ubi"
+    ],
+    "flag": "done_pz_valley_ditches"
+   }
+  },
+  "pz_sentani_find": {
+   "id": "pz_sentani_find",
+   "type": "exploration",
+   "title": "Something by the Lake",
+   "description": "Read the villagers' directions and mark the place on the lakeshore.",
+   "data": {
+    "clues": [
+     "The old canoe is on the north shore of the lake.",
+     "The painted stones were gathered east of the canoe.",
+     "The fish drying racks stand south of the painted stones.",
+     "The person you are looking for sits between the drying racks and the water."
+    ],
+    "answer": [
+     0.68,
+     0.55
+    ],
+    "tolerance": 0.13
+   },
+   "hints": [
+    "North is up, east is right.",
+    "Move down from the painted stones to reach the racks.",
+    "The lake is towards the bottom of the map."
+   ],
+   "rewards": {
+    "culture": [
+     "danau_sentani"
+    ],
+    "items": [],
+    "flag": "done_pz_sentani_find"
+   }
+  },
+  "pz_barkcloth": {
+   "id": "pz_barkcloth",
+   "type": "sequence",
+   "title": "Making Bark Cloth",
+   "description": "Put the steps of making bark cloth in the right order.",
+   "data": {
+    "items": [
+     "Strip the inner bark",
+     "Soak the bark",
+     "Beat it with a mallet",
+     "Dry the sheet",
+     "Paint the pattern"
+    ],
+    "order": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ]
+   },
+   "hints": [
+    "The bark is only beaten after it has been soaked.",
+    "Painting comes last of all.",
+    "Nothing is dried before it is flat."
+   ],
+   "rewards": {
+    "culture": [
+     "kain_kulit_kayu"
+    ],
+    "items": [
+     "serat_kulit_kayu"
+    ],
+    "flag": "done_pz_barkcloth"
+   }
+  },
+  "pz_bird_logic": {
+   "id": "pz_bird_logic",
+   "type": "logic",
+   "title": "Watching, Not Catching",
+   "description": "From the watchers' notes, work out which bird the group is watching.",
+   "data": {
+    "clues": [
+     "The bird displays at dawn, not at midday.",
+     "It holds the plumes up in a fan above its head.",
+     "It is not the one that sings from the same branch all morning.",
+     "The watchers never catch or cage anything."
+    ],
+    "options": [
+     "The dawn displaying bird",
+     "The one singing from the branch",
+     "The pale bird by the water"
+    ],
+    "answer": 0,
+    "explain": "Only the dawn bird folds its plumes into a fan."
+   },
+   "hints": [
+    "Notes are about behaviour, not about catching.",
+    "The display happens at dawn.",
+    "Choose the bird the notes describe."
+   ],
+   "rewards": {
+    "culture": [
+     "burung_cenderawasih"
+    ],
+    "items": [
+     "col_bulu_molt"
+    ],
+    "flag": "done_pz_bird_logic"
+   }
+  },
+  "pz_quiz_festival": {
+   "id": "pz_quiz_festival",
+   "type": "quiz",
+   "title": "The Keeping of Records",
+   "description": "The last test: answer questions from across the whole journey.",
+   "data": {
+    "questions": [
+     {
+      "q": "Which community builds the rumah gadang with its sweeping roof?",
+      "options": [
+       "Minangkabau",
+       "Toraja",
+       "Dani"
+      ],
+      "answer": 0,
+      "fact": "The rumah gadang is the Minangkabau house of West Sumatra."
+     },
+     {
+      "q": "What makes batik patterns?",
+      "options": [
+       "Wax resisting dye",
+       "Printed stickers",
+       "Painted ink alone"
+      ],
+      "answer": 0,
+      "fact": "Wax blocks the dye, so waxed areas stay light."
+     },
+     {
+      "q": "What is a noken made from?",
+      "options": [
+       "Plastic rope",
+       "Bark and leaf fibre",
+       "Cotton factory thread"
+      ],
+      "answer": 1,
+      "fact": "Noken is knotted or woven from natural fibre."
+     },
+     {
+      "q": "A pinisi hull is fastened how?",
+      "options": [
+       "Welded steel",
+       "Wooden pegs",
+       "Glue"
+      ],
+      "answer": 1,
+      "fact": "Wooden pegs and caulking hold a pinisi together."
+     },
+     {
+      "q": "Why is rendang cooked until nearly dry?",
+      "options": [
+       "So it keeps without refrigeration",
+       "Because it looks better",
+       "To make it sweet"
+      ],
+      "answer": 0,
+      "fact": "Slow drying means it keeps for days - useful for travel and celebrations."
+     },
+     {
+      "q": "Sago starch comes from where?",
+      "options": [
+       "A rice field",
+       "The trunk of a sago palm",
+       "A wheat mill"
+      ],
+      "answer": 1,
+      "fact": "Sago is washed out of the pith of a sago palm trunk."
+     }
+    ]
+   },
+   "hints": [
+    "Every answer is something a person told you on the road.",
+    "You can retry the quiz as many times as you like.",
+    "Two of these were taught by cooks, two by builders."
+   ],
+   "rewards": {
+    "culture": [
+     "gotong_royong",
+     "sambal"
+    ],
+    "items": [
+     "jurnal_nenek"
+    ],
+    "flag": "quiz_passed"
+   }
+  }
+ }
+}

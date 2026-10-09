@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d1a">
+  <meta name="description" content="Pratinjau interaktif Nusantara: Jejak Budaya, petualangan budaya Indonesia.">
+  <title>Nusantara: Jejak Budaya — Preview</title>
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Nusantara: Jejak Budaya home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M20 5.5 23.1 16.9 34.5 20l-11.4 3.1L20 34.5l-3.1-11.4L5.5 20l11.4-3.1L20 5.5Z" fill="currentColor"/>
+            <circle cx="20" cy="20" r="3.1" fill="#14231F"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-kicker">NUSANTARA</span>
+          <span class="brand-title">JEJAK BUDAYA</span>
+        </span>
+      </a>
+
+      <div class="journey-badge"><span class="pulse-dot"></span><span data-i18n="journeyBadge">FIELD JOURNAL · CHAPTER 01</span></div>
+
+      <nav class="region-nav" id="regionNav" aria-label="Choose a region"></nav>
+
+      <div class="top-actions">
+        <div class="language-toggle" id="languageToggle" role="group" aria-label="Ganti bahasa antarmuka" title="Ganti bahasa / Switch language">
+          <button type="button" data-language-label="en" aria-pressed="false">EN</button><i aria-hidden="true">/</i><button class="active" type="button" data-language-label="id" aria-pressed="true">ID</button>
+        </div>
+        <button class="icon-button" id="mapButton" type="button" title="Open world map (M)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 6.5 5-2 7 2 5-2v13l-5 2-7-2-5 2v-13Z"/><path d="M8.5 4.5v13m7-11v13"/></svg><span data-i18n="mapButton">Map</span><kbd>M</kbd>
+        </button>
+        <button class="icon-button" id="journalButton" type="button" title="Open culture journal (J)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5h13v16H6a2.5 2.5 0 0 1-2.5-2.5V7A2.5 2.5 0 0 1 6 4.5Z"/><path d="M6 4.5v16m4-11h5m-5 4h5"/></svg><span data-i18n="journalButton">Journal</span><kbd>J</kbd>
+        </button>
+        <button class="icon-button" id="fullscreenButton" type="button" aria-label="Enter full screen" aria-pressed="false" title="Enter full screen (F)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3m13-5h3a2 2 0 0 1 2 2v3M3 16v3a2 2 0 0 0 2 2h3m8 0h3a2 2 0 0 0 2-2v-3"/></svg><span id="fullscreenLabel" data-i18n="fullscreenEnter">Full screen</span><kbd>F</kbd>
+        </button>
+        <button class="sound-button" id="soundButton" type="button" aria-label="Turn ambience on">
+          <svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16 9a4 4 0 0 1 0 6m2.5-8.5a7.5 7.5 0 0 1 0 11"/></svg>
+          <span id="soundLabel">Sound off</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="explorer" aria-label="Game world">
+        <div class="location-row">
+          <div class="location-title">
+            <div class="eyebrow"><span class="eyebrow-line"></span><span id="regionEyebrow">NOW EXPLORING · KAMPUNG AWAL</span></div>
+            <h1 id="mapTitle">Kampung Awal</h1>
+            <p id="mapTagline">A small coastal village where the journey begins.</p>
+          </div>
+          <div class="location-meta">
+            <div class="weather-label"><span class="sun-symbol" aria-hidden="true">☼</span><span><b id="timeLabel">MORNING</b><small id="weatherLabel">Soft sea breeze</small></span></div>
+            <div class="chapter-mark"><span class="chapter-number">01</span><span data-i18n-html="chapterMark">THE FIRST<br>NOTE</span></div>
+          </div>
+        </div>
+
+        <div class="world-frame" id="worldFrame">
+          <canvas id="worldCanvas" aria-label="Top-down view of the Nusantara game world"></canvas>
+          <div class="world-vignette" aria-hidden="true"></div>
+          <section class="quest-card" aria-labelledby="questTitle">
+            <div class="card-topline"><span class="eyebrow-small"><span class="tiny-sun">✳</span> <span data-i18n="storyThread">STORY THREAD</span></span><span class="chapter-pill" id="questChapter">CH. 01</span></div>
+            <div class="quest-status"><span class="status-indicator"></span><span id="questStatus" data-i18n="questReady">READY TO BEGIN</span></div>
+            <h2 id="questTitle">The Notebook in the Store Room</h2>
+            <p class="quest-summary" id="questSummary">Find the loose pages and begin your grandmother's field journal.</p>
+            <div class="objective-line"><span class="objective-check" id="objectiveCheck">○</span><span id="objectiveText">Speak with the village keeper</span></div>
+            <div class="quest-progress"><span id="questProgressFill"></span></div>
+            <div class="quest-footer"><span id="questProgressLabel">0 / 2 field steps</span><button id="questButton" type="button" class="text-link"><span data-i18n="questLog">Quest log</span> <span>↗</span></button></div>
+          </section>
+          <div class="scene-topline">
+            <div class="scene-location-chip"><span class="tiny-pin"></span><span id="sceneMapName">KAMPUNG AWAL</span><span class="chip-divider"></span><span id="sceneRegionName">PROLOGUE</span></div>
+            <button class="zoom-control" id="zoomOut" type="button" aria-label="Zoom out">−</button>
+            <button class="zoom-control" id="zoomIn" type="button" aria-label="Zoom in">+</button>
+          </div>
+          <div class="compass" aria-hidden="true"><span>N</span><i></i></div>
+          <div class="interact-hint" id="interactHint" hidden>
+            <span class="hint-key">E</span><span id="interactText">Talk</span><span class="hint-chevron">↗</span>
+          </div>
+          <div class="coordinates" id="coordinates">24° · 28° <span data-i18n="coordinatesLabel">FIELD NOTES</span></div>
+          <div class="audio-caption" id="audioCaption"><span class="audio-bars"><i></i><i></i><i></i></span> AMBIENCE AVAILABLE</div>
+          <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+          <section class="dialogue-panel" id="dialoguePanel" aria-live="polite" hidden>
+            <div class="dialogue-portrait-wrap"><img id="dialoguePortrait" alt="" src=""><span class="portrait-glow"></span></div>
+            <div class="dialogue-content">
+              <div class="dialogue-speaker-row"><span id="dialogueSpeaker">Aminah</span><span class="dialogue-label" data-i18n="conversationLabel">FIELD CONVERSATION</span></div>
+              <p id="dialogueText"></p>
+              <div class="dialogue-actions" id="dialogueActions"></div>
+            </div>
+            <button class="dialogue-close" id="dialogueClose" type="button" aria-label="Close conversation">×</button>
+          </section>
+        </div>
+
+        <div class="controls-row">
+          <div class="control-group"><span class="key-cluster"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><span data-i18n="move">Move</span></div>
+          <span class="control-separator"></span>
+          <div class="control-group"><kbd class="single-key">E</kbd><span data-i18n="interact">Talk / examine</span></div>
+          <span class="control-separator"></span>
+          <div class="control-group"><kbd class="single-key">SHIFT</kbd><span data-i18n="hurry">Hurry</span></div>
+          <span class="controls-spacer"></span>
+          <span class="preview-note"><span class="preview-dot"></span><span data-i18n="previewNote">INTERACTIVE BROWSER PREVIEW</span></span>
+        </div>
+      </section>
+
+      <aside class="field-rail" aria-label="Journey details">
+        <div class="traveller-card">
+          <div class="traveller-avatar"><span class="avatar-spark">✦</span><img src="../assets/portraits/player.png" alt="Traveler portrait"></div>
+          <div class="traveller-copy"><span class="eyebrow-small" data-i18n="travelerLog">TRAVELER'S LOG</span><strong data-i18n="travelerName">The Storyteller</strong><span id="travellerSubline" data-i18n="travelerSubline">A new page is waiting.</span></div>
+          <button class="round-more" id="satchelButton" type="button" title="Open satchel" aria-label="Open satchel">···</button>
+        </div>
+
+        <section class="journal-card" aria-labelledby="journalCardTitle">
+          <div class="journal-card-head"><span class="eyebrow-small" data-i18n="cultureJournal">CULTURE JOURNAL</span><span class="journal-stamp" data-i18n-html="journalStamp">FIELD<br>NOTE 001</span></div>
+          <div class="journal-rule"></div>
+          <div class="journal-entry-row"><span class="entry-mark">✳</span><div><h2 id="journalCardTitle" data-i18n="journalTitle">Listening comes first</h2><p id="journalExcerpt" data-i18n="journalExcerpt">Write down what people tell you, in their own words.</p></div></div>
+          <button class="journal-open" id="journalCardButton" type="button"><span data-i18n="openJournal">Open the journal</span><span>↗</span></button>
+        </section>
+
+        <section class="travel-card">
+          <div class="travel-head"><div><span class="eyebrow-small" data-i18n="archipelago">THE ARCHIPELAGO</span><h2 data-i18n="trailTitle">Six stops on the trail</h2></div><button id="travelButton" type="button" aria-label="Open map">↗</button></div>
+          <div class="trail-line" id="trailLine"></div>
+          <div class="travel-foot"><span><b id="regionCount">01</b> / 06 locations</span><span data-i18n="previewRoute">PREVIEW ROUTE</span></div>
+        </section>
+
+        <div class="rail-bottom">
+          <div class="culture-points"><span class="coin-mark">✦</span><span><b id="cpCount">000</b><small data-i18n="culturePoints">CULTURE POINTS</small></span></div>
+          <button class="mini-action" id="questQuickButton" type="button"><span class="mini-action-icon">☷</span><span data-i18n="questLog">Quest log</span><kbd>Q</kbd></button>
+          <button class="mini-action" id="inventoryButton" type="button"><span class="mini-action-icon">▧</span><span data-i18n="satchel">Satchel</span><kbd>I</kbd></button>
+        </div>
+      </aside>
+    </main>
+
+    <div class="modal-root" id="modalRoot"></div>
+  </div>
+  <script src="./preview.js" defer></script>
+</body>
+</html>

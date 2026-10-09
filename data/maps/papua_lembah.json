@@ -1,0 +1,397 @@
+{
+ "id": "papua_lembah",
+ "name": "Lembah Baliem",
+ "region": "papua",
+ "size": [
+  56,
+  40
+ ],
+ "spawn": [
+  28,
+  32
+ ],
+ "music": "papua",
+ "ambience": "amb_highland",
+ "terrain": {
+  "default": "HIGHLAND",
+  "rects": [
+   {
+    "tile": "FARM",
+    "rect": [
+     6,
+     8,
+     20,
+     14
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     30,
+     8,
+     20,
+     14
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     6,
+     26,
+     20,
+     12
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     30,
+     26,
+     20,
+     12
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     2,
+     22,
+     52,
+     3
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     56,
+     3
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     26,
+     3
+    ],
+    "to": [
+     26,
+     38
+    ],
+    "width": 3
+   },
+   {
+    "tile": "DIRT",
+    "from": [
+     26,
+     22
+    ],
+    "to": [
+     30,
+     3
+    ],
+    "width": 1
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "CLIFF",
+    "center": [
+     50,
+     6
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     4,
+     34
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "honai",
+   "pos": [
+    10,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "honai",
+   "pos": [
+    44,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "honai_big",
+   "pos": [
+    26,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lookout_tower",
+   "pos": [
+    48,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lookout_tower",
+   "pos": [
+    8,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    18,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    34,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    22,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    30,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    14,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    52,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    42,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "mountain_rock",
+   "pos": [
+    46,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch",
+   "pos": [
+    24,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bridge_plank",
+   "pos": [
+    26,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_guru",
+   "pos": [
+    20,
+    24
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_yosia",
+   "pos": [
+    34,
+    34
+   ],
+   "wander": true,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pp_pz_ditch_site",
+   "kind": "puzzle",
+   "pos": [
+    26,
+    22
+   ],
+   "target": "pz_valley_ditches",
+   "prompt": "Examine the ditches",
+   "sprite": "bridge_plank",
+   "if": {
+    "quest_active": "pp_05_lembah"
+   }
+  },
+  {
+   "id": "pp_pick_cuttings",
+   "kind": "pickup",
+   "pos": [
+    38,
+    30
+   ],
+   "target": "bibit_ubi",
+   "text": "Vine cuttings for the next bed."
+  },
+  {
+   "id": "pp_col_stone",
+   "kind": "pickup",
+   "pos": [
+    46,
+    26
+   ],
+   "target": "col_batu_lukis"
+  },
+  {
+   "id": "pp_note_ditch",
+   "kind": "note",
+   "pos": [
+    24,
+    26
+   ],
+   "title": "Ditch note",
+   "text": "The ground is wet but the roots still need air, so we dig ditches instead of walls. Water moves; the plants stay."
+  },
+  {
+   "id": "pp_save_valley",
+   "kind": "save",
+   "pos": [
+    24,
+    24
+   ]
+  },
+  {
+   "id": "pp_minigame_bridge",
+   "kind": "minigame",
+   "pos": [
+    34,
+    24
+   ],
+   "prompt": "Cross the rope bridge",
+   "minigame": "nod",
+   "title": "Rope Bridge Timing",
+   "target": "nod",
+   "text": "Step when the rope is steady.",
+   "data": {
+    "rounds": 3,
+    "width": 94,
+    "speed": 330,
+    "themes": [
+     "the bridge swings!",
+     "one step at a time!",
+     "almost across!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_lembah",
+   "name": "Valley Gardens",
+   "pos": [
+    26,
+    30
+   ],
+   "description": "Long garden beds drained by ditches, with sweet potato, taro and yam.",
+   "entry": "gardens",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_papua_desa",
+   "pos": [
+    52,
+    22
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "papua_desa",
+   "entry": "to_papua_lembah"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   56,
+   3
+  ]
+ ]
+}

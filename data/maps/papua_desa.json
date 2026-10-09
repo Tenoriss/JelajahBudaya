@@ -1,0 +1,491 @@
+{
+ "id": "papua_desa",
+ "name": "Kampung Lembah",
+ "region": "papua",
+ "size": [
+  48,
+  40
+ ],
+ "spawn": [
+  24,
+  32
+ ],
+ "music": "papua",
+ "ambience": "amb_highland",
+ "terrain": {
+  "default": "HIGHLAND",
+  "rects": [
+   {
+    "tile": "DIRT",
+    "rect": [
+     12,
+     14,
+     24,
+     12
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     2,
+     28,
+     16,
+     8
+    ]
+   },
+   {
+    "tile": "FARM",
+    "rect": [
+     30,
+     28,
+     16,
+     8
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     6,
+     22,
+     36,
+     3
+    ]
+   },
+   {
+    "tile": "ASH",
+    "rect": [
+     14,
+     26,
+     8,
+     6
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     8
+    ],
+    "to": [
+     24,
+     22
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     6,
+     22
+    ],
+    "to": [
+     42,
+     22
+    ],
+    "width": 3
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "TALLGRASS",
+    "center": [
+     40,
+     8
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     4,
+     10
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "CLIFF",
+    "center": [
+     44,
+     34
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "honai_big",
+   "pos": [
+    22,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "honai",
+   "pos": [
+    14,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "honai",
+   "pos": [
+    32,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "honai",
+   "pos": [
+    12,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    20,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    28,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    26,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    18,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "pot_plant",
+   "pos": [
+    30,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drum",
+   "pos": [
+    24,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "easel_board",
+   "pos": [
+    34,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    46,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch",
+   "pos": [
+    16,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    44,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    34,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    10,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_yosia",
+   "pos": [
+    20,
+    16
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_mama_lena",
+   "pos": [
+    26,
+    18
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_tomas",
+   "pos": [
+    22,
+    22
+   ],
+   "wander": false,
+   "facing": "up"
+  },
+  {
+   "id": "npc_petrus",
+   "pos": [
+    30,
+    24
+   ],
+   "wander": true,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pp_pz_honai_site",
+   "kind": "puzzle",
+   "pos": [
+    24,
+    12
+   ],
+   "target": "pz_honai_build",
+   "prompt": "Lay the roof thatch",
+   "sprite": "easel_board",
+   "if": {
+    "quest_active": "pp_01_honai"
+   }
+  },
+  {
+   "id": "pp_pz_noken_site",
+   "kind": "puzzle",
+   "pos": [
+    28,
+    18
+   ],
+   "target": "pz_noken_knot",
+   "prompt": "Look at the knots",
+   "sprite": "basket",
+   "if": {
+    "quest_active": "pp_02_noken"
+   }
+  },
+  {
+   "id": "pp_pz_tifa_site",
+   "kind": "puzzle",
+   "pos": [
+    22,
+    24
+   ],
+   "target": "pz_tifa_pattern",
+   "prompt": "Answer the drum",
+   "sprite": "drum",
+   "if": {
+    "quest_active": "pp_04_tifa"
+   }
+  },
+  {
+   "id": "pp_pick_fibre",
+   "kind": "pickup",
+   "pos": [
+    20,
+    20
+   ],
+   "target": "serat_noken",
+   "text": "Bark fibre, softened by soaking."
+  },
+  {
+   "id": "pp_pick_sago",
+   "kind": "pickup",
+   "pos": [
+    30,
+    20
+   ],
+   "target": "sagu_kering",
+   "text": "Dried sago starch in a leaf wrapper."
+  },
+  {
+   "id": "pp_pick_skin",
+   "kind": "pickup",
+   "pos": [
+    26,
+    24
+   ],
+   "target": "anyaman_tifa",
+   "text": "A scraped drum skin, warm from the rack."
+  },
+  {
+   "id": "pp_col_noken",
+   "kind": "pickup",
+   "pos": [
+    34,
+    20
+   ],
+   "target": "col_noken_kecil"
+  },
+  {
+   "id": "pp_save_desa",
+   "kind": "save",
+   "pos": [
+    22,
+    18
+   ]
+  },
+  {
+   "id": "pp_note_house",
+   "kind": "note",
+   "pos": [
+    22,
+    14
+   ],
+   "title": "Round houses",
+   "text": "The door is low so that you bow to enter, and the hearth in the middle keeps the house warm all night."
+  },
+  {
+   "id": "pp_hidden_garden",
+   "kind": "hidden",
+   "pos": [
+    46,
+    36
+   ],
+   "title": "The Old Garden",
+   "text": "An abandoned garden bed behind the ridge still grows sweet potato on its own, and a rope fence marks where the plot used to end.",
+   "items": [
+    "bibit_ubi"
+   ],
+   "culture": "baliem_valley"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_honai",
+   "name": "The Round House",
+   "pos": [
+    22,
+    13
+   ],
+   "description": "A round house with a conical thatched roof and a low doorway, warm inside even when the morning is cold.",
+   "entry": "house",
+   "radius": 64
+  },
+  {
+   "id": "lm_kampung_lembah",
+   "name": "Highland Hamlet",
+   "pos": [
+    24,
+    20
+   ],
+   "description": "Gardens, ditches and round houses in a cold, high valley.",
+   "entry": "",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_papua_danau",
+   "pos": [
+    46,
+    20
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "papua_danau",
+   "entry": "to_papua_desa"
+  },
+  {
+   "id": "to_papua_lembah",
+   "pos": [
+    2,
+    22
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "papua_lembah",
+   "entry": "to_papua_desa"
+  },
+  {
+   "id": "to_papua_hutan",
+   "pos": [
+    24,
+    3
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "papua_hutan",
+   "entry": "to_papua_desa"
+  }
+ ],
+ "collision_rects": []
+}

@@ -1,0 +1,1523 @@
+{
+ "sumatra": {
+  "tile_size": 32,
+  "columns": 10,
+  "tiles": {
+   "grass0": {
+    "atlas": [
+     0,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "grass1": {
+    "atlas": [
+     1,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "grass2": {
+    "atlas": [
+     2,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "grass_flower": {
+    "atlas": [
+     3,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "path": {
+    "atlas": [
+     4,
+     0
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "sumatra"
+   },
+   "dirt": {
+    "atlas": [
+     5,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "sand": {
+    "atlas": [
+     6,
+     0
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "sumatra"
+   },
+   "water0": {
+    "atlas": [
+     7,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "sumatra"
+   },
+   "water1": {
+    "atlas": [
+     8,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "sumatra"
+   },
+   "water2": {
+    "atlas": [
+     9,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "sumatra"
+   },
+   "deep0": {
+    "atlas": [
+     0,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sumatra"
+   },
+   "deep1": {
+    "atlas": [
+     1,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sumatra"
+   },
+   "deep2": {
+    "atlas": [
+     2,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sumatra"
+   },
+   "rice0": {
+    "atlas": [
+     3,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "sumatra"
+   },
+   "rice1": {
+    "atlas": [
+     4,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "sumatra"
+   },
+   "farm": {
+    "atlas": [
+     5,
+     1
+    ],
+    "solid": false,
+    "speed": 0.95,
+    "region": "sumatra"
+   },
+   "jungle_floor": {
+    "atlas": [
+     6,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "mud": {
+    "atlas": [
+     7,
+     1
+    ],
+    "solid": false,
+    "speed": 0.8,
+    "region": "sumatra"
+   },
+   "stone_floor": {
+    "atlas": [
+     8,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "cliff": {
+    "atlas": [
+     9,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sumatra"
+   },
+   "plank": {
+    "atlas": [
+     0,
+     2
+    ],
+    "solid": false,
+    "speed": 1.1,
+    "region": "sumatra"
+   },
+   "bamboo_floor": {
+    "atlas": [
+     1,
+     2
+    ],
+    "solid": false,
+    "speed": 1.05,
+    "region": "sumatra"
+   },
+   "temple_stone": {
+    "atlas": [
+     2,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "paving": {
+    "atlas": [
+     3,
+     2
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "sumatra"
+   },
+   "highland": {
+    "atlas": [
+     4,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "tall_grass": {
+    "atlas": [
+     5,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "sumatra"
+   },
+   "reed": {
+    "atlas": [
+     6,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "sumatra"
+   },
+   "ash": {
+    "atlas": [
+     7,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sumatra"
+   },
+   "volcanic": {
+    "atlas": [
+     8,
+     2
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sumatra"
+   },
+   "carpet": {
+    "atlas": [
+     9,
+     2
+    ],
+    "solid": false,
+    "speed": 1.2,
+    "region": "sumatra"
+   }
+  },
+  "animations": {
+   "water": [
+    "water0",
+    "water1",
+    "water2"
+   ],
+   "deep": [
+    "deep0",
+    "deep1",
+    "deep2"
+   ]
+  },
+  "region": "sumatra"
+ },
+ "java": {
+  "tile_size": 32,
+  "columns": 10,
+  "tiles": {
+   "grass0": {
+    "atlas": [
+     0,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "grass1": {
+    "atlas": [
+     1,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "grass2": {
+    "atlas": [
+     2,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "grass_flower": {
+    "atlas": [
+     3,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "path": {
+    "atlas": [
+     4,
+     0
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "java"
+   },
+   "dirt": {
+    "atlas": [
+     5,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "sand": {
+    "atlas": [
+     6,
+     0
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "java"
+   },
+   "water0": {
+    "atlas": [
+     7,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "java"
+   },
+   "water1": {
+    "atlas": [
+     8,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "java"
+   },
+   "water2": {
+    "atlas": [
+     9,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "java"
+   },
+   "deep0": {
+    "atlas": [
+     0,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "java"
+   },
+   "deep1": {
+    "atlas": [
+     1,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "java"
+   },
+   "deep2": {
+    "atlas": [
+     2,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "java"
+   },
+   "rice0": {
+    "atlas": [
+     3,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "java"
+   },
+   "rice1": {
+    "atlas": [
+     4,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "java"
+   },
+   "farm": {
+    "atlas": [
+     5,
+     1
+    ],
+    "solid": false,
+    "speed": 0.95,
+    "region": "java"
+   },
+   "jungle_floor": {
+    "atlas": [
+     6,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "mud": {
+    "atlas": [
+     7,
+     1
+    ],
+    "solid": false,
+    "speed": 0.8,
+    "region": "java"
+   },
+   "stone_floor": {
+    "atlas": [
+     8,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "cliff": {
+    "atlas": [
+     9,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "java"
+   },
+   "plank": {
+    "atlas": [
+     0,
+     2
+    ],
+    "solid": false,
+    "speed": 1.1,
+    "region": "java"
+   },
+   "bamboo_floor": {
+    "atlas": [
+     1,
+     2
+    ],
+    "solid": false,
+    "speed": 1.05,
+    "region": "java"
+   },
+   "temple_stone": {
+    "atlas": [
+     2,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "paving": {
+    "atlas": [
+     3,
+     2
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "java"
+   },
+   "highland": {
+    "atlas": [
+     4,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "tall_grass": {
+    "atlas": [
+     5,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "java"
+   },
+   "reed": {
+    "atlas": [
+     6,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "java"
+   },
+   "ash": {
+    "atlas": [
+     7,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "java"
+   },
+   "volcanic": {
+    "atlas": [
+     8,
+     2
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "java"
+   },
+   "carpet": {
+    "atlas": [
+     9,
+     2
+    ],
+    "solid": false,
+    "speed": 1.2,
+    "region": "java"
+   }
+  },
+  "animations": {
+   "water": [
+    "water0",
+    "water1",
+    "water2"
+   ],
+   "deep": [
+    "deep0",
+    "deep1",
+    "deep2"
+   ]
+  },
+  "region": "java"
+ },
+ "kalimantan": {
+  "tile_size": 32,
+  "columns": 10,
+  "tiles": {
+   "grass0": {
+    "atlas": [
+     0,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "grass1": {
+    "atlas": [
+     1,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "grass2": {
+    "atlas": [
+     2,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "grass_flower": {
+    "atlas": [
+     3,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "path": {
+    "atlas": [
+     4,
+     0
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "kalimantan"
+   },
+   "dirt": {
+    "atlas": [
+     5,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "sand": {
+    "atlas": [
+     6,
+     0
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "kalimantan"
+   },
+   "water0": {
+    "atlas": [
+     7,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "kalimantan"
+   },
+   "water1": {
+    "atlas": [
+     8,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "kalimantan"
+   },
+   "water2": {
+    "atlas": [
+     9,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "kalimantan"
+   },
+   "deep0": {
+    "atlas": [
+     0,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "kalimantan"
+   },
+   "deep1": {
+    "atlas": [
+     1,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "kalimantan"
+   },
+   "deep2": {
+    "atlas": [
+     2,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "kalimantan"
+   },
+   "rice0": {
+    "atlas": [
+     3,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "kalimantan"
+   },
+   "rice1": {
+    "atlas": [
+     4,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "kalimantan"
+   },
+   "farm": {
+    "atlas": [
+     5,
+     1
+    ],
+    "solid": false,
+    "speed": 0.95,
+    "region": "kalimantan"
+   },
+   "jungle_floor": {
+    "atlas": [
+     6,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "mud": {
+    "atlas": [
+     7,
+     1
+    ],
+    "solid": false,
+    "speed": 0.8,
+    "region": "kalimantan"
+   },
+   "stone_floor": {
+    "atlas": [
+     8,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "cliff": {
+    "atlas": [
+     9,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "kalimantan"
+   },
+   "plank": {
+    "atlas": [
+     0,
+     2
+    ],
+    "solid": false,
+    "speed": 1.1,
+    "region": "kalimantan"
+   },
+   "bamboo_floor": {
+    "atlas": [
+     1,
+     2
+    ],
+    "solid": false,
+    "speed": 1.05,
+    "region": "kalimantan"
+   },
+   "temple_stone": {
+    "atlas": [
+     2,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "paving": {
+    "atlas": [
+     3,
+     2
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "kalimantan"
+   },
+   "highland": {
+    "atlas": [
+     4,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "tall_grass": {
+    "atlas": [
+     5,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "kalimantan"
+   },
+   "reed": {
+    "atlas": [
+     6,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "kalimantan"
+   },
+   "ash": {
+    "atlas": [
+     7,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "kalimantan"
+   },
+   "volcanic": {
+    "atlas": [
+     8,
+     2
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "kalimantan"
+   },
+   "carpet": {
+    "atlas": [
+     9,
+     2
+    ],
+    "solid": false,
+    "speed": 1.2,
+    "region": "kalimantan"
+   }
+  },
+  "animations": {
+   "water": [
+    "water0",
+    "water1",
+    "water2"
+   ],
+   "deep": [
+    "deep0",
+    "deep1",
+    "deep2"
+   ]
+  },
+  "region": "kalimantan"
+ },
+ "sulawesi": {
+  "tile_size": 32,
+  "columns": 10,
+  "tiles": {
+   "grass0": {
+    "atlas": [
+     0,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "grass1": {
+    "atlas": [
+     1,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "grass2": {
+    "atlas": [
+     2,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "grass_flower": {
+    "atlas": [
+     3,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "path": {
+    "atlas": [
+     4,
+     0
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "sulawesi"
+   },
+   "dirt": {
+    "atlas": [
+     5,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "sand": {
+    "atlas": [
+     6,
+     0
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "sulawesi"
+   },
+   "water0": {
+    "atlas": [
+     7,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "sulawesi"
+   },
+   "water1": {
+    "atlas": [
+     8,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "sulawesi"
+   },
+   "water2": {
+    "atlas": [
+     9,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "sulawesi"
+   },
+   "deep0": {
+    "atlas": [
+     0,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sulawesi"
+   },
+   "deep1": {
+    "atlas": [
+     1,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sulawesi"
+   },
+   "deep2": {
+    "atlas": [
+     2,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sulawesi"
+   },
+   "rice0": {
+    "atlas": [
+     3,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "sulawesi"
+   },
+   "rice1": {
+    "atlas": [
+     4,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "sulawesi"
+   },
+   "farm": {
+    "atlas": [
+     5,
+     1
+    ],
+    "solid": false,
+    "speed": 0.95,
+    "region": "sulawesi"
+   },
+   "jungle_floor": {
+    "atlas": [
+     6,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "mud": {
+    "atlas": [
+     7,
+     1
+    ],
+    "solid": false,
+    "speed": 0.8,
+    "region": "sulawesi"
+   },
+   "stone_floor": {
+    "atlas": [
+     8,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "cliff": {
+    "atlas": [
+     9,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sulawesi"
+   },
+   "plank": {
+    "atlas": [
+     0,
+     2
+    ],
+    "solid": false,
+    "speed": 1.1,
+    "region": "sulawesi"
+   },
+   "bamboo_floor": {
+    "atlas": [
+     1,
+     2
+    ],
+    "solid": false,
+    "speed": 1.05,
+    "region": "sulawesi"
+   },
+   "temple_stone": {
+    "atlas": [
+     2,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "paving": {
+    "atlas": [
+     3,
+     2
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "sulawesi"
+   },
+   "highland": {
+    "atlas": [
+     4,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "tall_grass": {
+    "atlas": [
+     5,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "sulawesi"
+   },
+   "reed": {
+    "atlas": [
+     6,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "sulawesi"
+   },
+   "ash": {
+    "atlas": [
+     7,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "sulawesi"
+   },
+   "volcanic": {
+    "atlas": [
+     8,
+     2
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "sulawesi"
+   },
+   "carpet": {
+    "atlas": [
+     9,
+     2
+    ],
+    "solid": false,
+    "speed": 1.2,
+    "region": "sulawesi"
+   }
+  },
+  "animations": {
+   "water": [
+    "water0",
+    "water1",
+    "water2"
+   ],
+   "deep": [
+    "deep0",
+    "deep1",
+    "deep2"
+   ]
+  },
+  "region": "sulawesi"
+ },
+ "papua": {
+  "tile_size": 32,
+  "columns": 10,
+  "tiles": {
+   "grass0": {
+    "atlas": [
+     0,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "grass1": {
+    "atlas": [
+     1,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "grass2": {
+    "atlas": [
+     2,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "grass_flower": {
+    "atlas": [
+     3,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "path": {
+    "atlas": [
+     4,
+     0
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "papua"
+   },
+   "dirt": {
+    "atlas": [
+     5,
+     0
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "sand": {
+    "atlas": [
+     6,
+     0
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "papua"
+   },
+   "water0": {
+    "atlas": [
+     7,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "papua"
+   },
+   "water1": {
+    "atlas": [
+     8,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "papua"
+   },
+   "water2": {
+    "atlas": [
+     9,
+     0
+    ],
+    "solid": false,
+    "speed": 0.72,
+    "region": "papua"
+   },
+   "deep0": {
+    "atlas": [
+     0,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "papua"
+   },
+   "deep1": {
+    "atlas": [
+     1,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "papua"
+   },
+   "deep2": {
+    "atlas": [
+     2,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "papua"
+   },
+   "rice0": {
+    "atlas": [
+     3,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "papua"
+   },
+   "rice1": {
+    "atlas": [
+     4,
+     1
+    ],
+    "solid": false,
+    "speed": 0.85,
+    "region": "papua"
+   },
+   "farm": {
+    "atlas": [
+     5,
+     1
+    ],
+    "solid": false,
+    "speed": 0.95,
+    "region": "papua"
+   },
+   "jungle_floor": {
+    "atlas": [
+     6,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "mud": {
+    "atlas": [
+     7,
+     1
+    ],
+    "solid": false,
+    "speed": 0.8,
+    "region": "papua"
+   },
+   "stone_floor": {
+    "atlas": [
+     8,
+     1
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "cliff": {
+    "atlas": [
+     9,
+     1
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "papua"
+   },
+   "plank": {
+    "atlas": [
+     0,
+     2
+    ],
+    "solid": false,
+    "speed": 1.1,
+    "region": "papua"
+   },
+   "bamboo_floor": {
+    "atlas": [
+     1,
+     2
+    ],
+    "solid": false,
+    "speed": 1.05,
+    "region": "papua"
+   },
+   "temple_stone": {
+    "atlas": [
+     2,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "paving": {
+    "atlas": [
+     3,
+     2
+    ],
+    "solid": false,
+    "speed": 1.15,
+    "region": "papua"
+   },
+   "highland": {
+    "atlas": [
+     4,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "tall_grass": {
+    "atlas": [
+     5,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "papua"
+   },
+   "reed": {
+    "atlas": [
+     6,
+     2
+    ],
+    "solid": false,
+    "speed": 0.9,
+    "region": "papua"
+   },
+   "ash": {
+    "atlas": [
+     7,
+     2
+    ],
+    "solid": false,
+    "speed": 1.0,
+    "region": "papua"
+   },
+   "volcanic": {
+    "atlas": [
+     8,
+     2
+    ],
+    "solid": true,
+    "speed": 0.0,
+    "region": "papua"
+   },
+   "carpet": {
+    "atlas": [
+     9,
+     2
+    ],
+    "solid": false,
+    "speed": 1.2,
+    "region": "papua"
+   }
+  },
+  "animations": {
+   "water": [
+    "water0",
+    "water1",
+    "water2"
+   ],
+   "deep": [
+    "deep0",
+    "deep1",
+    "deep2"
+   ]
+  },
+  "region": "papua"
+ },
+ "_legend": {
+  "GRASS": [
+   "grass0",
+   "grass1",
+   "grass2",
+   "grass_flower"
+  ],
+  "PATH": [
+   "path"
+  ],
+  "DIRT": [
+   "dirt"
+  ],
+  "SAND": [
+   "sand"
+  ],
+  "WATER": [
+   "water0",
+   "water1",
+   "water2"
+  ],
+  "DEEP": [
+   "deep0",
+   "deep1",
+   "deep2"
+  ],
+  "RICE": [
+   "rice0",
+   "rice1"
+  ],
+  "FARM": [
+   "farm"
+  ],
+  "JUNGLE": [
+   "jungle_floor"
+  ],
+  "MUD": [
+   "mud"
+  ],
+  "STONE": [
+   "stone_floor"
+  ],
+  "CLIFF": [
+   "cliff"
+  ],
+  "PLANK": [
+   "plank"
+  ],
+  "BAMBOO": [
+   "bamboo_floor"
+  ],
+  "TEMPLE": [
+   "temple_stone"
+  ],
+  "PAVING": [
+   "paving"
+  ],
+  "HIGHLAND": [
+   "highland"
+  ],
+  "TALLGRASS": [
+   "tall_grass"
+  ],
+  "REED": [
+   "reed"
+  ],
+  "ASH": [
+   "ash"
+  ],
+  "VOLCANIC": [
+   "volcanic"
+  ],
+  "CARPET": [
+   "carpet"
+  ]
+ }
+}

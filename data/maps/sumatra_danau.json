@@ -1,0 +1,411 @@
+{
+ "id": "sumatra_danau",
+ "name": "Tepi Danau Toba",
+ "region": "sumatra",
+ "size": [
+  54,
+  40
+ ],
+ "spawn": [
+  27,
+  32
+ ],
+ "music": "sumatra",
+ "ambience": "amb_waves",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     54,
+     14
+    ]
+   },
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     14,
+     54,
+     5
+    ]
+   },
+   {
+    "tile": "HIGHLAND",
+    "rect": [
+     0,
+     30,
+     54,
+     10
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     6,
+     22,
+     44,
+     3
+    ]
+   },
+   {
+    "tile": "PAVING",
+    "rect": [
+     20,
+     24,
+     14,
+     8
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "REED",
+    "center": [
+     12,
+     20
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "CLIFF",
+    "center": [
+     44,
+     24
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "TALLGRASS",
+    "center": [
+     28,
+     34
+    ],
+    "radius": 6
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    16,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    30,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    24,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    10,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    14,
+    16
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    20,
+    17
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    34,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack_blue",
+   "pos": [
+    37,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    22,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    20,
+    31
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    18,
+    31
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    46,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_small",
+   "pos": [
+    42,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_small",
+   "pos": [
+    44,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    10,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    4,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    48,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lookout_tower",
+   "pos": [
+    40,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    6,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_pedagang",
+   "pos": [
+    24,
+    28
+   ],
+   "wander": true,
+   "facing": "down"
+  },
+  {
+   "id": "npc_nelayan",
+   "pos": [
+    12,
+    22
+   ],
+   "wander": false,
+   "facing": "right"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sm_pz_lake_site",
+   "kind": "puzzle",
+   "pos": [
+    12,
+    21
+   ],
+   "target": "pz_danau_search",
+   "prompt": "Search the shore",
+   "sprite": "basket",
+   "if": {
+    "quest_active": "sm_06_danau"
+   }
+  },
+  {
+   "id": "sm_lake_note",
+   "kind": "note",
+   "pos": [
+    22,
+    18
+   ],
+   "title": "Jetty notice",
+   "text": "Canoes leave at first light. Nobody crosses the lake in the afternoon wind."
+  },
+  {
+   "id": "sm_col_coffee2",
+   "kind": "pickup",
+   "pos": [
+    30,
+    33
+   ],
+   "target": "col_kopi_liar"
+  },
+  {
+   "id": "sm_coffee_sack",
+   "kind": "pickup",
+   "pos": [
+    26,
+    30
+   ],
+   "target": "biji_kopi",
+   "text": "A sack of green coffee beans, drying in the sun."
+  },
+  {
+   "id": "sm_lake_hidden",
+   "kind": "hidden",
+   "pos": [
+    50,
+    36
+   ],
+   "title": "Under the Cliff",
+   "text": "A shelf of rock keeps the rain off. Someone has left dry firewood and a folded blanket here, ready for the next traveller.",
+   "items": [
+    "bekal_jalan"
+   ],
+   "culture": "danau_toba"
+  },
+  {
+   "id": "sm_save_lake",
+   "kind": "save",
+   "pos": [
+    20,
+    26
+   ]
+  },
+  {
+   "id": "sm_lake_minigame",
+   "kind": "minigame",
+   "pos": [
+    16,
+    26
+   ],
+   "prompt": "Play the boat-song game",
+   "minigame": "nod",
+   "title": "Boat Song Timing",
+   "target": "nod",
+   "text": "Paddle in time with the song.",
+   "data": {
+    "rounds": 3,
+    "width": 100,
+    "speed": 320,
+    "themes": [
+     "the paddles are up!",
+     "the song speeds up!",
+     "one more push to the shore!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_danau_toba",
+   "name": "Lake Viewpoint",
+   "pos": [
+    40,
+    27
+   ],
+   "description": "A lookout above the water: the largest volcanic lake in the world, ringed by highland slopes.",
+   "entry": "lake",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sumatra_desa",
+   "pos": [
+    26,
+    37
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "sumatra_desa",
+   "entry": "to_sumatra_danau"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   54,
+   14
+  ]
+ ]
+}
