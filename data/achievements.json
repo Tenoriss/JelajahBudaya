@@ -1,0 +1,164 @@
+{
+ "achievements": {
+  "first_step": {
+   "name": "First Step",
+   "description": "Complete your first quest.",
+   "condition": {
+    "quests_completed": 1
+   },
+   "icon": "flag"
+  },
+  "curious_traveler": {
+   "name": "Curious Traveller",
+   "description": "Discover 10 journal entries.",
+   "condition": {
+    "culture_discovered": 10
+   },
+   "icon": "journal"
+  },
+  "student_of_stories": {
+   "name": "Student of Stories",
+   "description": "Discover 30 journal entries.",
+   "condition": {
+    "culture_discovered": 30
+   },
+   "icon": "journal"
+  },
+  "nusantara_explorer": {
+   "name": "Nusantara Explorer",
+   "description": "Visit all five regions.",
+   "condition": {
+    "regions_visited": 5
+   },
+   "icon": "map"
+  },
+  "collector": {
+   "name": "Collector",
+   "description": "Find 15 collectibles.",
+   "condition": {
+    "collectibles": 15
+   },
+   "icon": "bag"
+  },
+  "puzzle_master": {
+   "name": "Puzzle Master",
+   "description": "Solve 20 puzzles.",
+   "condition": {
+    "puzzles_completed": 20
+   },
+   "icon": "puzzle"
+  },
+  "puzzler": {
+   "name": "Puzzler",
+   "description": "Solve your first puzzle.",
+   "condition": {
+    "puzzles_completed": 1
+   },
+   "icon": "puzzle"
+  },
+  "pathfinder": {
+   "name": "Pathfinder",
+   "description": "Discover 10 landmarks.",
+   "condition": {
+    "landmarks": 10
+   },
+   "icon": "star"
+  },
+  "hidden_paths": {
+   "name": "Hidden Paths",
+   "description": "Find 5 hidden places.",
+   "condition": {
+    "hidden_areas": 5
+   },
+   "icon": "map"
+  },
+  "festival_goer": {
+   "name": "Festival Goer",
+   "description": "Finish 5 mini-games.",
+   "condition": {
+    "minigames": 5
+   },
+   "icon": "trophy"
+  },
+  "good_neighbour": {
+   "name": "Good Neighbour",
+   "description": "Talk to 20 people.",
+   "condition": {
+    "npcs_talked": 20
+   },
+   "icon": "heart"
+  },
+  "story_complete": {
+   "name": "Cultural Journey",
+   "description": "Complete the main story.",
+   "condition": {
+    "flag": "story_complete"
+   },
+   "icon": "trophy"
+  },
+  "sumatra_friend": {
+   "name": "Highland Friend",
+   "description": "Complete 6 quests in Sumatra.",
+   "condition": {
+    "region_complete": "sumatra:70"
+   },
+   "icon": "star"
+  },
+  "java_friend": {
+   "name": "Gamelan Friend",
+   "description": "Complete 6 quests in Java.",
+   "condition": {
+    "region_complete": "java:70"
+   },
+   "icon": "star"
+  },
+  "kalimantan_friend": {
+   "name": "River Friend",
+   "description": "Complete 6 quests in Kalimantan.",
+   "condition": {
+    "region_complete": "kalimantan:70"
+   },
+   "icon": "star"
+  },
+  "sulawesi_friend": {
+   "name": "Harbour Friend",
+   "description": "Complete 6 quests in Sulawesi.",
+   "condition": {
+    "region_complete": "sulawesi:70"
+   },
+   "icon": "star"
+  },
+  "papua_friend": {
+   "name": "Mountain Friend",
+   "description": "Complete 6 quests in Papua.",
+   "condition": {
+    "region_complete": "papua:70"
+   },
+   "icon": "star"
+  },
+  "journal_keeper": {
+   "name": "Journal Keeper",
+   "description": "Fill a journal category with at least 3 entries.",
+   "condition": {
+    "journal_category_full": "Food"
+   },
+   "icon": "journal"
+  },
+  "quiz_champion": {
+   "name": "Culture Quiz Champion",
+   "description": "Pass a village culture quiz.",
+   "condition": {
+    "flag": "quiz_passed"
+   },
+   "icon": "trophy"
+  },
+  "minigame_all": {
+   "name": "Jack of All Trades",
+   "description": "Complete 15 mini-games.",
+   "condition": {
+    "minigames": 15
+   },
+   "icon": "trophy"
+  }
+ }
+}

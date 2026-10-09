@@ -1,0 +1,520 @@
+{
+ "id": "desa_awal",
+ "name": "Kampung Awal",
+ "region": "prologue",
+ "size": [
+  48,
+  36
+ ],
+ "spawn": [
+  24,
+  28
+ ],
+ "music": "prologue",
+ "ambience": "amb_waves",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     30,
+     48,
+     6
+    ]
+   },
+   {
+    "tile": "PAVING",
+    "rect": [
+     17,
+     15,
+     14,
+     10
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     22,
+     4,
+     4,
+     12
+    ]
+   },
+   {
+    "tile": "RICE",
+    "rect": [
+     34,
+     24,
+     10,
+     6
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     34,
+     48,
+     2
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     5,
+     20
+    ],
+    "to": [
+     43,
+     20
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     20
+    ],
+    "to": [
+     24,
+     33
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     12,
+     20
+    ],
+    "to": [
+     12,
+     27
+    ],
+    "width": 2
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "JUNGLE",
+    "center": [
+     6,
+     8
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     42,
+     8
+    ],
+    "radius": 5
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    12,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    36,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    10,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    40,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "workshop",
+   "pos": [
+    38,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    18,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    6,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    9,
+    33
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    12,
+    33
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    20,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "signpost",
+   "pos": [
+    24,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    16,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    30,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    32,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    33,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    4,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm2",
+   "pos": [
+    44,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    2,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bush_flower",
+   "pos": [
+    28,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch",
+   "pos": [
+    26,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    22,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "pot_plant",
+   "pos": [
+    14,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    34,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_penjaga",
+   "pos": [
+    22,
+    19
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_pengembara",
+   "pos": [
+    27,
+    22
+   ],
+   "wander": true,
+   "facing": "down"
+  },
+  {
+   "id": "npc_anak",
+   "pos": [
+    30,
+    21
+   ],
+   "wander": true,
+   "facing": "down"
+  },
+  {
+   "id": "npc_guru",
+   "pos": [
+    15,
+    21
+   ],
+   "wander": false,
+   "facing": "right"
+  },
+  {
+   "id": "npc_pengrajin",
+   "pos": [
+    34,
+    31
+   ],
+   "wander": true,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pg_store_room",
+   "kind": "door",
+   "pos": [
+    12,
+    15
+   ],
+   "prompt": "Enter the store room",
+   "target": "desa_awal",
+   "entry": "store"
+  },
+  {
+   "id": "pg_sign_gate",
+   "kind": "sign",
+   "pos": [
+    24,
+    27
+   ],
+   "title": "Village board",
+   "text": "Kampung Awal. Jetty to the west, rice field east, road inland north."
+  },
+  {
+   "id": "pg_note_pages",
+   "kind": "note",
+   "pos": [
+    22,
+    22
+   ],
+   "title": "Grandmother's first page",
+   "text": "It is not one culture, and it is not a hundred separate ones either. Write down what people tell you, in their own words."
+  },
+  {
+   "id": "pg_save",
+   "kind": "save",
+   "pos": [
+    20,
+    21
+   ]
+  },
+  {
+   "id": "pg_col_basket",
+   "kind": "pickup",
+   "pos": [
+    16,
+    25
+   ],
+   "target": "keranjang_bahu",
+   "text": "A woven shoulder basket, left on the bench."
+  },
+  {
+   "id": "pg_minigame_fest",
+   "kind": "minigame",
+   "pos": [
+    28,
+    33
+   ],
+   "prompt": "Join the village game",
+   "minigame": "nod",
+   "title": "Festival Timing",
+   "target": "nod",
+   "text": "Stop the marker in the golden band, three rounds.",
+   "data": {
+    "rounds": 3,
+    "width": 100,
+    "speed": 300,
+    "themes": [
+     "the boat race is starting!",
+     "the drums are getting louder!",
+     "everybody is watching the finish!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_kampung_awal",
+   "name": "Kampung Awal",
+   "pos": [
+    24,
+    22
+   ],
+   "description": "The home village: one street, one jetty, and a store room full of memories.",
+   "entry": "camp",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_pantai_awal",
+   "pos": [
+    2,
+    20
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "pantai_awal",
+   "entry": "to_desa_awal"
+  },
+  {
+   "id": "to_prologue_festival",
+   "pos": [
+    24,
+    2
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "prologue_festival",
+   "entry": "to_desa_awal"
+  },
+  {
+   "id": "to_sumatra_desa",
+   "pos": [
+    45,
+    19
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "sumatra_desa",
+   "entry": "to_desa_awal"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   36,
+   48,
+   2
+  ],
+  [
+   0,
+   34,
+   48,
+   2
+  ]
+ ]
+}

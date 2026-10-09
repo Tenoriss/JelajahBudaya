@@ -1,0 +1,350 @@
+{
+ "id": "prologue_festival",
+ "name": "Lapangan Festival",
+ "region": "prologue",
+ "size": [
+  40,
+  30
+ ],
+ "spawn": [
+  20,
+  22
+ ],
+ "music": "victory",
+ "ambience": "amb_night_crickets",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "PAVING",
+    "rect": [
+     8,
+     8,
+     24,
+     16
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     4,
+     15,
+     32,
+     3
+    ]
+   },
+   {
+    "tile": "CARPET",
+    "rect": [
+     16,
+     12,
+     8,
+     8
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "JUNGLE",
+    "center": [
+     4,
+     26
+    ],
+    "radius": 4
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     36,
+     26
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "stage",
+   "pos": [
+    20,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    12,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    28,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    12,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    28,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    8,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall_blue",
+   "pos": [
+    32,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "gamelan_set",
+   "pos": [
+    14,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "angklung_stand",
+   "pos": [
+    26,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drum",
+   "pos": [
+    20,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lantern",
+   "pos": [
+    16,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lantern",
+   "pos": [
+    24,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    6,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    34,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    38,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_penjaga",
+   "pos": [
+    20,
+    14
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_penari",
+   "pos": [
+    24,
+    18
+   ],
+   "wander": true,
+   "facing": "down"
+  },
+  {
+   "id": "npc_koki",
+   "pos": [
+    12,
+    24
+   ],
+   "wander": false,
+   "facing": "right"
+  },
+  {
+   "id": "npc_pedagang",
+   "pos": [
+    30,
+    24
+   ],
+   "wander": true,
+   "facing": "left"
+  },
+  {
+   "id": "npc_anak",
+   "pos": [
+    18,
+    24
+   ],
+   "wander": true,
+   "facing": "down"
+  },
+  {
+   "id": "npc_pengembara",
+   "pos": [
+    28,
+    20
+   ],
+   "wander": false,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pg_fest_sign",
+   "kind": "sign",
+   "pos": [
+    16,
+    26
+   ],
+   "title": "Festival banner",
+   "text": "One evening, six islands, everybody welcome. Bring something to share."
+  },
+  {
+   "id": "pg_fest_minigame",
+   "kind": "minigame",
+   "pos": [
+    24,
+    12
+   ],
+   "prompt": "Play the festival game",
+   "minigame": "nod",
+   "title": "Festival Finale",
+   "target": "nod",
+   "text": "Three rounds, faster each time. The crowd is on your side.",
+   "data": {
+    "rounds": 3,
+    "width": 90,
+    "speed": 330,
+    "themes": [
+     "the gongs are warming up!",
+     "the crowd is clapping!",
+     "one more round!"
+    ]
+   },
+   "reward_cp": 40
+  },
+  {
+   "id": "pg_fest_ending",
+   "kind": "dialogue",
+   "pos": [
+    20,
+    16
+   ],
+   "target": "ending_finale",
+   "prompt": "Close the notebook"
+  },
+  {
+   "id": "pg_fest_save",
+   "kind": "save",
+   "pos": [
+    14,
+    20
+   ]
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_lapangan",
+   "name": "Festival Ground",
+   "pos": [
+    20,
+    16
+   ],
+   "description": "Where every region's music ended up in the same evening.",
+   "entry": "festival",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_desa_awal",
+   "pos": [
+    20,
+    27
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "desa_awal",
+   "entry": "to_prologue_festival"
+  }
+ ],
+ "collision_rects": []
+}

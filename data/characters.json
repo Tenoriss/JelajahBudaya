@@ -1,0 +1,898 @@
+{
+ "player": {
+  "sheet": "assets/characters/player.png",
+  "portrait": "assets/portraits/player.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_aminah": {
+  "sheet": "assets/npcs/aminah.png",
+  "portrait": "assets/portraits/aminah.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_datuak": {
+  "sheet": "assets/npcs/datuak.png",
+  "portrait": "assets/portraits/datuak.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_sari": {
+  "sheet": "assets/npcs/sari.png",
+  "portrait": "assets/portraits/sari.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_bujang": {
+  "sheet": "assets/npcs/bujang.png",
+  "portrait": "assets/portraits/bujang.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_ida": {
+  "sheet": "assets/npcs/ida.png",
+  "portrait": "assets/portraits/ida.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_ki_bagus": {
+  "sheet": "assets/npcs/ki_bagus.png",
+  "portrait": "assets/portraits/ki_bagus.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_dewi": {
+  "sheet": "assets/npcs/dewi.png",
+  "portrait": "assets/portraits/dewi.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_pak_tarno": {
+  "sheet": "assets/npcs/pak_tarno.png",
+  "portrait": "assets/portraits/pak_tarno.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_rara": {
+  "sheet": "assets/npcs/rara.png",
+  "portrait": "assets/portraits/rara.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_mbah_karto": {
+  "sheet": "assets/npcs/mbah_karto.png",
+  "portrait": "assets/portraits/mbah_karto.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_lasan": {
+  "sheet": "assets/npcs/lasan.png",
+  "portrait": "assets/portraits/lasan.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_rini": {
+  "sheet": "assets/npcs/rini.png",
+  "portrait": "assets/portraits/rini.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_bapa_udi": {
+  "sheet": "assets/npcs/bapa_udi.png",
+  "portrait": "assets/portraits/bapa_udi.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_tina": {
+  "sheet": "assets/npcs/tina.png",
+  "portrait": "assets/portraits/tina.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_rambu": {
+  "sheet": "assets/npcs/rambu.png",
+  "portrait": "assets/portraits/rambu.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_puang": {
+  "sheet": "assets/npcs/puang.png",
+  "portrait": "assets/portraits/puang.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_dg_naba": {
+  "sheet": "assets/npcs/dg_naba.png",
+  "portrait": "assets/portraits/dg_naba.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_yuliana": {
+  "sheet": "assets/npcs/yuliana.png",
+  "portrait": "assets/portraits/yuliana.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_yosia": {
+  "sheet": "assets/npcs/yosia.png",
+  "portrait": "assets/portraits/yosia.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_petrus": {
+  "sheet": "assets/npcs/petrus.png",
+  "portrait": "assets/portraits/petrus.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_mama_lena": {
+  "sheet": "assets/npcs/mama_lena.png",
+  "portrait": "assets/portraits/mama_lena.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_tomas": {
+  "sheet": "assets/npcs/tomas.png",
+  "portrait": "assets/portraits/tomas.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_pedagang": {
+  "sheet": "assets/npcs/pedagang.png",
+  "portrait": "assets/portraits/pedagang.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_pengembara": {
+  "sheet": "assets/npcs/pengembara.png",
+  "portrait": "assets/portraits/pengembara.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_anak": {
+  "sheet": "assets/npcs/anak.png",
+  "portrait": "assets/portraits/anak.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_penjaga": {
+  "sheet": "assets/npcs/penjaga.png",
+  "portrait": "assets/portraits/penjaga.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_guru": {
+  "sheet": "assets/npcs/guru.png",
+  "portrait": "assets/portraits/guru.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_nelayan": {
+  "sheet": "assets/npcs/nelayan.png",
+  "portrait": "assets/portraits/nelayan.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_penari": {
+  "sheet": "assets/npcs/penari.png",
+  "portrait": "assets/portraits/penari.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_pengrajin": {
+  "sheet": "assets/npcs/pengrajin.png",
+  "portrait": "assets/portraits/pengrajin.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ },
+ "npc_koki": {
+  "sheet": "assets/npcs/koki.png",
+  "portrait": "assets/portraits/koki.png",
+  "frame_w": 32,
+  "frame_h": 48,
+  "columns": 6,
+  "rows": 8,
+  "directions": [
+   "down",
+   "left",
+   "right",
+   "up",
+   "down_left",
+   "down_right",
+   "up_left",
+   "up_right"
+  ],
+  "idle_frames": [
+   0,
+   1
+  ],
+  "walk_frames": [
+   2,
+   3,
+   4,
+   5
+  ]
+ }
+}

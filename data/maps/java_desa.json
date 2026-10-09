@@ -1,0 +1,580 @@
+{
+ "id": "java_desa",
+ "name": "Desa Jawa",
+ "region": "java",
+ "size": [
+  48,
+  40
+ ],
+ "spawn": [
+  24,
+  32
+ ],
+ "music": "java",
+ "ambience": "amb_village",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "RICE",
+    "rect": [
+     0,
+     4,
+     18,
+     14
+    ]
+   },
+   {
+    "tile": "RICE",
+    "rect": [
+     30,
+     4,
+     18,
+     14
+    ]
+   },
+   {
+    "tile": "PAVING",
+    "rect": [
+     16,
+     18,
+     16,
+     12
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     38,
+     48,
+     2
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     8,
+     24,
+     32,
+     3
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     6
+    ],
+    "to": [
+     24,
+     24
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     24
+    ],
+    "to": [
+     24,
+     36
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     4,
+     24
+    ],
+    "to": [
+     44,
+     24
+    ],
+    "width": 3
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "JUNGLE",
+    "center": [
+     44,
+     34
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "joglo_house",
+   "pos": [
+    22,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "joglo_house_small",
+   "pos": [
+    12,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "joglo_house_small",
+   "pos": [
+    36,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    6,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    42,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    14,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung_green",
+   "pos": [
+    34,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cultural_center",
+   "pos": [
+    24,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "stage",
+   "pos": [
+    20,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "gamelan_set",
+   "pos": [
+    26,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "angklung_stand",
+   "pos": [
+    28,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    18,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "pot_plant",
+   "pos": [
+    22,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    30,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "textile_rack",
+   "pos": [
+    32,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "loom",
+   "pos": [
+    30,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    12,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    8,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rice_terrace_edge",
+   "pos": [
+    38,
+    6
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_pine",
+   "pos": [
+    2,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    44,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "shrine_java",
+   "pos": [
+    6,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    16,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_ki_bagus",
+   "pos": [
+    26,
+    21
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_mbah_karto",
+   "pos": [
+    22,
+    20
+   ],
+   "wander": false,
+   "facing": "right"
+  },
+  {
+   "id": "npc_dewi",
+   "pos": [
+    14,
+    28
+   ],
+   "wander": false,
+   "facing": "right"
+  },
+  {
+   "id": "npc_rara",
+   "pos": [
+    30,
+    22
+   ],
+   "wander": true,
+   "facing": "left"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "jv_gamelan_site",
+   "kind": "puzzle",
+   "pos": [
+    26,
+    22
+   ],
+   "target": "pz_gamelan",
+   "prompt": "Join the rehearsal",
+   "sprite": "gamelan_set",
+   "if": {
+    "quest_active": "jv_03_gamelan"
+   }
+  },
+  {
+   "id": "jv_angklung_site",
+   "kind": "puzzle",
+   "pos": [
+    30,
+    24
+   ],
+   "target": "pz_angklung_order",
+   "prompt": "Look at the angklung",
+   "sprite": "angklung_stand",
+   "if": {
+    "quest_active": "jv_06_angklung"
+   }
+  },
+  {
+   "id": "jv_pick_mallet",
+   "kind": "pickup",
+   "pos": [
+    20,
+    20
+   ],
+   "target": "tabuh",
+   "text": "A padded mallet for the bronze."
+  },
+  {
+   "id": "jv_pick_canting",
+   "kind": "pickup",
+   "pos": [
+    32,
+    30
+   ],
+   "target": "canting",
+   "text": "A small copper wax pen with a bamboo handle."
+  },
+  {
+   "id": "jv_pick_script",
+   "kind": "pickup",
+   "pos": [
+    18,
+    30
+   ],
+   "target": "naskah_wayang",
+   "text": "A page of cues and jokes, written for a night performance."
+  },
+  {
+   "id": "jv_col_wax",
+   "kind": "pickup",
+   "pos": [
+    34,
+    24
+   ],
+   "target": "col_lilin"
+  },
+  {
+   "id": "jv_col_puppet",
+   "kind": "pickup",
+   "pos": [
+    24,
+    32
+   ],
+   "target": "col_boneka_lidi"
+  },
+  {
+   "id": "jv_save_village",
+   "kind": "save",
+   "pos": [
+    20,
+    24
+   ]
+  },
+  {
+   "id": "jv_sign_roads",
+   "kind": "sign",
+   "pos": [
+    24,
+    27
+   ],
+   "title": "Road sign",
+   "text": "North: the temple grounds. East: the morning market. West: the terraces."
+  },
+  {
+   "id": "jv_hidden_pond",
+   "kind": "hidden",
+   "pos": [
+    44,
+    36
+   ],
+   "title": "The Hidden Pond",
+   "text": "Behind the bamboo there is a small pond with lotus leaves and a stone stair going down. Somebody washes the gamelan here after the rain.",
+   "items": [
+    "pipa_bambu"
+   ],
+   "culture": "sawah"
+  },
+  {
+   "id": "jv_village_game",
+   "kind": "minigame",
+   "pos": [
+    20,
+    22
+   ],
+   "prompt": "Join the evening game",
+   "minigame": "nod",
+   "title": "Evening Timing",
+   "target": "nod",
+   "text": "The gamelan plays; keep the beat.",
+   "data": {
+    "rounds": 3,
+    "width": 96,
+    "speed": 315,
+    "themes": [
+     "the bonang starts!",
+     "the drums come in!",
+     "the gong is waiting!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_joglo",
+   "name": "Village Hall",
+   "pos": [
+    24,
+    30
+   ],
+   "description": "A tall joglo roof over an open hall: the pendopo where the gamelan is kept.",
+   "entry": "hall",
+   "radius": 64
+  },
+  {
+   "id": "lm_kampung_jawa",
+   "name": "Rice Village",
+   "pos": [
+    24,
+    24
+   ],
+   "description": "A village laid out between two blocks of wet rice fields.",
+   "entry": "",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sumatra_desa",
+   "pos": [
+    2,
+    24
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "sumatra_desa",
+   "entry": "to_java_desa"
+  },
+  {
+   "id": "to_java_sawah",
+   "pos": [
+    2,
+    24
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "java_sawah",
+   "entry": "to_java_desa"
+  },
+  {
+   "id": "to_java_pasar",
+   "pos": [
+    46,
+    24
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "java_pasar",
+   "entry": "to_java_desa"
+  },
+  {
+   "id": "to_java_candi",
+   "pos": [
+    24,
+    3
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "java_candi",
+   "entry": "to_java_desa"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   38,
+   48,
+   2
+  ]
+ ]
+}

@@ -1,0 +1,600 @@
+{
+ "id": "sumatra_desa",
+ "name": "Kampung Danau",
+ "region": "sumatra",
+ "size": [
+  48,
+  40
+ ],
+ "spawn": [
+  24,
+  32
+ ],
+ "music": "sumatra",
+ "ambience": "amb_stream",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "HIGHLAND",
+    "rect": [
+     0,
+     0,
+     48,
+     6
+    ]
+   },
+   {
+    "tile": "PAVING",
+    "rect": [
+     16,
+     16,
+     16,
+     12
+    ]
+   },
+   {
+    "tile": "RICE",
+    "rect": [
+     2,
+     26,
+     12,
+     10
+    ]
+   },
+   {
+    "tile": "DIRT",
+    "rect": [
+     30,
+     26,
+     14,
+     8
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     38,
+     48,
+     2
+    ]
+   }
+  ],
+  "lines": [
+   {
+    "tile": "PATH",
+    "from": [
+     4,
+     22
+    ],
+    "to": [
+     44,
+     22
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     6
+    ],
+    "to": [
+     24,
+     22
+    ],
+    "width": 3
+   },
+   {
+    "tile": "PATH",
+    "from": [
+     24,
+     22
+    ],
+    "to": [
+     24,
+     36
+    ],
+    "width": 3
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "TALLGRASS",
+    "center": [
+     40,
+     8
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "JUNGLE",
+    "center": [
+     4,
+     8
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "rumah_gadang",
+   "pos": [
+    24,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    12,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "lumbung",
+   "pos": [
+    36,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "warung",
+   "pos": [
+    10,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "market_stall",
+   "pos": [
+    16,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "workshop",
+   "pos": [
+    38,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "stage",
+   "pos": [
+    24,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "pot_plant",
+   "pos": [
+    20,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "well",
+   "pos": [
+    22,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    30,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "loom",
+   "pos": [
+    34,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    28,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "signpost",
+   "pos": [
+    24,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    2,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    44,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    42,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "flower_patch2",
+   "pos": [
+    18,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence_wood",
+   "pos": [
+    14,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "brazier",
+   "pos": [
+    26,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "textile_rack_red",
+   "pos": [
+    32,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "statue",
+   "pos": [
+    18,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_aminah",
+   "pos": [
+    22,
+    17
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_ida",
+   "pos": [
+    16,
+    24
+   ],
+   "wander": false,
+   "facing": "right"
+  },
+  {
+   "id": "npc_sari",
+   "pos": [
+    34,
+    30
+   ],
+   "wander": false,
+   "facing": "left"
+  },
+  {
+   "id": "npc_datuak",
+   "pos": [
+    26,
+    20
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_penari",
+   "pos": [
+    26,
+    28
+   ],
+   "wander": true,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sm_carving_wall",
+   "kind": "puzzle",
+   "pos": [
+    26,
+    12
+   ],
+   "target": "pz_carving_memory",
+   "prompt": "Examine the stacked panels",
+   "sprite": "easel_board",
+   "if": {
+    "quest_active": "sm_01_kampung"
+   }
+  },
+  {
+   "id": "sm1_lm_note",
+   "kind": "note",
+   "pos": [
+    24,
+    15
+   ],
+   "title": "The gable",
+   "text": "The roof rises into two sharp points. The house belongs to the women of the clan, and it is theirs to pass on."
+  },
+  {
+   "id": "sm_pick_milk",
+   "kind": "pickup",
+   "pos": [
+    30,
+    31
+   ],
+   "target": "mentega_kelapa",
+   "text": "A bowl of thick coconut milk, still warm from the grinding stone."
+  },
+  {
+   "id": "sm_pick_plates",
+   "kind": "pickup",
+   "pos": [
+    22,
+    30
+   ],
+   "target": "piring_tari",
+   "text": "Two small dance plates, stacked on the mat."
+  },
+  {
+   "id": "sm_col_songket_thread",
+   "kind": "pickup",
+   "pos": [
+    36,
+    30
+   ],
+   "target": "col_benang_emas"
+  },
+  {
+   "id": "sm_pick_spice",
+   "kind": "pickup",
+   "pos": [
+    14,
+    30
+   ],
+   "target": "bumbu_rendang",
+   "text": "Chilli, ginger, turmeric, galangal and lemongrass bundled in banana leaf."
+  },
+  {
+   "id": "sm_pick_thread",
+   "kind": "pickup",
+   "pos": [
+    18,
+    30
+   ],
+   "target": "benang_songket",
+   "text": "A spool of shiny thread for laying over cloth."
+  },
+  {
+   "id": "sm_col_carving",
+   "kind": "pickup",
+   "pos": [
+    34,
+    32
+   ],
+   "target": "col_ukiran_kecil"
+  },
+  {
+   "id": "sm_col_talempong",
+   "kind": "pickup",
+   "pos": [
+    12,
+    16
+   ],
+   "target": "col_talempong_chip"
+  },
+  {
+   "id": "sm_rumah_hidden",
+   "kind": "hidden",
+   "pos": [
+    44,
+    36
+   ],
+   "title": "Behind the Bamboo",
+   "text": "A narrow gap in the bamboo leads to a small clearing with a stone seat worn smooth by generations of storytellers.",
+   "items": [
+    "biji_kopi"
+   ],
+   "culture": "ukiran_dayak"
+  },
+  {
+   "id": "sm_save_village",
+   "kind": "save",
+   "pos": [
+    20,
+    22
+   ]
+  },
+  {
+   "id": "sm_sign_road",
+   "kind": "sign",
+   "pos": [
+    24,
+    25
+   ],
+   "title": "Road sign",
+   "text": "North: the lake road. West: the rainforest. East: the market street."
+  },
+  {
+   "id": "sm_festival",
+   "kind": "minigame",
+   "pos": [
+    24,
+    34
+   ],
+   "prompt": "Play the harvest game",
+   "minigame": "nod",
+   "title": "Harvest Timing",
+   "target": "nod",
+   "text": "Bring in the harvest on the beat.",
+   "data": {
+    "rounds": 3,
+    "width": 96,
+    "speed": 310,
+    "themes": [
+     "the harvest is starting!",
+     "the drums speed up!",
+     "one more round, then we eat!"
+    ]
+   },
+   "reward_cp": 35
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_rumah_gadang",
+   "name": "Rumah Gadang",
+   "pos": [
+    24,
+    14
+   ],
+   "description": "The clan house of the women's line, its roof sweeping up to two sharp points.",
+   "entry": "house",
+   "radius": 64
+  },
+  {
+   "id": "lm_pasar_danau",
+   "name": "Highland Market",
+   "pos": [
+    16,
+    30
+   ],
+   "description": "A market street that smells of coffee, chilli and rain.",
+   "entry": "",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_desa_awal",
+   "pos": [
+    2,
+    22
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "desa_awal",
+   "entry": "to_sumatra_desa"
+  },
+  {
+   "id": "to_sumatra_hutan",
+   "pos": [
+    2,
+    20
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "sumatra_hutan",
+   "entry": "to_sumatra_desa"
+  },
+  {
+   "id": "to_sumatra_danau",
+   "pos": [
+    24,
+    2
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "sumatra_danau",
+   "entry": "to_sumatra_desa"
+  },
+  {
+   "id": "to_java_desa",
+   "pos": [
+    46,
+    19
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "java_desa",
+   "entry": "to_sumatra_desa"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   48,
+   6
+  ],
+  [
+   0,
+   38,
+   48,
+   2
+  ]
+ ]
+}

@@ -1,0 +1,3355 @@
+{
+ "quests": {
+  "pg_01_notebook": {
+   "id": "pg_01_notebook",
+   "title": "The Notebook in the Store Room",
+   "region": "prologue",
+   "chapter": 1,
+   "giver": "npc_penjaga",
+   "type": "main",
+   "description": "The village keeper remembers a cloth-bound notebook that belonged to your grandmother. Find the loose pages in the store room and sort them out.",
+   "summary": "Sort grandmother's pages and take up her notebook.",
+   "requires": {
+    "quests": [],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_penjaga"
+   },
+   "objectives": [
+    {
+     "id": "pg1_pages",
+     "text": "Match the six loose pages",
+     "type": "puzzle",
+     "target": "pz_notebook_pages",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cocokkan enam halaman yang terlepas"
+    },
+    {
+     "id": "pg1_report",
+     "text": "Show the notebook to Pak Penjaga",
+     "type": "talk",
+     "target": "npc_penjaga",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan buku catatan kepada Pak Penjaga"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_penjaga"
+   },
+   "puzzle": "pz_notebook_pages",
+   "rewards": {
+    "culture_points": 40,
+    "items": [
+     "jurnal_nenek",
+     "lampu_minyak"
+    ],
+    "culture": [
+     "nusantara_intro",
+     "notebook_habit"
+    ],
+    "flags": [
+     "has_notebook"
+    ]
+   },
+   "hints": [
+    "The pages are matched in pairs - look at the drawings, not the handwriting.",
+    "Two pages have a pressed leaf inside them.",
+    "The store room is inside the big house to the north."
+   ],
+   "offer_dialogue": "dlg_pg_01_notebook_offer",
+   "turn_in_dialogue": "dlg_pg_01_notebook_turnin",
+   "title_id": "Buku Catatan di Ruang Penyimpanan",
+   "summary_id": "Susun halaman-halaman nenek dan lanjutkan buku catatannya."
+  },
+  "pg_02_keberangkatan": {
+   "id": "pg_02_keberangkatan",
+   "title": "What to Carry",
+   "region": "prologue",
+   "chapter": 1,
+   "giver": "npc_pengembara",
+   "type": "main",
+   "description": "A traveller who has walked every region helps you pack for the road.",
+   "summary": "Pack provisions with the traveller's help.",
+   "requires": {
+    "quests": [
+     "pg_01_notebook"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pengembara"
+   },
+   "objectives": [
+    {
+     "id": "pg2_supplies",
+     "text": "Finish packing the shoulder basket",
+     "type": "puzzle",
+     "target": "pz_gotong_royong",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Selesaikan mengepak keranjang gendong"
+    },
+    {
+     "id": "pg2_reach",
+     "text": "Meet the traveller at the village gate",
+     "type": "reach",
+     "target": "desa_awal",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Temui pengembara di gerbang kampung"
+    },
+    {
+     "id": "pg2_report",
+     "text": "Tell the traveller you are ready",
+     "type": "talk",
+     "target": "npc_pengembara",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu pengembara bahwa kamu sudah siap"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pengembara"
+   },
+   "puzzle": "pz_gotong_royong",
+   "rewards": {
+    "culture_points": 40,
+    "items": [
+     "keranjang_isi",
+     "bekal_jalan",
+     "air_minum",
+     "keranjang_kosong"
+    ],
+    "culture": [
+     "gotong_royong"
+    ],
+    "flags": [
+     "packed_basket"
+    ]
+   },
+   "hints": [
+    "A work day has an order: measure, cut, raise, tie, cover, sweep.",
+    "Nothing is tied before the posts stand up.",
+    "The gate is at the top of the village, where the path leaves the houses."
+   ],
+   "offer_dialogue": "dlg_pg_02_keberangkatan_offer",
+   "turn_in_dialogue": "dlg_pg_02_keberangkatan_turnin",
+   "title_id": "Bekal yang Harus Dibawa",
+   "summary_id": "Siapkan perbekalan dengan bantuan sang pengembara."
+  },
+  "pg_03_net_mend": {
+   "id": "pg_03_net_mend",
+   "title": "The Mended Net",
+   "region": "prologue",
+   "chapter": 1,
+   "giver": "npc_nelayan",
+   "type": "main",
+   "description": "The fisherman's net has torn. He will take your help - but he will not take a nail.",
+   "summary": "Mend the fishing net and earn the village's travel letter.",
+   "requires": {
+    "quests": [
+     "pg_02_keberangkatan"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_nelayan"
+   },
+   "objectives": [
+    {
+     "id": "pg3_net",
+     "text": "Mend the net",
+     "type": "puzzle",
+     "target": "pz_net_mend",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Perbaiki jaring"
+    },
+    {
+     "id": "pg3_flags",
+     "text": "Collect the travel letter",
+     "type": "flag",
+     "target": "travel_letter_signed",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Ambil surat jalan"
+    },
+    {
+     "id": "pg3_report",
+     "text": "Say goodbye at the village gate",
+     "type": "talk",
+     "target": "npc_nelayan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Berpamitan di gerbang kampung"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_nelayan"
+   },
+   "puzzle": "pz_net_mend",
+   "rewards": {
+    "culture_points": 60,
+    "items": [
+     "benang_jaring",
+     "surat_izin",
+     "tali_tambang"
+    ],
+    "culture": [
+     "kampung_home",
+     "sambal"
+    ],
+    "flags": [
+     "travel_letter_signed"
+    ]
+   },
+   "hints": [
+    "Nets are tied with twine and a shuttle; iron has no business in a net.",
+    "The mesh pattern is mirrored left and right.",
+    "The jetty is on the west side of the village, past the boats."
+   ],
+   "offer_dialogue": "dlg_pg_03_net_mend_offer",
+   "turn_in_dialogue": "dlg_pg_03_net_mend_turnin",
+   "title_id": "Jaring yang Diperbaiki",
+   "summary_id": "Perbaiki jaring ikan dan dapatkan surat jalan dari kampung."
+  },
+  "sm_01_kampung": {
+   "id": "sm_01_kampung",
+   "title": "The Carved Wall",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_aminah",
+   "type": "main",
+   "description": "Aminah is repainting the carved wall of the rumah gadang and cannot remember where each panel went. Help her put the patterns back in pairs.",
+   "summary": "Learn the highland village and its carved house.",
+   "requires": {
+    "quests": [],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_aminah"
+   },
+   "objectives": [
+    {
+     "id": "sm1_wall",
+     "text": "Restore the carved wall",
+     "type": "puzzle",
+     "target": "pz_carving_memory",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pulihkan susunan dinding berukir"
+    },
+    {
+     "id": "sm1_house",
+     "text": "Study the rumah gadang",
+     "type": "landmark",
+     "target": "lm_rumah_gadang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Amati Rumah Gadang"
+    },
+    {
+     "id": "sm1_report",
+     "text": "Report to Aminah",
+     "type": "talk",
+     "target": "npc_aminah",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan hasilnya kepada Aminah"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_aminah"
+   },
+   "puzzle": "pz_carving_memory",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "col_ukiran_kecil"
+    ],
+    "culture": [
+     "rumah_gadang",
+     "rumah_limas"
+    ],
+    "flags": [
+     "sm_wall_fixed"
+    ]
+   },
+   "hints": [
+    "Panels are paired by motif, not by size.",
+    "The house itself is north of the market square.",
+    "Stand close to the house until the journal entry is added."
+   ],
+   "offer_dialogue": "dlg_sm_01_kampung_offer",
+   "turn_in_dialogue": "dlg_sm_01_kampung_turnin",
+   "title_id": "Dinding Berukir",
+   "summary_id": "Kenali kampung dataran tinggi dan rumahnya yang berukir."
+  },
+  "sm_02_rendang": {
+   "id": "sm_02_rendang",
+   "title": "The Long Cook",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_ida",
+   "type": "main",
+   "description": "Ida is cooking for a wedding across the valley and needs the spice bundle finished and the pot watched.",
+   "summary": "Cook rendang with Ida for a village wedding.",
+   "requires": {
+    "quests": [
+     "sm_01_kampung"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_ida"
+   },
+   "objectives": [
+    {
+     "id": "sm2_spice",
+     "text": "Bring the spice bundle",
+     "type": "collect",
+     "target": "bumbu_rendang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan bungkusan rempah"
+    },
+    {
+     "id": "sm2_milk",
+     "text": "Bring the coconut milk",
+     "type": "collect",
+     "target": "mentega_kelapa",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan santan"
+    },
+    {
+     "id": "sm2_cook",
+     "text": "Cook the rendang",
+     "type": "puzzle",
+     "target": "pz_rendang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Masak rendang"
+    },
+    {
+     "id": "sm2_report",
+     "text": "Tell Ida it is ready",
+     "type": "talk",
+     "target": "npc_ida",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu Ida bahwa masakan sudah siap"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_ida"
+   },
+   "puzzle": "pz_rendang",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "bekal_jalan",
+     "sambal_botol"
+    ],
+    "culture": [
+     "rendang"
+    ],
+    "flags": [
+     "sm_rendang_cooked"
+    ]
+   },
+   "hints": [
+    "The spice bundle is on the market stall and the coconut milk is at the grinding shed.",
+    "Pound the aromatics before they go anywhere near the meat.",
+    "Coconut milk goes in after the spice paste, never before."
+   ],
+   "offer_dialogue": "dlg_sm_02_rendang_offer",
+   "turn_in_dialogue": "dlg_sm_02_rendang_turnin",
+   "title_id": "Memasak Lama",
+   "summary_id": "Masak rendang bersama Ida untuk pernikahan warga kampung."
+  },
+  "sm_03_saluang": {
+   "id": "sm_03_saluang",
+   "title": "A Melody in Bamboo",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_bujang",
+   "type": "main",
+   "description": "Bujang cut a flute blank and lost the song that went with it. Play it back for him.",
+   "summary": "Recover a saluang melody for the evening gathering.",
+   "requires": {
+    "quests": [
+     "sm_02_rendang"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_bujang"
+   },
+   "objectives": [
+    {
+     "id": "sm3_flute",
+     "text": "Find the bamboo blank",
+     "type": "collect",
+     "target": "bambu_saluang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cari bambu kosong untuk saluang"
+    },
+    {
+     "id": "sm3_play",
+     "text": "Play the melody",
+     "type": "puzzle",
+     "target": "pz_saluang_song",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Mainkan melodinya"
+    },
+    {
+     "id": "sm3_report",
+     "text": "Bring the melody to Bujang",
+     "type": "talk",
+     "target": "npc_bujang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan melodi itu kepada Bujang"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_bujang"
+   },
+   "puzzle": "pz_saluang_song",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "bambu_saluang"
+    ],
+    "culture": [
+     "saluang"
+    ],
+    "flags": [
+     "sm_flute_played"
+    ]
+   },
+   "hints": [
+    "The flute blank is on the bench by the bamboo clump.",
+    "Press space (or click) as the note reaches the gold line.",
+    "The melody starts slowly and speeds up in the middle - do not rush the start."
+   ],
+   "offer_dialogue": "dlg_sm_03_saluang_offer",
+   "turn_in_dialogue": "dlg_sm_03_saluang_turnin",
+   "title_id": "Melodi dari Bambu",
+   "summary_id": "Temukan kembali melodi saluang untuk pertemuan malam."
+  },
+  "sm_04_ulos": {
+   "id": "sm_04_ulos",
+   "title": "The Cloth for the Wedding",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_sari",
+   "type": "main",
+   "description": "Sari is weaving and the loom is set up with the wrong pattern. She needs the weave laid out before the thread tangles.",
+   "summary": "Weave a cloth for the wedding and learn what the cloth means.",
+   "requires": {
+    "quests": [
+     "sm_03_saluang"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_sari"
+   },
+   "objectives": [
+    {
+     "id": "sm4_thread",
+     "text": "Fetch the gold thread",
+     "type": "collect",
+     "target": "benang_songket",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Ambil benang emas"
+    },
+    {
+     "id": "sm4_weave",
+     "text": "Lay out the weaving pattern",
+     "type": "puzzle",
+     "target": "pz_ulos_pattern",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bentangkan pola tenun"
+    },
+    {
+     "id": "sm4_report",
+     "text": "Bring the cloth to Sari",
+     "type": "talk",
+     "target": "npc_sari",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan kain itu kepada Sari"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_sari"
+   },
+   "puzzle": "pz_ulos_pattern",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "kain_ulos",
+     "col_benang_emas"
+    ],
+    "culture": [
+     "ulos"
+    ],
+    "flags": [
+     "sm_ulos_woven"
+    ]
+   },
+   "hints": [
+    "The gold thread is with the trader at the market stall.",
+    "Thread is woven; plastic and paint are not part of a loom.",
+    "The pattern is mirrored top and bottom, with one line of light down the middle."
+   ],
+   "offer_dialogue": "dlg_sm_04_ulos_offer",
+   "turn_in_dialogue": "dlg_sm_04_ulos_turnin",
+   "title_id": "Kain untuk Pernikahan",
+   "summary_id": "Tenun kain untuk pernikahan dan pelajari maknanya."
+  },
+  "sm_05_talempong": {
+   "id": "sm_05_talempong",
+   "title": "The Wedding Music",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_datuak",
+   "type": "main",
+   "description": "The elder has a talempong set for the wedding, but the players must be led. Learn which gongs to strike and when.",
+   "summary": "Learn a talempong part for the wedding procession.",
+   "requires": {
+    "quests": [
+     "sm_04_ulos"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_datuak"
+   },
+   "objectives": [
+    {
+     "id": "sm5_listen",
+     "text": "Watch the gong pattern",
+     "type": "puzzle",
+     "target": "pz_talempong_pattern",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Amati pola gong"
+    },
+    {
+     "id": "sm5_play",
+     "text": "Play the talempong",
+     "type": "minigame",
+     "target": "nod",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Mainkan talempong"
+    },
+    {
+     "id": "sm5_report",
+     "text": "Tell Datuak it went well",
+     "type": "talk",
+     "target": "npc_datuak",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu Datuak bahwa permainanmu berhasil"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_datuak"
+   },
+   "puzzle": "pz_talempong_pattern",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "col_talempong_chip"
+    ],
+    "culture": [
+     "talempong"
+    ],
+    "flags": [
+     "sm_talempong_played"
+    ]
+   },
+   "hints": [
+    "Watch which gongs light up, then strike the same ones.",
+    "There are five of them, from top left to bottom right.",
+    "The festival game at the square uses the same steady hand."
+   ],
+   "offer_dialogue": "dlg_sm_05_talempong_offer",
+   "turn_in_dialogue": "dlg_sm_05_talempong_turnin",
+   "title_id": "Musik Pernikahan",
+   "summary_id": "Pelajari bagian talempong untuk arak-arakan pernikahan."
+  },
+  "sm_06_danau": {
+   "id": "sm_06_danau",
+   "title": "The Cargo that Went into the Lake",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_pedagang",
+   "type": "main",
+   "description": "A basket of goods slid off the trader's canoe. The villagers saw it drift - help the trader work out where it came ashore.",
+   "summary": "Recover the trader's cargo from the lakeshore.",
+   "requires": {
+    "quests": [
+     "sm_05_talempong"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "objectives": [
+    {
+     "id": "sm6_lake",
+     "text": "Reach the lakeshore",
+     "type": "reach",
+     "target": "sumatra_danau",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pergi ke tepi danau"
+    },
+    {
+     "id": "sm6_search",
+     "text": "Find the cargo",
+     "type": "puzzle",
+     "target": "pz_danau_search",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Temukan muatannya"
+    },
+    {
+     "id": "sm6_cliff",
+     "text": "Look out over the water",
+     "type": "landmark",
+     "target": "lm_danau_toba",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pandanglah ke seberang air"
+    },
+    {
+     "id": "sm6_report",
+     "text": "Return the cargo to the trader",
+     "type": "talk",
+     "target": "npc_pedagang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Kembalikan muatan kepada pedagang"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "puzzle": "pz_danau_search",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "biji_kopi",
+     "col_kopi_liar"
+    ],
+    "culture": [
+     "danau_toba"
+    ],
+    "flags": [
+     "sm_cargo_found"
+    ]
+   },
+   "hints": [
+    "The lake is up the western road from the village.",
+    "The reeds are on the north side of the landing; the rocks are south.",
+    "North is towards the top of the search picture."
+   ],
+   "offer_dialogue": "dlg_sm_06_danau_offer",
+   "turn_in_dialogue": "dlg_sm_06_danau_turnin",
+   "title_id": "Muatan yang Jatuh ke Danau",
+   "summary_id": "Temukan kembali muatan pedagang di tepi danau."
+  },
+  "sm_07_piring": {
+   "id": "sm_07_piring",
+   "title": "The Harvest Dance",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_penari",
+   "type": "main",
+   "description": "The dance troupe is rehearsing for the harvest festival and the newest dancer keeps losing the order of the steps.",
+   "summary": "Learn the order of the harvest plate dance.",
+   "requires": {
+    "quests": [
+     "sm_06_danau"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_penari"
+   },
+   "objectives": [
+    {
+     "id": "sm7_plates",
+     "text": "Find a pair of dance plates",
+     "type": "collect",
+     "target": "piring_tari",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Temukan sepasang piring tari"
+    },
+    {
+     "id": "sm7_steps",
+     "text": "Learn the dance steps",
+     "type": "puzzle",
+     "target": "pz_piring_steps",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pelajari gerak tari"
+    },
+    {
+     "id": "sm7_report",
+     "text": "Dance one round with the troupe",
+     "type": "talk",
+     "target": "npc_penari",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Menarilah satu putaran bersama kelompok tari"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_penari"
+   },
+   "puzzle": "pz_piring_steps",
+   "rewards": {
+    "culture_points": 70,
+    "items": [
+     "piring_tari"
+    ],
+    "culture": [
+     "tari_piring"
+    ],
+    "flags": [
+     "sm_dance_learned"
+    ]
+   },
+   "hints": [
+    "A performance opens with a bow and closes with a bow.",
+    "The quick steps come before the most difficult part, not after it.",
+    "The plates are stepped on last - the plates are with the troupe, north of the square."
+   ],
+   "offer_dialogue": "dlg_sm_07_piring_offer",
+   "turn_in_dialogue": "dlg_sm_07_piring_turnin",
+   "title_id": "Tari Panen",
+   "summary_id": "Pelajari urutan tari piring untuk perayaan panen."
+  },
+  "sm_08_pasar": {
+   "id": "sm_08_pasar",
+   "title": "Market Day in the Highlands",
+   "region": "sumatra",
+   "chapter": 2,
+   "giver": "npc_pengrajin",
+   "type": "main",
+   "description": "The craftswoman needs her goods matched to the right stalls before the market opens, and she has something for you when it is done.",
+   "summary": "Set up the market and take the road east.",
+   "requires": {
+    "quests": [
+     "sm_07_piring"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pengrajin"
+   },
+   "objectives": [
+    {
+     "id": "sm8_match",
+     "text": "Sort the goods to the stalls",
+     "type": "puzzle",
+     "target": "pz_pasar_match",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pilah barang-barang untuk kios"
+    },
+    {
+     "id": "sm8_market",
+     "text": "Walk the market street at first light",
+     "type": "reach",
+     "target": "sumatra_desa",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Susuri jalan pasar saat fajar"
+    },
+    {
+     "id": "sm8_report",
+     "text": "Say goodbye to the craftswoman",
+     "type": "talk",
+     "target": "npc_pengrajin",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Berpamitan kepada perajin"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pengrajin"
+   },
+   "puzzle": "pz_pasar_match",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "sou_kain_songket",
+     "sou_kopi_pak",
+     "col_benang_emas",
+     "sou_mini_rumah"
+    ],
+    "culture": [
+     "songket_palembang",
+     "tari_saman"
+    ],
+    "flags": [
+     "sm_market_done"
+    ]
+   },
+   "hints": [
+    "Thread belongs with weaving, chilli with spices, bronze with music.",
+    "The market is at the eastern end of the village.",
+    "Coffee is dried, not woven - it goes to the drying yard."
+   ],
+   "offer_dialogue": "dlg_sm_08_pasar_offer",
+   "turn_in_dialogue": "dlg_sm_08_pasar_turnin",
+   "title_id": "Hari Pasar di Dataran Tinggi",
+   "summary_id": "Tata pasar dan tempuh jalan ke timur."
+  },
+  "jv_01_tumpeng": {
+   "id": "jv_01_tumpeng",
+   "title": "The Cone of Yellow Rice",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_koki",
+   "type": "main",
+   "description": "The cook is preparing tumpeng for a thanksgiving gathering and the rice keeps collapsing into a lump.",
+   "summary": "Cook tumpeng for the village thanksgiving.",
+   "requires": {
+    "quests": [],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_koki"
+   },
+   "objectives": [
+    {
+     "id": "jv1_ing",
+     "text": "Collect the ingredients",
+     "type": "collect",
+     "target": "bumbu_tumpeng",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Kumpulkan bahan-bahannya"
+    },
+    {
+     "id": "jv1_cook",
+     "text": "Cook the tumpeng",
+     "type": "puzzle",
+     "target": "pz_tumpeng",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Masak tumpeng"
+    },
+    {
+     "id": "jv1_report",
+     "text": "Present the tumpeng to the cook",
+     "type": "talk",
+     "target": "npc_koki",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Sajikan tumpeng kepada juru masak"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_koki"
+   },
+   "puzzle": "pz_tumpeng",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "bekal_jalan",
+     "sambal_botol"
+    ],
+    "culture": [
+     "tumpeng"
+    ],
+    "flags": [
+     "jv_tumpeng_made"
+    ]
+   },
+   "hints": [
+    "Turmeric is what makes the rice yellow; without it the cone is just rice.",
+    "Rice is steamed before it is shaped - wet rice will not stand up.",
+    "The side dishes are arranged after the cone stands, not before."
+   ],
+   "offer_dialogue": "dlg_jv_01_tumpeng_offer",
+   "turn_in_dialogue": "dlg_jv_01_tumpeng_turnin",
+   "title_id": "Kerucut Nasi Kuning",
+   "summary_id": "Masak tumpeng untuk syukuran kampung."
+  },
+  "jv_02_batik": {
+   "id": "jv_02_batik",
+   "title": "Wax and Dye",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_pengrajin",
+   "type": "main",
+   "description": "A batik maker needs the wax pen warmed and the pattern drawn before the dye bath is ready.",
+   "summary": "Draw a batik pattern and learn how wax resists dye.",
+   "requires": {
+    "quests": [
+     "jv_01_tumpeng"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pengrajin"
+   },
+   "objectives": [
+    {
+     "id": "jv2_wax",
+     "text": "Bring the wax",
+     "type": "collect",
+     "target": "lilin_batik",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan malam batik"
+    },
+    {
+     "id": "jv2_pen",
+     "text": "Bring the wax pen",
+     "type": "collect",
+     "target": "canting",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan canting"
+    },
+    {
+     "id": "jv2_draw",
+     "text": "Draw the pattern",
+     "type": "puzzle",
+     "target": "pz_batik",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Gambar motifnya"
+    },
+    {
+     "id": "jv2_report",
+     "text": "Show the cloth to the batik maker",
+     "type": "talk",
+     "target": "npc_pengrajin",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan kain itu kepada perajin batik"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pengrajin"
+   },
+   "puzzle": "pz_batik",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "col_lilin",
+     "lilin_batik",
+     "canting",
+     "kain_merah"
+    ],
+    "culture": [
+     "batik"
+    ],
+    "flags": [
+     "jv_batik_drawn"
+    ]
+   },
+   "hints": [
+    "Wax goes on the cloth cold-looking and molten-hot; it blocks the dye.",
+    "The wax block is at the workshop and the pen is with the trader.",
+    "The pattern repeats diagonally with filled corners."
+   ],
+   "offer_dialogue": "dlg_jv_02_batik_offer",
+   "turn_in_dialogue": "dlg_jv_02_batik_turnin",
+   "title_id": "Malam dan Pewarna",
+   "summary_id": "Gambar motif batik dan pelajari cara malam menahan pewarna."
+  },
+  "jv_03_gamelan": {
+   "id": "jv_03_gamelan",
+   "title": "Bronze Voices",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_ki_bagus",
+   "type": "main",
+   "description": "Ki Bagus is rehearsing the gamelan for the temple anniversary and needs a player who can keep time.",
+   "summary": "Play in a gamelan rehearsal.",
+   "requires": {
+    "quests": [
+     "jv_02_batik"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_ki_bagus"
+   },
+   "objectives": [
+    {
+     "id": "jv3_mallet",
+     "text": "Fetch a mallet",
+     "type": "collect",
+     "target": "tabuh",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Ambil sebuah pemukul"
+    },
+    {
+     "id": "jv3_play",
+     "text": "Keep time with the ensemble",
+     "type": "puzzle",
+     "target": "pz_gamelan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Jaga irama bersama para pemain"
+    },
+    {
+     "id": "jv3_report",
+     "text": "Ask Ki Bagus about the tuning",
+     "type": "talk",
+     "target": "npc_ki_bagus",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tanyakan laras gamelan kepada Ki Bagus"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_ki_bagus"
+   },
+   "puzzle": "pz_gamelan",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "tabuh",
+     "col_keping_gamelan"
+    ],
+    "culture": [
+     "gamelan"
+    ],
+    "flags": [
+     "jv_gamelan_played"
+    ]
+   },
+   "hints": [
+    "Watch the drum; the whole ensemble follows it.",
+    "The notes come in groups of four.",
+    "You may miss a stroke - the rehearsal will not stop for you."
+   ],
+   "offer_dialogue": "dlg_jv_03_gamelan_offer",
+   "turn_in_dialogue": "dlg_jv_03_gamelan_turnin",
+   "title_id": "Suara-Suara Perunggu",
+   "summary_id": "Ikuti latihan gamelan."
+  },
+  "jv_04_sawah": {
+   "id": "jv_04_sawah",
+   "title": "Water for the Terrace",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_pak_tarno",
+   "type": "main",
+   "description": "The irrigation gate has jammed and the lower terrace is drying out. Pak Tarno is up the hill with the other farmers.",
+   "summary": "Open the water for the lowest terrace.",
+   "requires": {
+    "quests": [
+     "jv_03_gamelan"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pak_tarno"
+   },
+   "objectives": [
+    {
+     "id": "jv4_map",
+     "text": "Walk the terrace path",
+     "type": "reach",
+     "target": "java_sawah",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Susuri jalur terasering"
+    },
+    {
+     "id": "jv4_water",
+     "text": "Turn the channels to the lowest field",
+     "type": "puzzle",
+     "target": "pz_sawah_water",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Atur saluran agar air mencapai sawah terbawah"
+    },
+    {
+     "id": "jv4_seed",
+     "text": "Carry seedlings to the lower field",
+     "type": "collect",
+     "target": "bibit_padi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan bibit padi ke petak bawah"
+    },
+    {
+     "id": "jv4_report",
+     "text": "Report to Pak Tarno",
+     "type": "talk",
+     "target": "npc_pak_tarno",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan kepada Pak Tarno"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pak_tarno"
+   },
+   "puzzle": "pz_sawah_water",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "bibit_padi",
+     "col_batu_candi"
+    ],
+    "culture": [
+     "sawah"
+    ],
+    "flags": [
+     "jv_water_open"
+    ]
+   },
+   "hints": [
+    "The spring is at the top left of the field map.",
+    "Two channels must meet before any water can flow on.",
+    "The dry field is the bottom right corner."
+   ],
+   "offer_dialogue": "dlg_jv_04_sawah_offer",
+   "turn_in_dialogue": "dlg_jv_04_sawah_turnin",
+   "title_id": "Air untuk Terasering",
+   "summary_id": "Alirkan air ke petak sawah paling bawah."
+  },
+  "jv_05_wayang": {
+   "id": "jv_05_wayang",
+   "title": "Behind the Screen",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_mbah_karto",
+   "type": "main",
+   "description": "The old puppeteer cannot perform tonight unless someone can answer his questions about the stories.",
+   "summary": "Answer the puppeteer's questions about wayang.",
+   "requires": {
+    "quests": [
+     "jv_04_sawah"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_mbah_karto"
+   },
+   "objectives": [
+    {
+     "id": "jv5_script",
+     "text": "Bring the story note",
+     "type": "collect",
+     "target": "naskah_wayang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan catatan cerita"
+    },
+    {
+     "id": "jv5_quiz",
+     "text": "Answer the puppeteer's questions",
+     "type": "puzzle",
+     "target": "pz_wayang_quiz",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Jawab pertanyaan dalang"
+    },
+    {
+     "id": "jv5_report",
+     "text": "Sit with Mbah Karto for the story",
+     "type": "talk",
+     "target": "npc_mbah_karto",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Duduk bersama Mbah Karto mendengarkan cerita"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_mbah_karto"
+   },
+   "puzzle": "pz_wayang_quiz",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "naskah_wayang",
+     "col_boneka_lidi"
+    ],
+    "culture": [
+     "wayang_kulit"
+    ],
+    "flags": [
+     "jv_wayang_quiz_passed"
+    ]
+   },
+   "hints": [
+    "Think about where the lamp is and where the audience sits.",
+    "The puppets are in front of the screen; the shadows fall on the other side.",
+    "The performance traditionally runs all night."
+   ],
+   "offer_dialogue": "dlg_jv_05_wayang_offer",
+   "turn_in_dialogue": "dlg_jv_05_wayang_turnin",
+   "title_id": "Di Balik Kelir",
+   "summary_id": "Jawab pertanyaan dalang tentang wayang."
+  },
+  "jv_06_angklung": {
+   "id": "jv_06_angklung",
+   "title": "One Note Each",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_rara",
+   "type": "main",
+   "description": "Rara is teaching a group of children angklung, and the group keeps falling apart because nobody waits their turn.",
+   "summary": "Play angklung with the village children.",
+   "requires": {
+    "quests": [
+     "jv_05_wayang"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_rara"
+   },
+   "objectives": [
+    {
+     "id": "jv6_order",
+     "text": "Learn how a group plays",
+     "type": "puzzle",
+     "target": "pz_angklung_order",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pelajari cara bermain bersama"
+    },
+    {
+     "id": "jv6_play",
+     "text": "Take part in the group game",
+     "type": "minigame",
+     "target": "nod",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Ikut bermain dalam kelompok"
+    },
+    {
+     "id": "jv6_report",
+     "text": "Tell Rara the group is ready",
+     "type": "talk",
+     "target": "npc_rara",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu Rara bahwa kelompok sudah siap"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_rara"
+   },
+   "puzzle": "pz_angklung_order",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "sou_angklung_mini"
+    ],
+    "culture": [
+     "angklung"
+    ],
+    "flags": [
+     "jv_angklung_played"
+    ]
+   },
+   "hints": [
+    "Each instrument makes one note, so the music only exists when many people play.",
+    "Agree the beat before anybody shakes anything.",
+    "Everyone stops together at the signal."
+   ],
+   "offer_dialogue": "dlg_jv_06_angklung_offer",
+   "turn_in_dialogue": "dlg_jv_06_angklung_turnin",
+   "title_id": "Satu Nada untuk Setiap Orang",
+   "summary_id": "Mainkan angklung bersama anak-anak kampung."
+  },
+  "jv_07_candi": {
+   "id": "jv_07_candi",
+   "title": "The Stepped Mountain",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_dewi",
+   "type": "main",
+   "description": "Dewi is copying the relief panels of the old temple for the museum and one panel row is out of order.",
+   "summary": "Reconstruct the temple panel row and walk the galleries.",
+   "requires": {
+    "quests": [
+     "jv_06_angklung"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_dewi"
+   },
+   "objectives": [
+    {
+     "id": "jv7_reach",
+     "text": "Go to the temple grounds",
+     "type": "reach",
+     "target": "java_candi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pergi ke kompleks candi"
+    },
+    {
+     "id": "jv7_panels",
+     "text": "Turn the stone panels straight",
+     "type": "puzzle",
+     "target": "pz_candi_relief",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Luruskan panel-panel batu"
+    },
+    {
+     "id": "jv7_lm",
+     "text": "Walk the temple galleries",
+     "type": "landmark",
+     "target": "lm_candi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Telusuri galeri candi"
+    },
+    {
+     "id": "jv7_report",
+     "text": "Give Dewi the panel notes",
+     "type": "talk",
+     "target": "npc_dewi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Berikan catatan panel kepada Dewi"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_dewi"
+   },
+   "puzzle": "pz_candi_relief",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "col_batu_candi"
+    ],
+    "culture": [
+     "borobudur"
+    ],
+    "flags": [
+     "jv_candi_fixed"
+    ]
+   },
+   "hints": [
+    "Click a panel to turn it a quarter; none of them need to move.",
+    "Fix the top row first and then leave it alone.",
+    "The galleries are walked clockwise, with the temple shape as the story."
+   ],
+   "offer_dialogue": "dlg_jv_07_candi_offer",
+   "turn_in_dialogue": "dlg_jv_07_candi_turnin",
+   "title_id": "Gunung Bertingkat",
+   "summary_id": "Susun kembali panel candi dan telusuri galeri-galerinya."
+  },
+  "jv_08_pasar_java": {
+   "id": "jv_08_pasar_java",
+   "title": "Before the Market Closes",
+   "region": "java",
+   "chapter": 3,
+   "giver": "npc_pedagang",
+   "type": "main",
+   "description": "The trader's stall list is muddled and the market closes before noon. Sort the stalls, and the trader will point you to the crossing south.",
+   "summary": "Sort the morning market and take the road south.",
+   "requires": {
+    "quests": [
+     "jv_07_candi"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "objectives": [
+    {
+     "id": "jv8_match",
+     "text": "Match the stalls to their goods",
+     "type": "puzzle",
+     "target": "pz_javanese_market",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cocokkan kios dengan barang dagangannya"
+    },
+    {
+     "id": "jv8_joglo",
+     "text": "Visit the village hall",
+     "type": "landmark",
+     "target": "lm_joglo",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Kunjungi balai kampung"
+    },
+    {
+     "id": "jv8_report",
+     "text": "Say goodbye to the trader",
+     "type": "talk",
+     "target": "npc_pedagang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Berpamitan kepada pedagang"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "puzzle": "pz_javanese_market",
+   "rewards": {
+    "culture_points": 100,
+    "items": [
+     "sou_batik_syal",
+     "sou_gamelan_mini"
+    ],
+    "culture": [
+     "rumah_joglo",
+     "pasar_tradisional",
+     "warung"
+    ],
+    "flags": [
+     "jv_market_done"
+    ]
+   },
+   "hints": [
+    "Rice in a cone belongs to a food stall, wax to a batik stall.",
+    "The padded mallet is used on bronze, not on cloth.",
+    "The village hall is at the north end, where the gamelan is kept."
+   ],
+   "offer_dialogue": "dlg_jv_08_pasar_java_offer",
+   "turn_in_dialogue": "dlg_jv_08_pasar_java_turnin",
+   "title_id": "Sebelum Pasar Tutup",
+   "summary_id": "Pilah barang-barang pasar pagi dan tempuh jalan ke selatan."
+  },
+  "kl_01_rumah_panjang": {
+   "id": "kl_01_rumah_panjang",
+   "title": "The Long Roof",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_lasan",
+   "type": "main",
+   "description": "A storm took the roof panels off the longhouse gallery. Lasan is re-plaiting them and needs another pair of hands.",
+   "summary": "Repair the longhouse roof and learn how it is shared.",
+   "requires": {
+    "quests": [],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_lasan"
+   },
+   "objectives": [
+    {
+     "id": "kl1_plait",
+     "text": "Plait a roof panel",
+     "type": "puzzle",
+     "target": "pz_roof_plait",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Anyam satu panel atap"
+    },
+    {
+     "id": "kl1_lm",
+     "text": "Walk the long gallery",
+     "type": "landmark",
+     "target": "lm_rumah_panjang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Telusuri selasar panjang"
+    },
+    {
+     "id": "kl1_report",
+     "text": "Report to Lasan",
+     "type": "talk",
+     "target": "npc_lasan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan hasilnya kepada Lasan"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_lasan"
+   },
+   "puzzle": "pz_roof_plait",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "rumpun_rotan",
+     "col_gelang_rotan",
+     "kayu_ukiran"
+    ],
+    "culture": [
+     "rumah_panjang"
+    ],
+    "flags": [
+     "kl_roof_fixed"
+    ]
+   },
+   "hints": [
+    "Rattan is soaked first so that it bends instead of cracking.",
+    "The panel has a hollow centre and a complete outer ring.",
+    "The gallery runs the whole length of the house."
+   ],
+   "offer_dialogue": "dlg_kl_01_rumah_panjang_offer",
+   "turn_in_dialogue": "dlg_kl_01_rumah_panjang_turnin",
+   "title_id": "Atap Panjang",
+   "summary_id": "Perbaiki atap rumah panjang dan pelajari cara warga berbagi ruang."
+  },
+  "kl_02_karungut": {
+   "id": "kl_02_karungut",
+   "title": "A Sung Story",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_tina",
+   "type": "main",
+   "description": "Tina is learning karungut - sung verses - and cannot hold the pulse through a long phrase.",
+   "summary": "Learn the pulse of a sung verse.",
+   "requires": {
+    "quests": [
+     "kl_01_rumah_panjang"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_tina"
+   },
+   "objectives": [
+    {
+     "id": "kl2_beats",
+     "text": "Keep the pulse of the verse",
+     "type": "puzzle",
+     "target": "pz_karungut",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Jaga irama bait"
+    },
+    {
+     "id": "kl2_report",
+     "text": "Sing a verse back to Tina",
+     "type": "talk",
+     "target": "npc_tina",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Nyanyikan satu bait untuk Tina"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_tina"
+   },
+   "puzzle": "pz_karungut",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "anyaman_tifa"
+    ],
+    "culture": [
+     "karungut"
+    ],
+    "flags": [
+     "kl_karungut_sung"
+    ]
+   },
+   "hints": [
+    "A sung story runs on a steady pulse - follow the drum, not your breath.",
+    "The phrases are short, with a longer pause between them.",
+    "You may miss a syllable and still finish the verse."
+   ],
+   "offer_dialogue": "dlg_kl_02_karungut_offer",
+   "turn_in_dialogue": "dlg_kl_02_karungut_turnin",
+   "title_id": "Cerita yang Dinyanyikan",
+   "summary_id": "Pelajari irama bait yang dinyanyikan."
+  },
+  "kl_03_sungai": {
+   "id": "kl_03_sungai",
+   "title": "The Blocked Channel",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_bapa_udi",
+   "type": "main",
+   "description": "A fallen tree is damming a side channel and the boats cannot reach the landing. The channel pieces must be turned so the flow finds its way again.",
+   "summary": "Clear the channel so the river reaches the landing.",
+   "requires": {
+    "quests": [
+     "kl_02_karungut"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_bapa_udi"
+   },
+   "objectives": [
+    {
+     "id": "kl3_reach",
+     "text": "Reach the upper river",
+     "type": "reach",
+     "target": "kalimantan_sungai",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pergi ke bagian hulu"
+    },
+    {
+     "id": "kl3_flow",
+     "text": "Turn the channels",
+     "type": "puzzle",
+     "target": "pz_river_flow",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Atur saluran air"
+    },
+    {
+     "id": "kl3_report",
+     "text": "Tell Bapa Udi the boats can come",
+     "type": "talk",
+     "target": "npc_bapa_udi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu Bapa Udi bahwa perahu bisa datang"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_bapa_udi"
+   },
+   "puzzle": "pz_river_flow",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "peta_lipat"
+    ],
+    "culture": [
+     "hutan_kalimantan"
+    ],
+    "flags": [
+     "kl_channel_open"
+    ]
+   },
+   "hints": [
+    "The channel starts on the left bank, halfway up the map.",
+    "A channel pointing away from the next one blocks the whole line.",
+    "The landing is just above the middle of the right edge."
+   ],
+   "offer_dialogue": "dlg_kl_03_sungai_offer",
+   "turn_in_dialogue": "dlg_kl_03_sungai_turnin",
+   "title_id": "Saluran yang Tersumbat",
+   "summary_id": "Buka saluran agar sungai kembali mengalir ke dermaga."
+  },
+  "kl_04_sasirangan": {
+   "id": "kl_04_sasirangan",
+   "title": "Tied and Dyed",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_rini",
+   "type": "main",
+   "description": "Rini is dyeing cloth for the river festival and one batch came out wrong because the ties were placed at random.",
+   "summary": "Tie and dye a cloth the Banjar way.",
+   "requires": {
+    "quests": [
+     "kl_03_sungai"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_rini"
+   },
+   "objectives": [
+    {
+     "id": "kl4_thread",
+     "text": "Bring the dye thread",
+     "type": "collect",
+     "target": "benang_sasirangan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan benang celup"
+    },
+    {
+     "id": "kl4_pattern",
+     "text": "Tie the pattern",
+     "type": "puzzle",
+     "target": "pz_sasirangan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Ikat kain mengikuti polanya"
+    },
+    {
+     "id": "kl4_report",
+     "text": "Show Rini the dyed cloth",
+     "type": "talk",
+     "target": "npc_rini",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan kain yang sudah dicelup kepada Rini"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_rini"
+   },
+   "puzzle": "pz_sasirangan",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "benang_sasirangan",
+     "sou_sasirangan"
+    ],
+    "culture": [
+     "sasirangan"
+    ],
+    "flags": [
+     "kl_cloth_dyed"
+    ]
+   },
+   "hints": [
+    "The ties form a ring around the middle of the cloth.",
+    "Two of the tied squares sit in opposite corners.",
+    "Count eight ties - not six, not ten."
+   ],
+   "offer_dialogue": "dlg_kl_04_sasirangan_offer",
+   "turn_in_dialogue": "dlg_kl_04_sasirangan_turnin",
+   "title_id": "Ikat dan Celup",
+   "summary_id": "Ikat dan celup kain dengan teknik Banjar."
+  },
+  "kl_05_bengkel": {
+   "id": "kl_05_bengkel",
+   "title": "Tools of the Workshop",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_pengrajin",
+   "type": "main",
+   "description": "The craftsperson's workbench was knocked over and every tool has to be paired with its partner before the day's work can start.",
+   "summary": "Sort the workshop tools and learn what a mandau is for.",
+   "requires": {
+    "quests": [
+     "kl_04_sasirangan"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pengrajin"
+   },
+   "objectives": [
+    {
+     "id": "kl5_tools",
+     "text": "Pair the workshop tools",
+     "type": "puzzle",
+     "target": "pz_mandau_tools",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cocokkan pasangan perkakas"
+    },
+    {
+     "id": "kl5_report",
+     "text": "Ask the craftsperson about the blade",
+     "type": "talk",
+     "target": "npc_pengrajin",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tanyakan kegunaan bilah kepada perajin"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pengrajin"
+   },
+   "puzzle": "pz_mandau_tools",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "pisau_serbaguna",
+     "col_ukiran_kecil_kl"
+    ],
+    "culture": [
+     "mandau"
+    ],
+    "flags": [
+     "kl_tools_sorted"
+    ]
+   },
+   "hints": [
+    "Each tool has exactly one twin on the bench.",
+    "Six pairs, twelve items - work across a row at a time.",
+    "The blade and its sheath belong together."
+   ],
+   "offer_dialogue": "dlg_kl_05_bengkel_offer",
+   "turn_in_dialogue": "dlg_kl_05_bengkel_turnin",
+   "title_id": "Perkakas Bengkel",
+   "summary_id": "Pilah perkakas bengkel dan pelajari kegunaan mandau."
+  },
+  "kl_06_soto": {
+   "id": "kl_06_soto",
+   "title": "Soto from the River Market",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_koki",
+   "type": "main",
+   "description": "The cook at the floating market is short-handed and the spice pot is about to boil over.",
+   "summary": "Cook soto for the river market.",
+   "requires": {
+    "quests": [
+     "kl_05_bengkel"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_koki"
+   },
+   "objectives": [
+    {
+     "id": "kl6_cook",
+     "text": "Cook the soto",
+     "type": "puzzle",
+     "target": "pz_soto_banjar",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Masak soto"
+    },
+    {
+     "id": "kl6_market",
+     "text": "Visit the floating market",
+     "type": "reach",
+     "target": "kalimantan_pasar",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Kunjungi pasar terapung"
+    },
+    {
+     "id": "kl6_report",
+     "text": "Serve the first bowl",
+     "type": "talk",
+     "target": "npc_koki",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Sajikan mangkuk pertama"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_koki"
+   },
+   "puzzle": "pz_soto_banjar",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "bekal_jalan",
+     "col_damar"
+    ],
+    "culture": [
+     "kuliner_kalimantan"
+    ],
+    "flags": [
+     "kl_soto_cooked"
+    ]
+   },
+   "hints": [
+    "Broth first, whole spices second, lime only in the bowl.",
+    "The whole spices are fished out before serving.",
+    "The floating market is east along the water, past the long jetty."
+   ],
+   "offer_dialogue": "dlg_kl_06_soto_offer",
+   "turn_in_dialogue": "dlg_kl_06_soto_turnin",
+   "title_id": "Soto dari Pasar Sungai",
+   "summary_id": "Masak soto untuk pasar sungai."
+  },
+  "kl_07_pasar_logic": {
+   "id": "kl_07_pasar_logic",
+   "title": "Which Boat Carries the Salt?",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_pedagang",
+   "type": "main",
+   "description": "Three boats lie at the landing and the trader's salt is on one of them. The boatmen will not say which.",
+   "summary": "Work out which boat carries the salt.",
+   "requires": {
+    "quests": [
+     "kl_06_soto"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "objectives": [
+    {
+     "id": "kl7_logic",
+     "text": "Work out which boat carries the salt",
+     "type": "puzzle",
+     "target": "pz_pasar_logic",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cari tahu perahu mana yang membawa garam"
+    },
+    {
+     "id": "kl7_report",
+     "text": "Tell the trader where the salt is",
+     "type": "talk",
+     "target": "npc_pedagang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu pedagang di mana garamnya"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "puzzle": "pz_pasar_logic",
+   "rewards": {
+    "culture_points": 80,
+    "items": [
+     "keranjang_bahu",
+     "sou_tas_rotan"
+    ],
+    "culture": [
+     "pasar_terapung"
+    ],
+    "flags": [
+     "kl_salt_found"
+    ]
+   },
+   "hints": [
+    "The boat at the far end has only one neighbour.",
+    "Boat A carries fruit, so the salt is not in A.",
+    "Ask who is moored beside A."
+   ],
+   "offer_dialogue": "dlg_kl_07_pasar_logic_offer",
+   "turn_in_dialogue": "dlg_kl_07_pasar_logic_turnin",
+   "title_id": "Perahu Mana yang Membawa Garam?",
+   "summary_id": "Cari tahu perahu mana yang membawa garam."
+  },
+  "kl_08_gantar": {
+   "id": "kl_08_gantar",
+   "title": "The Planting Dance",
+   "region": "kalimantan",
+   "chapter": 4,
+   "giver": "npc_penari",
+   "type": "main",
+   "description": "The dancers are preparing a gantar for the planting season and the order of the movements keeps getting mixed up.",
+   "summary": "Learn the planting dance and take the river road north.",
+   "requires": {
+    "quests": [
+     "kl_07_pasar_logic"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_penari"
+   },
+   "objectives": [
+    {
+     "id": "kl8_seed",
+     "text": "Bring seed for the planting",
+     "type": "collect",
+     "target": "bibit_padi_ladang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan benih untuk ditanam"
+    },
+    {
+     "id": "kl8_steps",
+     "text": "Learn the planting steps",
+     "type": "puzzle",
+     "target": "pz_gantar_steps",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pelajari gerak menanam"
+    },
+    {
+     "id": "kl8_dance",
+     "text": "Dance the gantar with the troupe",
+     "type": "minigame",
+     "target": "nod",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tari gantar bersama kelompok tari"
+    },
+    {
+     "id": "kl8_report",
+     "text": "Say goodbye to the dancers",
+     "type": "talk",
+     "target": "npc_penari",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Berpamitan kepada para penari"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_penari"
+   },
+   "puzzle": "pz_gantar_steps",
+   "rewards": {
+    "culture_points": 100,
+    "items": [
+     "bibit_padi_ladang",
+     "sou_topi_anyaman",
+     "col_manik_dayak"
+    ],
+    "culture": [
+     "tari_gantar",
+     "tenun_ikat",
+     "ukiran_dayak"
+    ],
+    "flags": [
+     "kl_planting_done"
+    ]
+   },
+   "hints": [
+    "Nothing is planted before the ground is cleared; start there.",
+    "Seed goes into a hole, never on top of the soil.",
+    "The last movement presses the earth down over the seed."
+   ],
+   "offer_dialogue": "dlg_kl_08_gantar_offer",
+   "turn_in_dialogue": "dlg_kl_08_gantar_turnin",
+   "title_id": "Tari Menanam",
+   "summary_id": "Pelajari tari menanam dan tempuh jalur sungai ke utara."
+  },
+  "sl_01_tongkonan": {
+   "id": "sl_01_tongkonan",
+   "title": "The Saddle Roof",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_puang",
+   "type": "main",
+   "description": "The gable of the ancestral house is being recarved and the panels have to be turned the right way before the feast.",
+   "summary": "Help restore the gable of the ancestral house.",
+   "requires": {
+    "quests": [],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_puang"
+   },
+   "objectives": [
+    {
+     "id": "sl1_carve",
+     "text": "Turn the gable panels straight",
+     "type": "puzzle",
+     "target": "pz_tongkonan_carve",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Luruskan panel-panel bubungan"
+    },
+    {
+     "id": "sl1_lm",
+     "text": "Stand before the ancestral house",
+     "type": "landmark",
+     "target": "lm_tongkonan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Berdirilah di depan rumah leluhur"
+    },
+    {
+     "id": "sl1_report",
+     "text": "Report to Puang",
+     "type": "talk",
+     "target": "npc_puang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan hasilnya kepada Puang"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_puang"
+   },
+   "puzzle": "pz_tongkonan_carve",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "ukiran_kayu",
+     "col_keping_kolintang"
+    ],
+    "culture": [
+     "tongkonan"
+    ],
+    "flags": [
+     "sl_gable_fixed"
+    ]
+   },
+   "hints": [
+    "Fix a row at a time and leave it alone once it is right.",
+    "Each turn of a panel is a quarter turn; none of them move.",
+    "The house faces north, and the gable is above the door."
+   ],
+   "offer_dialogue": "dlg_sl_01_tongkonan_offer",
+   "turn_in_dialogue": "dlg_sl_01_tongkonan_turnin",
+   "title_id": "Atap Pelana",
+   "summary_id": "Bantu memperbaiki bubungan rumah leluhur."
+  },
+  "sl_02_phinisi": {
+   "id": "sl_02_phinisi",
+   "title": "A Ship Without Nails",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_dg_naba",
+   "type": "main",
+   "description": "The shipwright is laying the planking of a new hull and needs someone to check the curve pattern before the pegs go in.",
+   "summary": "Lay out the planks of a wooden ship.",
+   "requires": {
+    "quests": [
+     "sl_01_tongkonan"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_dg_naba"
+   },
+   "objectives": [
+    {
+     "id": "sl2_wood",
+     "text": "Bring the planking",
+     "type": "collect",
+     "target": "papan_phinisi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan papan kapal"
+    },
+    {
+     "id": "sl2_pegs",
+     "text": "Bring the wooden pegs",
+     "type": "collect",
+     "target": "pasak_kayu",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan pasak kayu"
+    },
+    {
+     "id": "sl2_hull",
+     "text": "Lay the hull pattern",
+     "type": "puzzle",
+     "target": "pz_phinisi_hull",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bentangkan pola lambung kapal"
+    },
+    {
+     "id": "sl2_report",
+     "text": "Show the shipwright the layout",
+     "type": "talk",
+     "target": "npc_dg_naba",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan tata letaknya kepada pembuat kapal"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_dg_naba"
+   },
+   "puzzle": "pz_phinisi_hull",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "pasak_kayu",
+     "sou_perahu_mini",
+     "layar_kain"
+    ],
+    "culture": [
+     "phinisi"
+    ],
+    "flags": [
+     "sl_hull_laid"
+    ]
+   },
+   "hints": [
+    "No iron goes into a wooden hull - not one nail.",
+    "The pattern narrows towards the keel and widens at the deck line.",
+    "The bottom row is two separate points, not a solid line."
+   ],
+   "offer_dialogue": "dlg_sl_02_phinisi_offer",
+   "turn_in_dialogue": "dlg_sl_02_phinisi_turnin",
+   "title_id": "Kapal Tanpa Paku",
+   "summary_id": "Susun papan-papan untuk membuat kapal kayu."
+  },
+  "sl_03_kolintang": {
+   "id": "sl_03_kolintang",
+   "title": "Wooden Bars and Mallets",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_rambu",
+   "type": "main",
+   "description": "Rambu's kolintang group is one player short for a wedding, and the new player keeps striking the wrong bars.",
+   "summary": "Learn a kolintang part for a wedding.",
+   "requires": {
+    "quests": [
+     "sl_02_phinisi"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_rambu"
+   },
+   "objectives": [
+    {
+     "id": "sl3_bar",
+     "text": "Find a kolintang bar",
+     "type": "collect",
+     "target": "batang_kolintang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Temukan satu bilah kolintang"
+    },
+    {
+     "id": "sl3_listen",
+     "text": "Watch which bars are struck",
+     "type": "puzzle",
+     "target": "pz_kolintang_tune",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Amati bilah mana yang dipukul"
+    },
+    {
+     "id": "sl3_report",
+     "text": "Tell Rambu the group is ready",
+     "type": "talk",
+     "target": "npc_rambu",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu Rambu bahwa kelompok sudah siap"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_rambu"
+   },
+   "puzzle": "pz_kolintang_tune",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "batang_kolintang",
+     "sou_kolintang_mini"
+    ],
+    "culture": [
+     "kolintang"
+    ],
+    "flags": [
+     "sl_kolintang_ready"
+    ]
+   },
+   "hints": [
+    "Watch the four bars that light up - they form a square in the middle.",
+    "You may strike them in any order once you remember them.",
+    "The spare bar is at the workshop behind the church."
+   ],
+   "offer_dialogue": "dlg_sl_03_kolintang_offer",
+   "turn_in_dialogue": "dlg_sl_03_kolintang_turnin",
+   "title_id": "Bilah Kayu dan Pemukul",
+   "summary_id": "Pelajari bagian kolintang untuk pernikahan."
+  },
+  "sl_04_coto": {
+   "id": "sl_04_coto",
+   "title": "Coto for the Harbour",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_koki",
+   "type": "main",
+   "description": "The harbour cook has a queue of dockworkers and one pot of coto left to finish.",
+   "summary": "Cook coto makassar for the harbour crowd.",
+   "requires": {
+    "quests": [
+     "sl_03_kolintang"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_koki"
+   },
+   "objectives": [
+    {
+     "id": "sl4_spice",
+     "text": "Bring the spice mix",
+     "type": "collect",
+     "target": "bumbu_coto",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan campuran rempah"
+    },
+    {
+     "id": "sl4_cook",
+     "text": "Cook the coto",
+     "type": "puzzle",
+     "target": "pz_coto",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Masak coto"
+    },
+    {
+     "id": "sl4_report",
+     "text": "Serve the harbour crowd",
+     "type": "talk",
+     "target": "npc_koki",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Sajikan kepada warga pelabuhan"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_koki"
+   },
+   "puzzle": "pz_coto",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "bumbu_coto",
+     "col_serat_sutra"
+    ],
+    "culture": [
+     "coto_makassar"
+    ],
+    "flags": [
+     "sl_coto_cooked"
+    ]
+   },
+   "hints": [
+    "Peanut is what thickens the broth; it goes in grated, not whole.",
+    "Spices are added after the meat is tender, never before.",
+    "Stop the boil while the marker is inside the golden band."
+   ],
+   "offer_dialogue": "dlg_sl_04_coto_offer",
+   "turn_in_dialogue": "dlg_sl_04_coto_turnin",
+   "title_id": "Coto untuk Pelabuhan",
+   "summary_id": "Masak coto Makassar untuk warga pelabuhan."
+  },
+  "sl_05_pakarena": {
+   "id": "sl_05_pakarena",
+   "title": "The Unhurried Dance",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_penari",
+   "type": "main",
+   "description": "The dancers are rehearsing a Makassar welcome dance and the new dancers keep speeding up against the drum.",
+   "summary": "Learn to follow the drum in a Makassar dance.",
+   "requires": {
+    "quests": [
+     "sl_04_coto"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_penari"
+   },
+   "objectives": [
+    {
+     "id": "sl5_beats",
+     "text": "Follow the drum",
+     "type": "puzzle",
+     "target": "pz_pakarena",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Ikuti irama gendang"
+    },
+    {
+     "id": "sl5_dance",
+     "text": "Dance one round",
+     "type": "minigame",
+     "target": "nod",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Menarilah satu putaran"
+    },
+    {
+     "id": "sl5_report",
+     "text": "Ask the dancer about the pace",
+     "type": "talk",
+     "target": "npc_penari",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tanyakan tempo tarian kepada penari"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_penari"
+   },
+   "puzzle": "pz_pakarena",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "sou_sutra_kecil",
+     "col_kerang"
+    ],
+    "culture": [
+     "tari_pakarena"
+    ],
+    "flags": [
+     "sl_dance_learned"
+    ]
+   },
+   "hints": [
+    "The drum leads; you follow it. There is no counted beat.",
+    "The beats come in pairs with a gap between them.",
+    "Slow is correct - the dance is deliberately unhurried."
+   ],
+   "offer_dialogue": "dlg_sl_05_pakarena_offer",
+   "turn_in_dialogue": "dlg_sl_05_pakarena_turnin",
+   "title_id": "Tari yang Tenang",
+   "summary_id": "Pelajari cara mengikuti gendang dalam tari Makassar."
+  },
+  "sl_06_lontara": {
+   "id": "sl_06_lontara",
+   "title": "The Palm Leaf Archive",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_guru",
+   "type": "main",
+   "description": "The teacher is sorting old palm-leaf records and one strip cannot be identified.",
+   "summary": "Sort the old records in the village archive.",
+   "requires": {
+    "quests": [
+     "sl_05_pakarena"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_guru"
+   },
+   "objectives": [
+    {
+     "id": "sl6_logic",
+     "text": "Identify the record",
+     "type": "puzzle",
+     "target": "pz_lontara_logic",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Kenali catatannya"
+    },
+    {
+     "id": "sl6_report",
+     "text": "Return the strip to the teacher",
+     "type": "talk",
+     "target": "npc_guru",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Kembalikan lembaran itu kepada guru"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_guru"
+   },
+   "puzzle": "pz_lontara_logic",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "naskah_lontara",
+     "col_kulit_lontara"
+    ],
+    "culture": [
+     "lontara",
+     "benteng_rotterdam"
+    ],
+    "flags": [
+     "sl_record_read"
+    ]
+   },
+   "hints": [
+    "Compare the lengths of the strips before the marks on them.",
+    "The double mark appears on one record only.",
+    "Whatever remains is the land record."
+   ],
+   "offer_dialogue": "dlg_sl_06_lontara_offer",
+   "turn_in_dialogue": "dlg_sl_06_lontara_turnin",
+   "title_id": "Arsip Daun Lontar",
+   "summary_id": "Pilah catatan lama di arsip kampung."
+  },
+  "sl_07_bajo": {
+   "id": "sl_07_bajo",
+   "title": "Where the Fish Are",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_nelayan",
+   "type": "main",
+   "description": "The stilt village has had two empty mornings. The fishers' reports need reading to find where the fish have moved.",
+   "summary": "Find the fishing ground from the fishers' reports.",
+   "requires": {
+    "quests": [
+     "sl_06_lontara"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_nelayan"
+   },
+   "objectives": [
+    {
+     "id": "sl7_reach",
+     "text": "Walk the stilt village",
+     "type": "reach",
+     "target": "sulawesi_pantai",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Susuri kampung rumah panggung"
+    },
+    {
+     "id": "sl7_find",
+     "text": "Mark the fishing ground",
+     "type": "puzzle",
+     "target": "pz_bajo_search",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tandai lokasi menangkap ikan"
+    },
+    {
+     "id": "sl7_report",
+     "text": "Give the fishers the position",
+     "type": "talk",
+     "target": "npc_nelayan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan lokasinya kepada para nelayan"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_nelayan"
+   },
+   "puzzle": "pz_bajo_search",
+   "rewards": {
+    "culture_points": 85,
+    "items": [
+     "col_kerang"
+    ],
+    "culture": [
+     "bajo_village"
+    ],
+    "flags": [
+     "sl_fishing_ground"
+    ]
+   },
+   "hints": [
+    "West is the left side of the map and north is up.",
+    "Fish were seen where the reef meets the deep channel.",
+    "The channel runs south of the village, so the ground is between the two."
+   ],
+   "offer_dialogue": "dlg_sl_07_bajo_offer",
+   "turn_in_dialogue": "dlg_sl_07_bajo_turnin",
+   "title_id": "Di Mana Ikannya?",
+   "summary_id": "Temukan lokasi menangkap ikan dari laporan para nelayan."
+  },
+  "sl_08_pelabuhan": {
+   "id": "sl_08_pelabuhan",
+   "title": "Ports and Cargo",
+   "region": "sulawesi",
+   "chapter": 5,
+   "giver": "npc_pedagang",
+   "type": "main",
+   "description": "The last thing before the eastern crossing: the trader's cargo ledger has to be matched to the ports it came from.",
+   "summary": "Sort the harbour ledger and take ship east.",
+   "requires": {
+    "quests": [
+     "sl_07_bajo"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "objectives": [
+    {
+     "id": "sl8_match",
+     "text": "Match each cargo to its port",
+     "type": "puzzle",
+     "target": "pz_harbour_match",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cocokkan setiap muatan dengan pelabuhannya"
+    },
+    {
+     "id": "sl8_report",
+     "text": "Close the ledger with the trader",
+     "type": "talk",
+     "target": "npc_pedagang",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tutup buku muatan bersama pedagang"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pedagang"
+   },
+   "puzzle": "pz_harbour_match",
+   "rewards": {
+    "culture_points": 110,
+    "items": [
+     "sou_perahu_mini"
+    ],
+    "culture": [
+     "sutra_sengkang",
+     "sagu_maluku"
+    ],
+    "flags": [
+     "sl_ledger_done"
+    ]
+   },
+   "hints": [
+    "Silk comes from where it is woven, ships from where they are built.",
+    "Sago travels by boat; it does not come down a mountain road.",
+    "Each answer names a place you have already stood in."
+   ],
+   "offer_dialogue": "dlg_sl_08_pelabuhan_offer",
+   "turn_in_dialogue": "dlg_sl_08_pelabuhan_turnin",
+   "title_id": "Pelabuhan dan Muatan",
+   "summary_id": "Pilah buku muatan pelabuhan dan berlayarlah ke timur."
+  },
+  "pp_01_honai": {
+   "id": "pp_01_honai",
+   "title": "A House for the Cold Nights",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_yosia",
+   "type": "main",
+   "description": "The nights in the valley are cold and the thatch on the small house has to be rebuilt before the rains.",
+   "summary": "Rebuild the roof of a round highland house.",
+   "requires": {
+    "quests": [],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_yosia"
+   },
+   "objectives": [
+    {
+     "id": "pp1_build",
+     "text": "Lay the roof thatch",
+     "type": "puzzle",
+     "target": "pz_honai_build",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bentangkan ilalang atap"
+    },
+    {
+     "id": "pp1_lm",
+     "text": "Look at the round house",
+     "type": "landmark",
+     "target": "lm_honai",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Amati rumah bundar"
+    },
+    {
+     "id": "pp1_report",
+     "text": "Report to Yosia",
+     "type": "talk",
+     "target": "npc_yosia",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan hasilnya kepada Yosia"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_yosia"
+   },
+   "puzzle": "pz_honai_build",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "col_noken_kecil"
+    ],
+    "culture": [
+     "honai"
+    ],
+    "flags": [
+     "pp_roof_built"
+    ]
+   },
+   "hints": [
+    "A honai roof is a cone of thatch - thick at the base and narrow at the top.",
+    "The pattern widens with every row.",
+    "The lowest three rows are filled in completely."
+   ],
+   "offer_dialogue": "dlg_pp_01_honai_offer",
+   "turn_in_dialogue": "dlg_pp_01_honai_turnin",
+   "title_id": "Rumah untuk Malam yang Dingin",
+   "summary_id": "Bangun kembali atap rumah bundar di dataran tinggi."
+  },
+  "pp_02_noken": {
+   "id": "pp_02_noken",
+   "title": "The Knotted Bag",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_mama_lena",
+   "type": "main",
+   "description": "Mama Lena is making a noken and the knots have to be paired exactly, or the bag will not stretch evenly.",
+   "summary": "Learn the knots of a noken bag.",
+   "requires": {
+    "quests": [
+     "pp_01_honai"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_mama_lena"
+   },
+   "objectives": [
+    {
+     "id": "pp2_fibre",
+     "text": "Bring bark fibre",
+     "type": "collect",
+     "target": "serat_noken",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan serat kulit kayu"
+    },
+    {
+     "id": "pp2_knots",
+     "text": "Pair the knots",
+     "type": "puzzle",
+     "target": "pz_noken_knot",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cocokkan pasangan simpul"
+    },
+    {
+     "id": "pp2_report",
+     "text": "Show Mama Lena the knots",
+     "type": "talk",
+     "target": "npc_mama_lena",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan simpul-simpulnya kepada Mama Lena"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_mama_lena"
+   },
+   "puzzle": "pz_noken_knot",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "serat_noken",
+     "sou_noken_tas"
+    ],
+    "culture": [
+     "noken"
+    ],
+    "flags": [
+     "pp_knots_paired"
+    ]
+   },
+   "hints": [
+    "Six knots, twelve cards - each knot has exactly one twin.",
+    "Work across the top row first, then down.",
+    "The fibre is in the smoke rack above the hearth."
+   ],
+   "offer_dialogue": "dlg_pp_02_noken_offer",
+   "turn_in_dialogue": "dlg_pp_02_noken_turnin",
+   "title_id": "Tas Bersimpul",
+   "summary_id": "Pelajari simpul-simpul pada tas noken."
+  },
+  "pp_03_papeda": {
+   "id": "pp_03_papeda",
+   "title": "Sago and Fish",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_petrus",
+   "type": "main",
+   "description": "Petrus is cooking papeda for the whole family and the sago has to go into the water at exactly the right moment.",
+   "summary": "Cook papeda and fish soup.",
+   "requires": {
+    "quests": [
+     "pp_02_noken"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_petrus"
+   },
+   "objectives": [
+    {
+     "id": "pp3_sago",
+     "text": "Bring the sago",
+     "type": "collect",
+     "target": "sagu_kering",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan sagu"
+    },
+    {
+     "id": "pp3_fish",
+     "text": "Bring fish for the soup",
+     "type": "collect",
+     "target": "ikan_kuning",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan ikan untuk sup"
+    },
+    {
+     "id": "pp3_cook",
+     "text": "Cook the papeda",
+     "type": "puzzle",
+     "target": "pz_papeda",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Masak papeda"
+    },
+    {
+     "id": "pp3_report",
+     "text": "Eat with the family",
+     "type": "talk",
+     "target": "npc_petrus",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Makan bersama keluarga"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_petrus"
+   },
+   "puzzle": "pz_papeda",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "sagu_kering",
+     "gaung_papeda"
+    ],
+    "culture": [
+     "papeda"
+    ],
+    "flags": [
+     "pp_papeda_cooked"
+    ]
+   },
+   "hints": [
+    "Sago thickens all at once if the starch goes in too fast - stir while you pour.",
+    "The fish soup simmers while the sago is being stirred.",
+    "The sago is at the smoke rack and the fish is at the drying rack by the river."
+   ],
+   "offer_dialogue": "dlg_pp_03_papeda_offer",
+   "turn_in_dialogue": "dlg_pp_03_papeda_turnin",
+   "title_id": "Sagu dan Ikan",
+   "summary_id": "Masak papeda dan sup ikan."
+  },
+  "pp_04_tifa": {
+   "id": "pp_04_tifa",
+   "title": "Drum Call",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_tomas",
+   "type": "main",
+   "description": "Tomas is carving a drum body and needs the call pattern again in his hands before the evening gathering.",
+   "summary": "Learn the drum call for the evening gathering.",
+   "requires": {
+    "quests": [
+     "pp_03_papeda"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_tomas"
+   },
+   "objectives": [
+    {
+     "id": "pp4_skin",
+     "text": "Bring the drum skin",
+     "type": "collect",
+     "target": "anyaman_tifa",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan kulit gendang"
+    },
+    {
+     "id": "pp4_call",
+     "text": "Answer the drum call",
+     "type": "puzzle",
+     "target": "pz_tifa_pattern",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Jawab panggilan gendang"
+    },
+    {
+     "id": "pp4_report",
+     "text": "Play the call for Tomas",
+     "type": "talk",
+     "target": "npc_tomas",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Mainkan panggilan itu untuk Tomas"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_tomas"
+   },
+   "puzzle": "pz_tifa_pattern",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "anyaman_tifa",
+     "sou_tifa_mini"
+    ],
+    "culture": [
+     "tifa"
+    ],
+    "flags": [
+     "pp_call_learned"
+    ]
+   },
+   "hints": [
+    "The call starts at the top corner and closes at the bottom.",
+    "Six strikes, not eight - count them as they light up.",
+    "Answer in any order; only the set of strikes matters."
+   ],
+   "offer_dialogue": "dlg_pp_04_tifa_offer",
+   "turn_in_dialogue": "dlg_pp_04_tifa_turnin",
+   "title_id": "Panggilan Gendang",
+   "summary_id": "Pelajari panggilan gendang untuk pertemuan malam."
+  },
+  "pp_05_lembah": {
+   "id": "pp_05_lembah",
+   "title": "Watering the Gardens",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_guru",
+   "type": "main",
+   "description": "The teacher is showing the garden ditches to the children, and one channel is turned the wrong way.",
+   "summary": "Open the ditch to the sweet potato beds.",
+   "requires": {
+    "quests": [
+     "pp_04_tifa"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_guru"
+   },
+   "objectives": [
+    {
+     "id": "pp5_reach",
+     "text": "Walk the valley gardens",
+     "type": "reach",
+     "target": "papua_lembah",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Susuri kebun di lembah"
+    },
+    {
+     "id": "pp5_ditch",
+     "text": "Turn the ditches",
+     "type": "puzzle",
+     "target": "pz_valley_ditches",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Atur parit-paritnya"
+    },
+    {
+     "id": "pp5_seed",
+     "text": "Carry cuttings to the beds",
+     "type": "collect",
+     "target": "bibit_ubi",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Bawakan stek tanaman ke bedengan"
+    },
+    {
+     "id": "pp5_report",
+     "text": "Report to the teacher",
+     "type": "talk",
+     "target": "npc_guru",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan hasilnya kepada guru"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_guru"
+   },
+   "puzzle": "pz_valley_ditches",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "bibit_ubi",
+     "col_batu_lukis"
+    ],
+    "culture": [
+     "baliem_valley",
+     "rumah_kaki_seribu"
+    ],
+    "flags": [
+     "pp_ditch_open"
+    ]
+   },
+   "hints": [
+    "The stream enters near the top edge, one column across from the corner.",
+    "These gardens are drained, not flooded; the ditch must keep running.",
+    "The beds are in the bottom row, middle column."
+   ],
+   "offer_dialogue": "dlg_pp_05_lembah_offer",
+   "turn_in_dialogue": "dlg_pp_05_lembah_turnin",
+   "title_id": "Mengairi Kebun",
+   "summary_id": "Buka parit menuju bedengan ubi jalar."
+  },
+  "pp_06_sentani": {
+   "id": "pp_06_sentani",
+   "title": "Something by the Lake",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_petrus",
+   "type": "main",
+   "description": "A canoe has gone missing on the lake and the villagers' directions disagree.",
+   "summary": "Find the missing canoe by the lake.",
+   "requires": {
+    "quests": [
+     "pp_05_lembah"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_petrus"
+   },
+   "objectives": [
+    {
+     "id": "pp6_lake",
+     "text": "Reach the lake shore",
+     "type": "reach",
+     "target": "papua_danau",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Pergi ke tepi danau"
+    },
+    {
+     "id": "pp6_find",
+     "text": "Mark the place on the shore",
+     "type": "puzzle",
+     "target": "pz_sentani_find",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tandai tempat di tepi air"
+    },
+    {
+     "id": "pp6_report",
+     "text": "Tell the village the canoe is safe",
+     "type": "talk",
+     "target": "npc_petrus",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Beri tahu warga kampung bahwa kano aman"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_petrus"
+   },
+   "puzzle": "pz_sentani_find",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "peta_lipat"
+    ],
+    "culture": [
+     "danau_sentani"
+    ],
+    "flags": [
+     "pp_canoe_found"
+    ]
+   },
+   "hints": [
+    "North is up on the search map, east is right.",
+    "Start at the old canoe, then move east to the painted stones.",
+    "The drying racks stand between the stones and the water."
+   ],
+   "offer_dialogue": "dlg_pp_06_sentani_offer",
+   "turn_in_dialogue": "dlg_pp_06_sentani_turnin",
+   "title_id": "Sesuatu di Tepi Danau",
+   "summary_id": "Temukan kano yang hilang di dekat danau."
+  },
+  "pp_07_kulit_kayu": {
+   "id": "pp_07_kulit_kayu",
+   "title": "Beaten Cloth",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_mama_lena",
+   "type": "main",
+   "description": "Mama Lena is making bark cloth and the sheet must be beaten flat before it dries, or the whole morning is wasted.",
+   "summary": "Make bark cloth from start to finish.",
+   "requires": {
+    "quests": [
+     "pp_06_sentani"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_mama_lena"
+   },
+   "objectives": [
+    {
+     "id": "pp7_steps",
+     "text": "Order the steps of making bark cloth",
+     "type": "puzzle",
+     "target": "pz_barkcloth",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Susun urutan pembuatan kain kulit kayu"
+    },
+    {
+     "id": "pp7_report",
+     "text": "Show Mama Lena the finished sheet",
+     "type": "talk",
+     "target": "npc_mama_lena",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tunjukkan kain yang sudah jadi kepada Mama Lena"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_mama_lena"
+   },
+   "puzzle": "pz_barkcloth",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "serat_kulit_kayu",
+     "col_serat_sagu_kol",
+     "sou_ukiran_papua"
+    ],
+    "culture": [
+     "kain_kulit_kayu",
+     "asmat_carving"
+    ],
+    "flags": [
+     "pp_barkcloth_made"
+    ]
+   },
+   "hints": [
+    "Bark is soaked before it is beaten, never the other way round.",
+    "The sheet is dried flat; if it curls, it cannot be painted.",
+    "Painting is the last step of all."
+   ],
+   "offer_dialogue": "dlg_pp_07_kulit_kayu_offer",
+   "turn_in_dialogue": "dlg_pp_07_kulit_kayu_turnin",
+   "title_id": "Kain Pukul dari Kulit Kayu",
+   "summary_id": "Buat kain kulit kayu dari awal hingga selesai."
+  },
+  "pp_08_burung": {
+   "id": "pp_08_burung",
+   "title": "Watching, Not Catching",
+   "region": "papua",
+   "chapter": 6,
+   "giver": "npc_pengembara",
+   "type": "main",
+   "description": "A bird watcher has been in the forest since before dawn and needs help reading the notes they brought back.",
+   "summary": "Identify a bird from the watchers' notes.",
+   "requires": {
+    "quests": [
+     "pp_07_kulit_kayu"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_pengembara"
+   },
+   "objectives": [
+    {
+     "id": "pp8_reach",
+     "text": "Walk into the forest",
+     "type": "reach",
+     "target": "papua_hutan",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Masuklah ke hutan"
+    },
+    {
+     "id": "pp8_notes",
+     "text": "Work out which bird was seen",
+     "type": "puzzle",
+     "target": "pz_bird_logic",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Cari tahu burung mana yang terlihat"
+    },
+    {
+     "id": "pp8_report",
+     "text": "Report the sighting",
+     "type": "talk",
+     "target": "npc_pengembara",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Laporkan hasil pengamatan"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_pengembara"
+   },
+   "puzzle": "pz_bird_logic",
+   "rewards": {
+    "culture_points": 90,
+    "items": [
+     "col_bulu_molt"
+    ],
+    "culture": [
+     "burung_cenderawasih"
+    ],
+    "flags": [
+     "pp_bird_logged"
+    ]
+   },
+   "hints": [
+    "The notes are about behaviour, not about catching anything.",
+    "One bird displays at dawn and folds its plumes into a fan.",
+    "Choose the bird the notes describe."
+   ],
+   "offer_dialogue": "dlg_pp_08_burung_offer",
+   "turn_in_dialogue": "dlg_pp_08_burung_turnin",
+   "title_id": "Mengamati, Bukan Menangkap",
+   "summary_id": "Kenali burung dari catatan para pengamat."
+  },
+  "pp_09_jejak": {
+   "id": "pp_09_jejak",
+   "title": "The Keeping of Records",
+   "region": "papua",
+   "chapter": 7,
+   "giver": "npc_penjaga",
+   "type": "main",
+   "description": "Before the notebook is closed, the village keeper has one last test: everything you have recorded, asked back to you.",
+   "summary": "Pass the final test and close the notebook.",
+   "requires": {
+    "quests": [
+     "pp_08_burung"
+    ],
+    "flags": []
+   },
+   "start": {
+    "type": "talk",
+    "npc": "npc_penjaga"
+   },
+   "objectives": [
+    {
+     "id": "pp9_quiz",
+     "text": "Answer the keeper's questions",
+     "type": "puzzle",
+     "target": "pz_quiz_festival",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Jawab pertanyaan penjaga kampung"
+    },
+    {
+     "id": "pp9_report",
+     "text": "Close the notebook with the keeper",
+     "type": "talk",
+     "target": "npc_penjaga",
+     "count": 1,
+     "hidden": false,
+     "text_id": "Tutup buku catatan bersama penjaga kampung"
+    }
+   ],
+   "complete": {
+    "type": "talk",
+    "npc": "npc_penjaga"
+   },
+   "puzzle": "pz_quiz_festival",
+   "rewards": {
+    "culture_points": 150,
+    "items": [
+     "jurnal_nenek"
+    ],
+    "culture": [
+     "nusantara_intro",
+     "gotong_royong"
+    ],
+    "flags": [
+     "story_complete"
+    ]
+   },
+   "hints": [
+    "Every question comes from something a person told you along the road.",
+    "You may retry the test as many times as you like - it is a test, not a gate.",
+    "The keeper will not ask about anything you never heard."
+   ],
+   "offer_dialogue": "dlg_pp_09_jejak_offer",
+   "turn_in_dialogue": "dlg_pp_09_jejak_turnin",
+   "title_id": "Menyimpan Catatan",
+   "summary_id": "Lalui ujian terakhir dan tutup buku catatan."
+  }
+ }
+}

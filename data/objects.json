@@ -1,0 +1,1580 @@
+{
+ "tree_tropical": {
+  "file": "assets/objects/tree_tropical.png",
+  "size": [
+   64,
+   88
+  ],
+  "collision": [
+   -20,
+   62,
+   40,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Tropical tree",
+   "id": "Pohon tropis"
+  }
+ },
+ "tree_tropical2": {
+  "file": "assets/objects/tree_tropical2.png",
+  "size": [
+   64,
+   88
+  ],
+  "collision": [
+   -20,
+   62,
+   40,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Broad-leaf tropical tree",
+   "id": "Pohon tropis rimbun"
+  }
+ },
+ "tree_fruit": {
+  "file": "assets/objects/tree_fruit.png",
+  "size": [
+   64,
+   88
+  ],
+  "collision": [
+   -20,
+   62,
+   40,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Fruit tree",
+   "id": "Pohon buah"
+  }
+ },
+ "tree_palm": {
+  "file": "assets/objects/tree_palm.png",
+  "size": [
+   56,
+   84
+  ],
+  "collision": [
+   -16,
+   58,
+   32,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Palm tree",
+   "id": "Pohon palem"
+  }
+ },
+ "tree_palm2": {
+  "file": "assets/objects/tree_palm2.png",
+  "size": [
+   56,
+   84
+  ],
+  "collision": [
+   -16,
+   58,
+   32,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Palm tree",
+   "id": "Pohon palem"
+  }
+ },
+ "tree_pine": {
+  "file": "assets/objects/tree_pine.png",
+  "size": [
+   44,
+   76
+  ],
+  "collision": [
+   -14,
+   54,
+   28,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Pine tree",
+   "id": "Pohon pinus"
+  }
+ },
+ "bamboo_cluster": {
+  "file": "assets/objects/bamboo_cluster.png",
+  "size": [
+   48,
+   70
+  ],
+  "collision": [
+   -14,
+   48,
+   28,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": true,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Bamboo cluster",
+   "id": "Rumpun bambu"
+  }
+ },
+ "bush_green": {
+  "file": "assets/objects/bush_green.png",
+  "size": [
+   40,
+   28
+  ],
+  "collision": [
+   -10,
+   14,
+   20,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Green shrub",
+   "id": "Semak hijau"
+  }
+ },
+ "bush_flower": {
+  "file": "assets/objects/bush_flower.png",
+  "size": [
+   40,
+   28
+  ],
+  "collision": [
+   -10,
+   14,
+   20,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Flowering shrub",
+   "id": "Semak berbunga"
+  }
+ },
+ "bush_dark": {
+  "file": "assets/objects/bush_dark.png",
+  "size": [
+   40,
+   28
+  ],
+  "collision": [
+   -10,
+   14,
+   20,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Shaded shrub",
+   "id": "Semak rindang"
+  }
+ },
+ "fern": {
+  "file": "assets/objects/fern.png",
+  "size": [
+   42,
+   34
+  ],
+  "collision": [
+   -10,
+   14,
+   20,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Fern",
+   "id": "Pakis"
+  }
+ },
+ "rock_small": {
+  "file": "assets/objects/rock_small.png",
+  "size": [
+   34,
+   26
+  ],
+  "collision": [
+   -9,
+   12,
+   18,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Small rock",
+   "id": "Batu kecil"
+  }
+ },
+ "rock_big": {
+  "file": "assets/objects/rock_big.png",
+  "size": [
+   34,
+   26
+  ],
+  "collision": [
+   -14,
+   14,
+   28,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Large boulder",
+   "id": "Bongkah batu"
+  }
+ },
+ "stump": {
+  "file": "assets/objects/stump.png",
+  "size": [
+   28,
+   20
+  ],
+  "collision": [
+   -10,
+   12,
+   20,
+   8
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Tree stump",
+   "id": "Tunggul pohon"
+  }
+ },
+ "flower_patch": {
+  "file": "assets/objects/flower_patch.png",
+  "size": [
+   26,
+   20
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Flower patch",
+   "id": "Rumpun bunga"
+  }
+ },
+ "flower_patch2": {
+  "file": "assets/objects/flower_patch2.png",
+  "size": [
+   26,
+   20
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Flower patch",
+   "id": "Rumpun bunga"
+  }
+ },
+ "mushroom": {
+  "file": "assets/objects/mushroom.png",
+  "size": [
+   20,
+   18
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Mushroom",
+   "id": "Jamur"
+  }
+ },
+ "log": {
+  "file": "assets/objects/log.png",
+  "size": [
+   46,
+   22
+  ],
+  "collision": [
+   -20,
+   12,
+   40,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Fallen log",
+   "id": "Batang kayu tumbang"
+  }
+ },
+ "reed_clump": {
+  "file": "assets/objects/reed_clump.png",
+  "size": [
+   34,
+   34
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Reed clump",
+   "id": "Rumpun gelagah"
+  }
+ },
+ "lily_pad": {
+  "file": "assets/objects/lily_pad.png",
+  "size": [
+   26,
+   18
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Water lily",
+   "id": "Teratai"
+  }
+ },
+ "mountain_rock": {
+  "file": "assets/objects/mountain_rock.png",
+  "size": [
+   96,
+   84
+  ],
+  "collision": [
+   -40,
+   58,
+   80,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Mountain rock",
+   "id": "Tebing batu"
+  }
+ },
+ "waterfall": {
+  "file": "assets/objects/waterfall.png",
+  "size": [
+   96,
+   120
+  ],
+  "collision": [
+   -30,
+   30,
+   60,
+   88
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Waterfall",
+   "id": "Air terjun"
+  }
+ },
+ "cave_mouth": {
+  "file": "assets/objects/cave_mouth.png",
+  "size": [
+   120,
+   96
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Cave entrance",
+   "id": "Mulut gua"
+  }
+ },
+ "rice_terrace_edge": {
+  "file": "assets/objects/rice_terrace_edge.png",
+  "size": [
+   96,
+   40
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Rice terrace",
+   "id": "Teras sawah"
+  }
+ },
+ "rumah_gadang": {
+  "file": "assets/objects/rumah_gadang.png",
+  "size": [
+   176,
+   128
+  ],
+  "collision": [
+   -70,
+   92,
+   140,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Rumah Gadang",
+   "id": "Rumah Gadang"
+  }
+ },
+ "joglo_house": {
+  "file": "assets/objects/joglo_house.png",
+  "size": [
+   132,
+   122
+  ],
+  "collision": [
+   -52,
+   96,
+   104,
+   22
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Joglo house",
+   "id": "Rumah Joglo"
+  }
+ },
+ "joglo_house_small": {
+  "file": "assets/objects/joglo_house_small.png",
+  "size": [
+   102,
+   95
+  ],
+  "collision": [
+   -42,
+   96,
+   84,
+   22
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Small Joglo house",
+   "id": "Rumah Joglo kecil"
+  }
+ },
+ "rumah_panjang": {
+  "file": "assets/objects/rumah_panjang.png",
+  "size": [
+   224,
+   124
+  ],
+  "collision": [
+   -96,
+   96,
+   192,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Longhouse",
+   "id": "Rumah panjang"
+  }
+ },
+ "tongkonan": {
+  "file": "assets/objects/tongkonan.png",
+  "size": [
+   150,
+   134
+  ],
+  "collision": [
+   -56,
+   100,
+   112,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Tongkonan",
+   "id": "Tongkonan"
+  }
+ },
+ "honai": {
+  "file": "assets/objects/honai.png",
+  "size": [
+   78,
+   84
+  ],
+  "collision": [
+   -24,
+   66,
+   48,
+   18
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Honai",
+   "id": "Honai"
+  }
+ },
+ "honai_big": {
+  "file": "assets/objects/honai_big.png",
+  "size": [
+   104,
+   108
+  ],
+  "collision": [
+   -34,
+   86,
+   68,
+   22
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Large Honai",
+   "id": "Honai besar"
+  }
+ },
+ "hut_coastal": {
+  "file": "assets/objects/hut_coastal.png",
+  "size": [
+   96,
+   88
+  ],
+  "collision": [
+   -34,
+   62,
+   68,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Coastal hut",
+   "id": "Rumah pesisir"
+  }
+ },
+ "lumbung": {
+  "file": "assets/objects/lumbung.png",
+  "size": [
+   84,
+   96
+  ],
+  "collision": [
+   -28,
+   60,
+   56,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Rice barn",
+   "id": "Lumbung padi"
+  }
+ },
+ "warung": {
+  "file": "assets/objects/warung.png",
+  "size": [
+   76,
+   68
+  ],
+  "collision": [
+   -30,
+   42,
+   60,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Warung",
+   "id": "Warung"
+  }
+ },
+ "warung_green": {
+  "file": "assets/objects/warung_green.png",
+  "size": [
+   76,
+   68
+  ],
+  "collision": [
+   -30,
+   42,
+   60,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Green Warung",
+   "id": "Warung hijau"
+  }
+ },
+ "food_stall": {
+  "file": "assets/objects/food_stall.png",
+  "size": [
+   88,
+   60
+  ],
+  "collision": [
+   -36,
+   28,
+   72,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Food stall",
+   "id": "Warung makanan"
+  }
+ },
+ "workshop": {
+  "file": "assets/objects/workshop.png",
+  "size": [
+   92,
+   76
+  ],
+  "collision": [
+   -36,
+   40,
+   72,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Workshop",
+   "id": "Tempat kerja"
+  }
+ },
+ "workshop_java": {
+  "file": "assets/objects/workshop_java.png",
+  "size": [
+   92,
+   76
+  ],
+  "collision": [
+   -36,
+   40,
+   72,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Workshop",
+   "id": "Tempat kerja"
+  }
+ },
+ "cultural_center": {
+  "file": "assets/objects/cultural_center.png",
+  "size": [
+   128,
+   100
+  ],
+  "collision": [
+   -52,
+   48,
+   104,
+   44
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Cultural center",
+   "id": "Balai budaya"
+  }
+ },
+ "cultural_center_timur": {
+  "file": "assets/objects/cultural_center_timur.png",
+  "size": [
+   128,
+   100
+  ],
+  "collision": [
+   -52,
+   48,
+   104,
+   44
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Cultural center",
+   "id": "Balai budaya"
+  }
+ },
+ "candi": {
+  "file": "assets/objects/candi.png",
+  "size": [
+   118,
+   140
+  ],
+  "collision": [
+   -52,
+   116,
+   104,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "landmark",
+  "inspect_name": {
+   "en": "Candi",
+   "id": "Candi"
+  }
+ },
+ "gate_keraton": {
+  "file": "assets/objects/gate_keraton.png",
+  "size": [
+   126,
+   118
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "landmark",
+  "inspect_name": {
+   "en": "Palace gate",
+   "id": "Gerbang keraton"
+  }
+ },
+ "clock_tower": {
+  "file": "assets/objects/clock_tower.png",
+  "size": [
+   74,
+   152
+  ],
+  "collision": [
+   -22,
+   138,
+   44,
+   16
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "landmark",
+  "inspect_name": {
+   "en": "Clock tower",
+   "id": "Menara jam"
+  }
+ },
+ "lookout_tower": {
+  "file": "assets/objects/lookout_tower.png",
+  "size": [
+   92,
+   132
+  ],
+  "collision": [
+   -24,
+   120,
+   48,
+   14
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "landmark",
+  "inspect_name": {
+   "en": "Lookout tower",
+   "id": "Menara pandang"
+  }
+ },
+ "boat_dock_house": {
+  "file": "assets/objects/boat_dock_house.png",
+  "size": [
+   118,
+   104
+  ],
+  "collision": [
+   -48,
+   68,
+   96,
+   30
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Dockside house",
+   "id": "Rumah dermaga"
+  }
+ },
+ "stage": {
+  "file": "assets/objects/stage.png",
+  "size": [
+   140,
+   96
+  ],
+  "collision": [
+   -60,
+   62,
+   120,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Stage",
+   "id": "Panggung"
+  }
+ },
+ "fence": {
+  "file": "assets/objects/fence.png",
+  "size": [
+   64,
+   30
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Fence",
+   "id": "Pagar"
+  }
+ },
+ "fence_wood": {
+  "file": "assets/objects/fence_wood.png",
+  "size": [
+   64,
+   30
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Wooden fence",
+   "id": "Pagar kayu"
+  }
+ },
+ "signpost": {
+  "file": "assets/objects/signpost.png",
+  "size": [
+   34,
+   46
+  ],
+  "collision": [
+   -8,
+   22,
+   16,
+   20
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Signpost",
+   "id": "Papan petunjuk"
+  }
+ },
+ "lantern": {
+  "file": "assets/objects/lantern.png",
+  "size": [
+   26,
+   40
+  ],
+  "collision": [
+   -6,
+   24,
+   12,
+   14
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Lantern",
+   "id": "Lentera"
+  }
+ },
+ "brazier": {
+  "file": "assets/objects/brazier.png",
+  "size": [
+   28,
+   34
+  ],
+  "collision": [
+   -10,
+   24,
+   20,
+   8
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Brazier",
+   "id": "Tungku bara"
+  }
+ },
+ "well": {
+  "file": "assets/objects/well.png",
+  "size": [
+   46,
+   50
+  ],
+  "collision": [
+   -14,
+   24,
+   28,
+   18
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Well",
+   "id": "Sumur"
+  }
+ },
+ "bridge_plank": {
+  "file": "assets/objects/bridge_plank.png",
+  "size": [
+   64,
+   38
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Bridge plank",
+   "id": "Papan jembatan"
+  }
+ },
+ "canoe": {
+  "file": "assets/objects/canoe.png",
+  "size": [
+   64,
+   26
+  ],
+  "collision": [
+   -24,
+   14,
+   48,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Canoe",
+   "id": "Kano"
+  }
+ },
+ "dock": {
+  "file": "assets/objects/dock.png",
+  "size": [
+   96,
+   46
+  ],
+  "collision": null,
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Dock",
+   "id": "Dermaga"
+  }
+ },
+ "pot_plant": {
+  "file": "assets/objects/pot_plant.png",
+  "size": [
+   24,
+   30
+  ],
+  "collision": [
+   -9,
+   20,
+   18,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Potted plant",
+   "id": "Tanaman pot"
+  }
+ },
+ "basket": {
+  "file": "assets/objects/basket.png",
+  "size": [
+   26,
+   24
+  ],
+  "collision": [
+   -10,
+   12,
+   20,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Basket",
+   "id": "Keranjang"
+  }
+ },
+ "drying_rack": {
+  "file": "assets/objects/drying_rack.png",
+  "size": [
+   58,
+   44
+  ],
+  "collision": [
+   -20,
+   12,
+   40,
+   28
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Drying rack",
+   "id": "Rak jemuran"
+  }
+ },
+ "drying_rack_blue": {
+  "file": "assets/objects/drying_rack_blue.png",
+  "size": [
+   58,
+   44
+  ],
+  "collision": [
+   -20,
+   12,
+   40,
+   28
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Drying rack",
+   "id": "Rak jemuran"
+  }
+ },
+ "gamelan_set": {
+  "file": "assets/objects/gamelan_set.png",
+  "size": [
+   78,
+   54
+  ],
+  "collision": [
+   -32,
+   40,
+   64,
+   8
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Gamelan set",
+   "id": "Perangkat gamelan"
+  }
+ },
+ "angklung_stand": {
+  "file": "assets/objects/angklung_stand.png",
+  "size": [
+   60,
+   62
+  ],
+  "collision": [
+   -22,
+   50,
+   44,
+   8
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Angklung stand",
+   "id": "Rak angklung"
+  }
+ },
+ "loom": {
+  "file": "assets/objects/loom.png",
+  "size": [
+   66,
+   58
+  ],
+  "collision": [
+   -24,
+   46,
+   48,
+   8
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Loom",
+   "id": "Alat tenun"
+  }
+ },
+ "cooking_fire": {
+  "file": "assets/objects/cooking_fire.png",
+  "size": [
+   40,
+   36
+  ],
+  "collision": [
+   -12,
+   24,
+   24,
+   8
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Cooking fire",
+   "id": "Tungku"
+  }
+ },
+ "shrine": {
+  "file": "assets/objects/shrine.png",
+  "size": [
+   34,
+   48
+  ],
+  "collision": [
+   -11,
+   38,
+   22,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Small shrine",
+   "id": "Tempat suci kecil"
+  }
+ },
+ "shrine_java": {
+  "file": "assets/objects/shrine_java.png",
+  "size": [
+   34,
+   48
+  ],
+  "collision": [
+   -11,
+   38,
+   22,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Small shrine",
+   "id": "Tempat suci kecil"
+  }
+ },
+ "market_stall": {
+  "file": "assets/objects/market_stall.png",
+  "size": [
+   84,
+   72
+  ],
+  "collision": [
+   -32,
+   40,
+   64,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Market stall",
+   "id": "Kios pasar"
+  }
+ },
+ "market_stall_blue": {
+  "file": "assets/objects/market_stall_blue.png",
+  "size": [
+   84,
+   72
+  ],
+  "collision": [
+   -32,
+   40,
+   64,
+   26
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "building",
+  "inspect_name": {
+   "en": "Market stall",
+   "id": "Kios pasar"
+  }
+ },
+ "statue": {
+  "file": "assets/objects/statue.png",
+  "size": [
+   34,
+   56
+  ],
+  "collision": [
+   -12,
+   40,
+   24,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Statue",
+   "id": "Patung"
+  }
+ },
+ "totem": {
+  "file": "assets/objects/totem.png",
+  "size": [
+   34,
+   80
+  ],
+  "collision": [
+   -10,
+   58,
+   20,
+   16
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Carved pole",
+   "id": "Tiang ukiran"
+  }
+ },
+ "totem_red": {
+  "file": "assets/objects/totem_red.png",
+  "size": [
+   34,
+   80
+  ],
+  "collision": [
+   -10,
+   58,
+   20,
+   16
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Carved pole",
+   "id": "Tiang ukiran"
+  }
+ },
+ "tribal_shield": {
+  "file": "assets/objects/tribal_shield.png",
+  "size": [
+   24,
+   40
+  ],
+  "collision": [
+   -9,
+   12,
+   18,
+   24
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Decorative shield",
+   "id": "Perisai hiasan"
+  }
+ },
+ "drum": {
+  "file": "assets/objects/drum.png",
+  "size": [
+   34,
+   42
+  ],
+  "collision": [
+   -12,
+   28,
+   24,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Drum",
+   "id": "Gendang"
+  }
+ },
+ "flute_rack": {
+  "file": "assets/objects/flute_rack.png",
+  "size": [
+   46,
+   34
+  ],
+  "collision": [
+   -18,
+   22,
+   36,
+   10
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Flute rack",
+   "id": "Rak suling"
+  }
+ },
+ "textile_rack": {
+  "file": "assets/objects/textile_rack.png",
+  "size": [
+   58,
+   52
+  ],
+  "collision": [
+   -20,
+   4,
+   40,
+   44
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Textile rack",
+   "id": "Rak kain"
+  }
+ },
+ "textile_rack_red": {
+  "file": "assets/objects/textile_rack_red.png",
+  "size": [
+   58,
+   52
+  ],
+  "collision": [
+   -20,
+   4,
+   40,
+   44
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Textile rack",
+   "id": "Rak kain"
+  }
+ },
+ "crate": {
+  "file": "assets/objects/crate.png",
+  "size": [
+   30,
+   28
+  ],
+  "collision": [
+   -12,
+   14,
+   24,
+   12
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Wooden crate",
+   "id": "Peti kayu"
+  }
+ },
+ "barrel": {
+  "file": "assets/objects/barrel.png",
+  "size": [
+   26,
+   30
+  ],
+  "collision": [
+   -11,
+   14,
+   22,
+   14
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Barrel",
+   "id": "Tong"
+  }
+ },
+ "easel_board": {
+  "file": "assets/objects/easel_board.png",
+  "size": [
+   46,
+   52
+  ],
+  "collision": [
+   -14,
+   16,
+   28,
+   32
+  ],
+  "anchor": "bottom",
+  "shadow": true,
+  "sway": false,
+  "tag": "prop",
+  "inspect_name": {
+   "en": "Display board",
+   "id": "Papan pajang"
+  }
+ }
+}

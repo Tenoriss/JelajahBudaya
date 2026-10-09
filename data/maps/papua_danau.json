@@ -1,0 +1,419 @@
+{
+ "id": "papua_danau",
+ "name": "Danau Sentani",
+ "region": "papua",
+ "size": [
+  52,
+  38
+ ],
+ "spawn": [
+  26,
+  30
+ ],
+ "music": "papua",
+ "ambience": "amb_waves",
+ "terrain": {
+  "default": "GRASS",
+  "rects": [
+   {
+    "tile": "WATER",
+    "rect": [
+     0,
+     0,
+     52,
+     16
+    ]
+   },
+   {
+    "tile": "SAND",
+    "rect": [
+     0,
+     16,
+     52,
+     4
+    ]
+   },
+   {
+    "tile": "GRASS",
+    "rect": [
+     0,
+     20,
+     52,
+     10
+    ]
+   },
+   {
+    "tile": "DIRT",
+    "rect": [
+     6,
+     26,
+     40,
+     8
+    ]
+   },
+   {
+    "tile": "JUNGLE",
+    "rect": [
+     40,
+     20,
+     12,
+     18
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "CLIFF",
+    "center": [
+     46,
+     22
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "REED",
+    "center": [
+     10,
+     20
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    14,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "hut_coastal",
+   "pos": [
+    30,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "boat_dock_house",
+   "pos": [
+    22,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "dock",
+   "pos": [
+    24,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    20,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "canoe",
+   "pos": [
+    28,
+    18
+   ],
+   "flip": true,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack",
+   "pos": [
+    18,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "drying_rack_blue",
+   "pos": [
+    21,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "basket",
+   "pos": [
+    12,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "crate",
+   "pos": [
+    32,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "barrel",
+   "pos": [
+    34,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "easel_board",
+   "pos": [
+    26,
+    32
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cooking_fire",
+   "pos": [
+    16,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_palm",
+   "pos": [
+    2,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    48,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    44,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    8,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fence",
+   "pos": [
+    30,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_petrus",
+   "pos": [
+    24,
+    28
+   ],
+   "wander": false,
+   "facing": "down"
+  },
+  {
+   "id": "npc_mama_lena",
+   "pos": [
+    16,
+    30
+   ],
+   "wander": false,
+   "facing": "right"
+  },
+  {
+   "id": "npc_anak",
+   "pos": [
+    30,
+    26
+   ],
+   "wander": true,
+   "facing": "down"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "pp_pz_lake_site",
+   "kind": "puzzle",
+   "pos": [
+    22,
+    32
+   ],
+   "target": "pz_sentani_find",
+   "prompt": "Search the shore",
+   "sprite": "basket",
+   "if": {
+    "quest_active": "pp_06_sentani"
+   }
+  },
+  {
+   "id": "pp_pz_barkcloth_site",
+   "kind": "puzzle",
+   "pos": [
+    34,
+    32
+   ],
+   "target": "pz_barkcloth",
+   "prompt": "Help beat the bark cloth",
+   "sprite": "textile_rack",
+   "if": {
+    "quest_active": "pp_07_kulit_kayu"
+   }
+  },
+  {
+   "id": "pp_pick_fish",
+   "kind": "pickup",
+   "pos": [
+    18,
+    34
+   ],
+   "target": "ikan_kuning",
+   "text": "Fresh fish, ready for the soup pot."
+  },
+  {
+   "id": "pp_col_fibre",
+   "kind": "pickup",
+   "pos": [
+    40,
+    32
+   ],
+   "target": "col_serat_sagu_kol"
+  },
+  {
+   "id": "pp_note_lake",
+   "kind": "note",
+   "pos": [
+    26,
+    24
+   ],
+   "title": "Canoe note",
+   "text": "Every canoe has a name and a family. If one is missing, the first question is always: whose canoe, and who took it out?"
+  },
+  {
+   "id": "pp_save_lake",
+   "kind": "save",
+   "pos": [
+    24,
+    26
+   ]
+  },
+  {
+   "id": "pp_hidden_paint",
+   "kind": "hidden",
+   "pos": [
+    48,
+    34
+   ],
+   "title": "The Painting Rock",
+   "text": "A flat rock by the water is covered in old painted marks in red, white and black - geometric shapes only, made for this game and not copied from any specific design.",
+   "items": [
+    "serat_kulit_kayu"
+   ],
+   "culture": "danau_sentani"
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_danau_sentani",
+   "name": "Lake Shore",
+   "pos": [
+    26,
+    22
+   ],
+   "description": "A lake among hills, worked by the villages around it and famous for its painted bark cloth and canoes.",
+   "entry": "lake",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sulawesi_pelabuhan",
+   "pos": [
+    26,
+    36
+   ],
+   "size": [
+    3,
+    2
+   ],
+   "target": "sulawesi_pelabuhan",
+   "entry": "to_papua_danau"
+  },
+  {
+   "id": "to_sulawesi_pantai",
+   "pos": [
+    2,
+    28
+   ],
+   "size": [
+    2,
+    3
+   ],
+   "target": "sulawesi_pantai",
+   "entry": "to_papua_danau"
+  },
+  {
+   "id": "to_papua_desa",
+   "pos": [
+    2,
+    30
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "papua_desa",
+   "entry": "to_papua_danau"
+  }
+ ],
+ "collision_rects": [
+  [
+   0,
+   0,
+   52,
+   16
+  ]
+ ]
+}

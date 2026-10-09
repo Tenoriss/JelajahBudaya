@@ -1,0 +1,112 @@
+[
+  {
+    "id": "desa_awal",
+    "name": "Kampung Awal",
+    "region": "prologue"
+  },
+  {
+    "id": "java_candi",
+    "name": "Candi Tua",
+    "region": "java"
+  },
+  {
+    "id": "java_desa",
+    "name": "Desa Jawa",
+    "region": "java"
+  },
+  {
+    "id": "java_pasar",
+    "name": "Pasar Pagi",
+    "region": "java"
+  },
+  {
+    "id": "java_sawah",
+    "name": "Terasering Sawah",
+    "region": "java"
+  },
+  {
+    "id": "kalimantan_desa",
+    "name": "Kampung Sungai",
+    "region": "kalimantan"
+  },
+  {
+    "id": "kalimantan_hutan",
+    "name": "Rimba Kalimantan",
+    "region": "kalimantan"
+  },
+  {
+    "id": "kalimantan_pasar",
+    "name": "Pasar Terapung",
+    "region": "kalimantan"
+  },
+  {
+    "id": "kalimantan_sungai",
+    "name": "Sungai Besar",
+    "region": "kalimantan"
+  },
+  {
+    "id": "pantai_awal",
+    "name": "Pantai Awal",
+    "region": "prologue"
+  },
+  {
+    "id": "papua_danau",
+    "name": "Danau Sentani",
+    "region": "papua"
+  },
+  {
+    "id": "papua_desa",
+    "name": "Kampung Lembah",
+    "region": "papua"
+  },
+  {
+    "id": "papua_hutan",
+    "name": "Hutan Pegunungan",
+    "region": "papua"
+  },
+  {
+    "id": "papua_lembah",
+    "name": "Lembah Baliem",
+    "region": "papua"
+  },
+  {
+    "id": "prologue_festival",
+    "name": "Lapangan Festival",
+    "region": "prologue"
+  },
+  {
+    "id": "sulawesi_bukit",
+    "name": "Bukit Minahasa",
+    "region": "sulawesi"
+  },
+  {
+    "id": "sulawesi_desa",
+    "name": "Kampung Tongkonan",
+    "region": "sulawesi"
+  },
+  {
+    "id": "sulawesi_pantai",
+    "name": "Pantai Bajo",
+    "region": "sulawesi"
+  },
+  {
+    "id": "sulawesi_pelabuhan",
+    "name": "Pelabuhan Makassar",
+    "region": "sulawesi"
+  },
+  {
+    "id": "sumatra_danau",
+    "name": "Tepi Danau Toba",
+    "region": "sumatra"
+  },
+  {
+    "id": "sumatra_desa",
+    "name": "Kampung Danau",
+    "region": "sumatra"
+  },
+  {
+    "id": "sumatra_hutan",
+    "name": "Hutan Hujan",
+    "region": "sumatra"
+  }
+]

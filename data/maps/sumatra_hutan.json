@@ -1,0 +1,406 @@
+{
+ "id": "sumatra_hutan",
+ "name": "Hutan Hujan",
+ "region": "sumatra",
+ "size": [
+  54,
+  40
+ ],
+ "spawn": [
+  27,
+  32
+ ],
+ "music": "sumatra",
+ "ambience": "amb_forest",
+ "terrain": {
+  "default": "JUNGLE",
+  "rects": [
+   {
+    "tile": "TALLGRASS",
+    "rect": [
+     6,
+     6,
+     42,
+     6
+    ]
+   },
+   {
+    "tile": "PATH",
+    "rect": [
+     4,
+     20,
+     46,
+     3
+    ]
+   },
+   {
+    "tile": "WATER",
+    "rect": [
+     34,
+     16,
+     4,
+     18
+    ]
+   },
+   {
+    "tile": "MUD",
+    "rect": [
+     10,
+     26,
+     14,
+     10
+    ]
+   }
+  ],
+  "blobs": [
+   {
+    "tile": "GRASS",
+    "center": [
+     30,
+     32
+    ],
+    "radius": 7
+   },
+   {
+    "tile": "BAMBOO",
+    "center": [
+     44,
+     8
+    ],
+    "radius": 5
+   },
+   {
+    "tile": "REED",
+    "center": [
+     20,
+     18
+    ],
+    "radius": 4
+   }
+  ]
+ },
+ "objects": [
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    8,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    14,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    22,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    30,
+    8
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    40,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    48,
+    16
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical",
+   "pos": [
+    6,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_fruit",
+   "pos": [
+    18,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "tree_tropical2",
+   "pos": [
+    44,
+    34
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    42,
+    10
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bamboo_cluster",
+   "pos": [
+    46,
+    14
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    12,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "fern",
+   "pos": [
+    28,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bush_green",
+   "pos": [
+    16,
+    22
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bush_dark",
+   "pos": [
+    38,
+    26
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "mushroom",
+   "pos": [
+    24,
+    30
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "log",
+   "pos": [
+    32,
+    28
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "rock_big",
+   "pos": [
+    46,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "cave_mouth",
+   "pos": [
+    12,
+    12
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "waterfall",
+   "pos": [
+    36,
+    18
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "bridge_plank",
+   "pos": [
+    34,
+    24
+   ],
+   "flip": false,
+   "collide": true
+  },
+  {
+   "sprite": "reed_clump",
+   "pos": [
+    22,
+    20
+   ],
+   "flip": false,
+   "collide": true
+  }
+ ],
+ "npcs": [
+  {
+   "id": "npc_bujang",
+   "pos": [
+    30,
+    30
+   ],
+   "wander": false,
+   "facing": "up"
+  }
+ ],
+ "interactables": [
+  {
+   "id": "sm_flute_bench",
+   "kind": "pickup",
+   "pos": [
+    32,
+    30
+   ],
+   "target": "bambu_saluang",
+   "text": "A bamboo tube, cut to length, lying on a stump beside a knife."
+  },
+  {
+   "id": "sm_pz_saluang_site",
+   "kind": "puzzle",
+   "pos": [
+    30,
+    32
+   ],
+   "target": "pz_saluang_song",
+   "prompt": "Try the flute",
+   "sprite": "flute_rack",
+   "if": {
+    "quest_active": "sm_03_saluang"
+   }
+  },
+  {
+   "id": "sm_cave_note",
+   "kind": "note",
+   "pos": [
+    12,
+    13
+   ],
+   "title": "Cave mouth",
+   "text": "Cool air comes out of the dark. Charcoal marks on the rock are old, and the people who made them are not named here."
+  },
+  {
+   "id": "sm_col_coffee",
+   "kind": "pickup",
+   "pos": [
+    26,
+    36
+   ],
+   "target": "col_kopi_liar"
+  },
+  {
+   "id": "sm_hutan_hidden",
+   "kind": "hidden",
+   "pos": [
+    46,
+    30
+   ],
+   "title": "The Fallen Tree Bridge",
+   "text": "A tree has fallen across the stream and made a bridge. The far bank is quieter, and the birds there are not used to people.",
+   "items": [
+    "obat_herbal"
+   ],
+   "culture": "hutan_kalimantan"
+  },
+  {
+   "id": "sm_save_hutan",
+   "kind": "save",
+   "pos": [
+    28,
+    28
+   ]
+  },
+  {
+   "id": "sm_bark_note",
+   "kind": "note",
+   "pos": [
+    36,
+    26
+   ],
+   "title": "Bark inscription",
+   "text": "Original marks cut into the bark: three lines, a hook and a dot. The shape is repeated in this game's artwork as an invented motif, not a copy of any specific carving."
+  }
+ ],
+ "landmarks": [
+  {
+   "id": "lm_hutan_sumatra",
+   "name": "Rainforest Clearing",
+   "pos": [
+    30,
+    30
+   ],
+   "description": "Bamboo, mud and water noise. Somebody has been cutting flute blanks here.",
+   "entry": "clearing",
+   "radius": 64
+  }
+ ],
+ "exits": [
+  {
+   "id": "to_sumatra_desa",
+   "pos": [
+    52,
+    20
+   ],
+   "size": [
+    2,
+    4
+   ],
+   "target": "sumatra_desa",
+   "entry": "to_sumatra_hutan"
+  }
+ ],
+ "collision_rects": [
+  [
+   34,
+   16,
+   4,
+   18
+  ]
+ ]
+}
